@@ -31,10 +31,11 @@
     #hypridle
     pywal
     cosmic-launcher
-    rofi
+    #rofi
     wlogout
     waypaper
     swww
+    #swaybg
     mpvpaper
     hyprshot
     hyprpicker
@@ -81,13 +82,14 @@
     caffeine-ng
     kdePackages.okular
     typst
+    inputs.wifi-tui.packages.${pkgs.system}.default
 
     #Pentesting and related tools
     netdiscover
     nmap
     nftables
     ffuf
-    feroxbuster
+    wirelesstools
     sqlmap
     john
     enum4linux
