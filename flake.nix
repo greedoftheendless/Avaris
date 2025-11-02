@@ -28,6 +28,11 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    wifi-tui = {
+      url = "github:/shazow/wifitui";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
