@@ -19,8 +19,6 @@ input {
     mouse {
         accel-speed 0.0
     }
-
-    focus-follows-mouse
 }
 
 // Make workspaces four times smaller than normal in the overview.
