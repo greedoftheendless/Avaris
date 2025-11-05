@@ -1,0 +1,20 @@
+{
+  "position": "bottom",
+  "orientation": "horizontal",
+  "items": [
+    "Obsidian",
+    "Thunderbird",
+    "Zed",
+    "Spotify",
+    "Vesktop",
+    "Ghostty",
+    "Steam"
+  ],
+  "iconSize": 48,
+  "alwaysVisible": false,
+  "showIconsBackground": true,
+  "showTooltips": true,
+  "falloff": 3,
+  "scaleFactor": 0.3,
+  "damp": 1
+}

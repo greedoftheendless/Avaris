@@ -1,0 +1,45 @@
+{
+  "opacity": 0.5,
+  "colors": {
+    "background": "#1B191B",
+    "foreground": "#F8E2D2",
+    "primary": "#D37D58"
+  },
+  "rounding": {
+    "small": 8,
+    "medium": 12,
+    "large": 16
+  },
+  "spacing": {
+    "small": 8,
+    "medium": 16,
+    "large": 24
+  },
+  "padding": {
+    "small": 6,
+    "medium": 12,
+    "large": 24
+  },
+  "font": {
+    "family": {
+      "regular": "JetBrains Mono",
+      "heading": "Fira Code"
+    },
+    "size": {
+      "xm": 8,
+      "s": 12,
+      "m": 14,
+      "l": 16,
+      "xl": 18,
+      "xxl": 28
+    }
+  },
+  "animation": {
+    "duration": {
+      "quick": 100,
+      "normal": 200,
+      "slow": 400,
+      "sequential": 25
+    }
+  }
+}
