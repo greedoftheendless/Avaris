@@ -1,9 +1,15 @@
 {
+  "project_panel": {
+    "button": true
+  },
+  "disable_ai": false,
   "agent": {
+    "notify_when_agent_waiting": "all_screens",
     "play_sound_when_agent_done": true
   },
   "icon_theme": "Catppuccin Mocha",
   "telemetry": {
+    "diagnostics": false,
     "metrics": false
   },
   "vim_mode": true,

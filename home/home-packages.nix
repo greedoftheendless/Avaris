@@ -25,7 +25,7 @@
     nushell
 
     #Hyprland/Niri required packages
-    quickshell
+    inputs.quickshell.packages.${pkgs.system}.default
     waybar
     hyprlock
     #hypridle
@@ -36,7 +36,7 @@
     waypaper
     swww
     #swaybg
-    mpvpaper
+    #mpvpaper
     hyprshot
     hyprpicker
     ffmpeg
@@ -64,7 +64,7 @@
     usbguard
     usbguard-notifier
     ghostty
-    alacritty
+    #alacritty
     kitty
     git
     tealdeer
