@@ -2,7 +2,7 @@
 
 # Check if Bluetooth is soft blocked
 if rfkill list bluetooth | grep -q 'Soft blocked: yes'; then
-  echo '{"text": "󰂰", "class": "off"}'
+  echo '{"text": "󰂯X", "class": "off"}'
   exit 0
 fi
 
@@ -11,7 +11,7 @@ connected_mac=$(bluetoothctl devices Connected | head -n1 | awk '{print $2}')
 
 # If no device is connected
 if [ -z "$connected_mac" ]; then
-  echo '{"text": "󰂯", "class": "on"}'
+  echo '{"text": "󰂯X", "class": "on"}'
   exit 0
 fi
 
