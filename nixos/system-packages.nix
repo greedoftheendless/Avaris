@@ -55,8 +55,8 @@
     nh
     better-control
     upower
+    libsForQt5.qt5.qttools
     upower-notify
-    tshark
     nwg-look
     nwg-menu
     pkgs.adwaita-icon-theme
