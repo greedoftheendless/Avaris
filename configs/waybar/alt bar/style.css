@@ -1,0 +1,97 @@
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 18px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    border: 0px solid #7aa2f7;
+    border-radius: 4px;
+    color: #c0caf5;
+    padding: 2px 0px;
+    min-height: 28px; /* force smaller bar height */
+}
+
+#custom-power,
+#clock,
+#taskbar,
+#workspaces,
+#custom-spotify,
+#custom-volume,
+#tray,
+#custom-memory,
+#custom-battery,
+#custom-brightness,
+#network,
+#custom-bluetooth {
+    border: 1px solid #7aa2f7;
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin: 2px;
+    background: #191724;
+    transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+#custom-power:hover,
+#clock:hover,
+#workspaces button:hover,
+#custom-spotify:hover,
+#custom-volume:hover,
+#custom-brightness:hover,
+#custom-memory:hover,
+#network:hover,
+#custom-battery:hover,
+#custom-bluetooth:hover {
+    background: #2a2f42;
+}
+
+#custom-volume span,
+#custom-brightness span {
+    font-size: 18px;
+}
+
+#custom-bluetooth.on {
+    color: #89b4fa;
+}
+
+.low {
+    color: #f7768e;
+}
+.med {
+    color: #e0af68;
+}
+.high {
+    color: #9ece6a;
+}
+
+menu {
+    border: 1px solid #7aa2f7;
+    background: #2a2f42;
+    font-weight: bold;
+}
+
+#workspaces {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+#workspaces button {
+    color: #c0caf5;
+}
+
+#workspaces button:hover {
+    color: #c0caf5;
+    background: #2a2f42;
+}
+
+#workspaces button.focused {
+    background: #545c7e;
+}
+
+#custom-background-apps {
+    color: #88c0d0;
+}
