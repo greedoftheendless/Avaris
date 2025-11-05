@@ -228,6 +228,7 @@ spawn-at-startup "caffeine"
 spawn-at-startup "swaync"
 spawn-at-startup "zen-beta"
 spawn-at-startup "vicinae" "server"
+spawn-at-startup "quickshell" "-c" "/home/greed/.config/quickshell/cwc"
 //spawn-at-startup "sh" "-c" "wal -R && ~/.config/hypr/scripts/wal-theme.sh"
 
 // ========== OUTPUT CONFIGURATION ==========
