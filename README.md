@@ -1,4 +1,4 @@
-# Greed's Hyprland Dotfiles
+# Avaris, the Latin root of Greed!
 
 Welcome! This repository contains my personal Nix OS configuration using Niri(Main) and Hyprland, designed for a clean and efficient workspace.
 
