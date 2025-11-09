@@ -1,5 +1,3 @@
-#!/run/current-system/sw/bin/sh
-
 # Check if Bluetooth is soft blocked
 if rfkill list bluetooth | grep -q 'Soft blocked: yes'; then
   echo '{"text": "󰂯X", "class": "off"}'

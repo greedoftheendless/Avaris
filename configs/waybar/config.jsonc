@@ -1,5 +1,4 @@
-// WAYBAR CONFIG - Original by ML4W (https://www.ml4w.com)
-// MODIFIED BY @GeodeArc
+// WAYBAR BY @GeodeArc
 // RE-MODIFIED BY GREED
 
 {
@@ -20,10 +19,6 @@
     "clock",
     "custom/separator",
     "custom/spotify",
-    "custom/separator",
-    "cpu",
-    "memory",
-    "disk",
   ],
 
   // Modules Center
@@ -37,6 +32,9 @@
     "battery",
     "backlight",
     "pulseaudio",
+    "custom/separator",
+    "memory",
+    "disk",
   ],
 
   // Workspaces
@@ -139,7 +137,7 @@
     "tooltip-format": " {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
     "max-length": 50,
     "on-click": "/home/greed/dotfiles/configs/waybar/scripts/wifitui.sh",
-    "on-click-right": "kitty nmtui",
+    "on-click-right": "better-control -w",
   },
 
   // Battery
@@ -190,17 +188,19 @@
       "default": ["", "", ""],
     },
     "tooltip-format": "{desc}\nSpeaker: {volume}%\nMic: {format_source}",
-    "on-click": "pavucontrol",
+    "on-click": "better-control -v",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
   },
 
   // Bluetooth
   "bluetooth": {
-    "format": "",
+    "format": " ",
     "format-disabled": "  ",
     "format-off": " Off",
     "interval": 30,
-    "on-click": "blueman-manager",
+    "on-click": "better-control -b",
+    "on-click-middle": "rfkill block bluetooth",
+    "on-click-right": "rfkill unblock bluetooth",
     "tooltip-format": " {controller_alias}\n{num_connections} connected",
     "tooltip-format-connected": " {controller_alias}\n{num_connections} connected",
     "tooltip-format-enumerate-connected": " {device_alias}",
