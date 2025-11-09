@@ -2,29 +2,32 @@
   programs.fish = {
     enable = true;
 
+    shellAliases = {
+      #Apps
+      lgit = "lazygit";
+      zed = "zeditor";
+      wiki = "wiki-tui";
+      #for nh/nix update and switch
+      update = "nh os switch -u";
+      rebuild = "nh os switch";
+      #Everyday commands
+      cat = "bat";
+      cd = "z";
+      la = "eza --long --color=always -aa";
+      ls = "nu -c ls";
+      "..." = "cd ../..";
+      ".." = "cd ..";
+    };
+
     interactiveShellInit = ''
       # Greeting
       set -g fish_greeting "🦊 Welcome, $USER!"
-
-      # Simple ls aliases
-      alias la="eza --long --color=always -aa"
-
-      # LazyGit and Zed
-      alias lgit=lazygit
-      alias zed=zeditor
-
-      # ls using nu
-      alias ls="nu -c ls"
 
       # Starship prompt
       starship init fish | source
 
       # Atuin shell history
       atuin init fish | sed 's/-k up/up/' | source
-
-      # Other aliases
-      alias cat="bat"
-      alias cd="z"  # requires zoxide
 
       # Zoxide integration
       zoxide init fish | source
