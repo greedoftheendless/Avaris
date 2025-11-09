@@ -104,10 +104,6 @@ Inspired by and based on the incredible work from:
 
     r/unixporn
 
-    shell-ninja’s repo
-
-    Void ninja’s repo
-
     Aeon Remnant (for file structure and Nix mentoring)
 
     The VimJoyers Discord community (for making Nix exploration fun and collaborative)
