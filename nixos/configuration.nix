@@ -6,7 +6,8 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./nvidia.nix
+    ./modules/nvidia.nix
+    ./modules/sddm.nix
   ];
 
   # Bootloader.
@@ -80,6 +81,6 @@
 
   modules.nvidia.enable = true;
   modules.nvidia.withSpecialisation = true;
-    
+
   system.stateVersion = "25.05";
 }

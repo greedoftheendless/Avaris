@@ -113,6 +113,7 @@
     tcpdump
 
     # Web/Common Apps
+    vlc
     catppuccin
     zed-editor
     thunderbird
