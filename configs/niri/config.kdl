@@ -50,7 +50,7 @@ layout {
     default-column-width {
         proportion 0.66667
     }
-    
+
     preset-column-widths {
         proportion 0.66667
         proportion 0.99999
@@ -73,7 +73,7 @@ layout {
 prefer-no-csd
 
 cursor {
-    xcursor-theme "Adwaita"
+    xcursor-theme "BreezeX-RosePine-Linux"
     xcursor-size 24
 }
 
