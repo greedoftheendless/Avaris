@@ -9,6 +9,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+     zaphkiel = {
+      url = "github:Rexcrazy804/Zaphkiel";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     hjem = {
       url = "github:/feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,7 +33,10 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
+    silentSDDM = {
+      url = "github:uiriansan/silentSDDM";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     wifi-tui = {
       url = "github:/shazow/wifitui";
       inputs.nixpkgs.follows = "nixpkgs";
