@@ -57,8 +57,6 @@
     upower
     libsForQt5.qt5.qttools
     upower-notify
-    nwg-look
-    nwg-menu
     pkgs.adwaita-icon-theme
     swaynotificationcenter
     tlp
