@@ -5,6 +5,7 @@
     ./home-packages.nix
     ./modules/fish.nix
     ./modules/cursor.nix
+    ./modules/mpd.nix
   ];
 
   fonts.fontconfig.enable = true;

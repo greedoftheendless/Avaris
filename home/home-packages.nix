@@ -8,6 +8,9 @@
   #Installing Helix
   programs.helix.enable = true;
 
+  #Install MPD
+  #services.mpd.enable = true;
+
   #Enable zoxide
   programs.zoxide = {
     enable = true;
@@ -124,7 +127,7 @@
     wget
     curl
     spotify
-    rmpc
+    ncspot
     vesktop
     dropbox
     obsidian
