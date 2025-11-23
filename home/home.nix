@@ -4,6 +4,7 @@
   imports = [
     ./home-packages.nix
     ./modules/fish.nix
+    ./modules/cursor.nix
   ];
 
   fonts.fontconfig.enable = true;

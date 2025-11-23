@@ -26,11 +26,11 @@
 
     #Hyprland/Niri required packages
     inputs.quickshell.packages.${pkgs.system}.default
+    #inputs.zaphkiel.packages.${pkgs.system}.kurukurubar
     waybar
     hyprlock
     #hypridle
-    pywal
-    cosmic-launcher
+    #pywal
     #rofi
     wlogout
     waypaper
@@ -102,7 +102,6 @@
     hashcat
     exploitdb
     steghide
-    git-dumper
     bettercap
     unixtools.netstat
     burpsuite
@@ -119,16 +118,16 @@
     thunderbird
     #librewolf
     tor-browser
+    gimp3-with-plugins
     inputs.zen-browser.packages.${pkgs.system}.default
     libreoffice-still
     wget
     curl
-    croc
     spotify
+    rmpc
     vesktop
     dropbox
     obsidian
-    #copyq
     protonvpn-gui
     cava
     obs-studio
