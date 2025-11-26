@@ -6,19 +6,24 @@
 {
   # Enable SSH
   services.openssh.enable = true;
+
   #Adding bluetooth
   services.blueman.enable = true;
+
   #Adding power-management
   services.upower.enable = true;
+
   #Adding nix-experimental command features and nix flakes
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
   ];
+
   #Pointing nh the direction of flake
   environment.sessionVariables = {
     NH_FLAKE = "$HOME/dotfiles";
   };
+
   nixpkgs.config.allowUnfree = true;
   nix.package = pkgs.nixVersions.latest;
 
@@ -48,6 +53,9 @@
   };
 
   environment.systemPackages = with pkgs; [
+    #Flake packages
+    inputs.silentSDDM.packages.${pkgs.system}.default
+
     #Terminal tools
     xwayland
     xwayland-satellite
@@ -65,7 +73,7 @@
   fonts.packages = with pkgs; [
     noto-fonts
     noto-fonts-cjk-sans
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
     nerd-fonts.fira-mono

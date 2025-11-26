@@ -12,12 +12,12 @@ in {
   };
   config = lib.mkIf cfg.enable {
     services.displayManager.sddm = let
-      silent-sddm = inputs.silent-sddm.packages.${pkgs.stdenv.hostPlatform.system}.default;
+      silent-sddm = inputs.silentSDDM.packages.${pkgs.stdenv.hostPlatform.system}.default;
     in {
       enable = true;
       package = pkgs.kdePackages.sddm;
       wayland.enable = true;
-      theme = "silent";
+      theme = lib.mkForce "silent";
       settings = {
         General = {
           GreeterEnvironment = "QML2_IMPORT_PATH=${silent-sddm}/share/sddm/themes/silent/components/,QT_IM_MODULE=qtvirtualkeyboard";
@@ -30,7 +30,7 @@ in {
     };
 
     environment.systemPackages = [
-      inputs.silent-sddm.packages.${pkgs.stdenv.hostPlatform.system}.default
+      inputs.silentSDDM.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
   };
 }
