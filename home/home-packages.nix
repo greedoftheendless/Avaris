@@ -72,6 +72,7 @@
     git
     tealdeer
     nemo
+    nautilus
     kdePackages.gwenview
     lf
     starship
@@ -127,7 +128,6 @@
     wget
     curl
     spotify
-    ncspot
     vesktop
     dropbox
     obsidian
