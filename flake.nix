@@ -33,7 +33,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    silentSDDM = {
+    silent-sddm = {
       url = "github:uiriansan/silentSDDM";
       inputs.nixpkgs.follows = "nixpkgs";
     };

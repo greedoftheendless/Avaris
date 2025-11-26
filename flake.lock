@@ -280,7 +280,7 @@
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "quickshell": "quickshell",
-        "silentSDDM": "silentSDDM",
+        "silent-sddm": "silent-sddm",
         "vicinae": "vicinae",
         "wifi-tui": "wifi-tui",
         "zaphkiel": "zaphkiel",
@@ -309,7 +309,7 @@
         "type": "github"
       }
     },
-    "silentSDDM": {
+    "silent-sddm": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
