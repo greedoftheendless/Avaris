@@ -26,6 +26,10 @@ in {
       };
       extraPackages = [
         silent-sddm
+        pkgs.kdePackages.qtmultimedia
+        pkgs.kdePackages.qtbase
+        pkgs.kdePackages.qtwayland
+        pkgs.kdePackages.qtmultimedia
       ];
     };
 

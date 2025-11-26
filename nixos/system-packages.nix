@@ -28,10 +28,10 @@
   nix.package = pkgs.nixVersions.latest;
 
   #Enabling/Installing hyprland
-  programs.hyprland.enable = true;
+  #programs.hyprland.enable = true;
 
   #Enabling/Installing niri
-  programs.niri.enable = true;  # ADD THIS LINE
+  programs.niri.enable = true;
 
   #Enabling SSDM login screen
   services.displayManager.sddm.enable = true;
@@ -54,7 +54,7 @@
 
   environment.systemPackages = with pkgs; [
     #Flake packages
-    inputs.silentSDDM.packages.${pkgs.system}.default
+    #inputs.silent-sddm.packages.${pkgs.system}.default
 
     #Terminal tools
     xwayland
