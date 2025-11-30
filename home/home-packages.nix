@@ -18,6 +18,10 @@
     options = [ "--cmd cd" ];
   };
 
+  programs.dankMaterialShell = {
+    enable = true;
+  };
+
   #Enable hyprpanel
   #programs.hyprpanel.enable = true;
 
@@ -29,7 +33,6 @@
 
     #Hyprland/Niri required packages
     inputs.quickshell.packages.${pkgs.system}.default
-    #inputs.zaphkiel.packages.${pkgs.system}.kurukurubar
     waybar
     hyprlock
     #hypridle
