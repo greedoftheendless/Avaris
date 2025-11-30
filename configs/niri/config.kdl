@@ -31,8 +31,7 @@ overview {
 
 // Make the wallpaper stationary, rather than moving with workspaces.
 layer-rule {
-    // Find the right namespace by running niri msg layers.
-    match namespace="^swww-daemonbackdrop$"
+    match namespace="^quickshell$"
     place-within-backdrop true
 }
 
@@ -114,13 +113,45 @@ animations {
 
 // ========== KEYBINDINGS ==========
 binds {
-    // Basic window management
-    Mod+Return { spawn "ghostty"; }
-    Mod+Q { close-window; }
+    // === Application Launchers ===
+    Mod+Space hotkey-overlay-title="Application Launcher" {
+        spawn "dms" "ipc" "call" "spotlight" "toggle";
+    }
+    Mod+Alt+L hotkey-overlay-title="Clipboard Manager" {
+        spawn "dms" "ipc" "call" "clipboard" "toggle";
+    }
+    Mod+M hotkey-overlay-title="Task Manager" {
+        spawn "dms" "ipc" "call" "processlist" "toggle";
+    }
+    Mod+Alt+S hotkey-overlay-title="Settings" {
+        spawn "dms" "ipc" "call" "settings" "toggle";
+    }
+    Mod+Y hotkey-overlay-title="Browse Wallpapers" {
+        spawn "dms" "ipc" "call" "dankdash" "wallpaper";
+    }
+    Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+
+    // === Security ===
+    Mod+L hotkey-overlay-title="Lock Screen" {
+        spawn "dms" "ipc" "call" "lock" "lock";
+    }
+
+    // Applications
+    Mod+Shift+P { spawn "wlogout"; }
     Mod+E { spawn "nemo"; }
+    Mod+Return { spawn "ghostty"; }
+    Mod+B { spawn "zen-beta"; }
+    Mod+Alt+H { spawn "better-control"; }
+    Mod+Shift+Space { spawn "vicinae" "toggle"; }
+    //Mod+Shift+Comma { spawn "waypaper"; }
     //Mod+Space { spawn "rofi" "-show" "drun"; }
-    Mod+Space { spawn "vicinae" "toggle"; }
-    Mod+L { spawn "hyprlock"; }
+    //Mod+L { spawn "hyprlock"; }
+
+
+    // Basic window management
+    Mod+F { fullscreen-window; }
+    Mod+Q { close-window; }
     Mod+D { "toggle-overview";}
 
     // Window navigation (focus) using arrow keys
@@ -140,20 +171,9 @@ binds {
     Mod+Ctrl+H { move-column-to-monitor-left; }
     Mod+Ctrl+L { move-column-to-monitor-right; }
 
-    // Applications
-    Mod+F { fullscreen-window; }
-    Mod+Shift+P { spawn "wlogout"; }
-    Mod+B { spawn "zen-beta"; }
-    //Mod+Shift+Comma { spawn "waypaper"; }
-    Mod+Alt+H { spawn "better-control"; }
-    Mod+Alt+L { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
-    Mod+Shift+Space { spawn "vicinae" "toggle"; }
-
     // Overview mode (workspace overview)
     Mod+Tab { show-hotkey-overlay; }
-
-    // Screenshots
-    Shift+F5 { spawn "hyprshot" "-m" "region"; }
+    Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Workspace switching 1-9
     Mod+1 { focus-workspace 1; }
@@ -209,6 +229,12 @@ binds {
     XF86AudioPrev { spawn "playerctl" "previous"; }
     XF86AudioPlay { spawn "playerctl" "play-pause"; }
     XF86AudioNext { spawn "playerctl" "next"; }
+
+    // === Screenshots ===
+    Mod+S { screenshot; }
+    Print { screenshot; }
+    Ctrl+Print { screenshot-screen; }
+    Alt+Print { screenshot-window; }
 }
 
 // ========== WINDOW RULES ==========
@@ -235,7 +261,7 @@ spawn-at-startup "vicinae" "server"
  }
 
 // ========== MISC SETTINGS ==========
-screenshot-path "~/Pictures/Screenshots/screenshot-%Y-%m-%d-%H-%M-%S.png"
+screenshot-path "~/Pictures/Screenshots/screenshot-%d-%m-%Y-%H-%M-%S.png"
 
 hotkey-overlay {
     skip-at-startup
@@ -249,5 +275,4 @@ debug {
 
 // ========== ENVIRONMENT VARIABLES ==========
 environment {
-    HYPRSHOT_DIR "/home/greed/Pictures/Screenshots"
 }

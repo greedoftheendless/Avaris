@@ -71,6 +71,49 @@
         "type": "github"
       }
     },
+    "dankMaterialShell": {
+      "inputs": {
+        "dgop": [
+          "dgop"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1764518652,
+        "narHash": "sha256-KjEA4rYelqOhq+tANHqdsX56zdz9+07E0rucsXe3mOo=",
+        "owner": "AvengeMedia",
+        "repo": "DankMaterialShell",
+        "rev": "b2cf20f3d88df3294f84bf2f2909cd94bb9c3105",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "DankMaterialShell",
+        "type": "github"
+      }
+    },
+    "dgop": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762835999,
+        "narHash": "sha256-UykYGrGFOFTmDpKTLNxj1wvd1gbDG4TkqLNSbV0TYwk=",
+        "owner": "AvengeMedia",
+        "repo": "dgop",
+        "rev": "799301991cd5dcea9b64245f9d500dcc76615653",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "dgop",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems_3"
@@ -276,11 +319,12 @@
     },
     "root": {
       "inputs": {
+        "dankMaterialShell": "dankMaterialShell",
+        "dgop": "dgop",
         "hjem": "hjem",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "quickshell": "quickshell",
-        "silent-sddm": "silent-sddm",
         "vicinae": "vicinae",
         "wifi-tui": "wifi-tui",
         "zaphkiel": "zaphkiel",
@@ -306,26 +350,6 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "silent-sddm": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1761228832,
-        "narHash": "sha256-yOE3CA5VzThSTTtwv4K0iR0BUq1qc9vE6Kxoe0KXplo=",
-        "owner": "uiriansan",
-        "repo": "silentSDDM",
-        "rev": "e334d92d3512cb5f49d16ca4b0a4baef721f9713",
-        "type": "github"
-      },
-      "original": {
-        "owner": "uiriansan",
-        "repo": "silentSDDM",
         "type": "github"
       }
     },
