@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -6,6 +6,7 @@
     ./modules/fish.nix
     ./modules/cursor.nix
     ./modules/mpd.nix
+    inputs.dankMaterialShell.homeModules.dankMaterialShell.default
   ];
 
   fonts.fontconfig.enable = true;
