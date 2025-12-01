@@ -34,7 +34,10 @@
   programs.niri.enable = true;
 
   #Enabling SSDM login screen
-  services.displayManager.sddm.enable = true;
+  #services.displayManager.sddm.enable = true;
+
+  #Enabling ly login manager
+  services.displayManager.ly.enable = true;
 
   #Home-manager config
   home-manager = {
@@ -55,7 +58,7 @@
 
   environment.systemPackages = with pkgs; [
     #Flake packages
-    #inputs.silent-sddm.packages.${pkgs.system}.default
+    #inputs.silent-sddm.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     #Terminal tools
     xwayland
