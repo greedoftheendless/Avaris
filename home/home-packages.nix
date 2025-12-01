@@ -8,9 +8,6 @@
   #Installing Helix
   programs.helix.enable = true;
 
-  #Install MPD
-  #services.mpd.enable = true;
-
   #Enable zoxide
   programs.zoxide = {
     enable = true;
@@ -22,37 +19,42 @@
     enable = true;
   };
 
+  programs.dsearch = {
+      enable = true;
+  };
+
   #Enable hyprpanel
   #programs.hyprpanel.enable = true;
 
   home.packages = with pkgs; [
+
+    (import ./modules/webapp-install.nix { inherit pkgs; })
+    (import ./modules/webapp-uninstall.nix  { inherit pkgs; })
 
     #Shells
     bash
     nushell
 
     #Hyprland/Niri required packages
-    inputs.quickshell.packages.${pkgs.system}.default
     waybar
     hyprlock
     #hypridle
     #pywal
     #rofi
     wlogout
-    waypaper
+    #waypaper
     swww
-    #swaybg
     #mpvpaper
-    hyprshot
+    #hyprshot
     hyprpicker
     ffmpeg
-    inputs.vicinae.packages.${pkgs.system}.default
+    #inputs.vicinae.packages.${pkgs.system}.default
 
     # CLI Tools
-    gemini-cli
+    claude-code
     tmux
     cava
-    #fastfetch
+    fastfetch
     atuin
     eza
     openssl
@@ -82,12 +84,13 @@
     btop
     binutils
     lazygit
+    gh
     unzip
     openvpn
     podman
     podman-tui
     caffeine-ng
-    kdePackages.okular
+    #kdePackages.okular
     typst
     inputs.wifi-tui.packages.${pkgs.system}.default
 
@@ -119,6 +122,7 @@
     tcpdump
 
     # Web/Common Apps
+    onlyoffice-desktopeditors
     vlc
     catppuccin
     zed-editor
@@ -127,7 +131,6 @@
     tor-browser
     gimp3-with-plugins
     inputs.zen-browser.packages.${pkgs.system}.default
-    libreoffice-still
     wget
     curl
     spotify

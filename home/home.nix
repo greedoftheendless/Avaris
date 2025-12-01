@@ -5,8 +5,8 @@
     ./home-packages.nix
     ./modules/fish.nix
     ./modules/cursor.nix
-    ./modules/mpd.nix
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
+    inputs.dsearch.homeModules.default
   ];
 
   fonts.fontconfig.enable = true;
