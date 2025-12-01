@@ -143,7 +143,6 @@ binds {
     Mod+Return { spawn "ghostty"; }
     Mod+B { spawn "zen-beta"; }
     Mod+Alt+H { spawn "better-control"; }
-    Mod+Shift+Space { spawn "vicinae" "toggle"; }
     //Mod+Shift+Comma { spawn "waypaper"; }
     //Mod+Space { spawn "rofi" "-show" "drun"; }
     //Mod+L { spawn "hyprlock"; }
@@ -247,12 +246,14 @@ draw-border-with-background false
 }
 
 // ========== AUTOSTART ==========
-//spawn-at-startup "hypridle"
+spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+spawn-at-startup "dms" "run"
 spawn-at-startup "waybar"
 spawn-at-startup "waypaper" "--restore"
 spawn-at-startup "caffeine"
 spawn-at-startup "zen-beta"
 spawn-at-startup "vicinae" "server"
+//spawn-at-startup "hypridle"
 //spawn-at-startup "sh" "-c" "wal -R && ~/.config/hypr/scripts/wal-theme.sh"
 
 // ========== OUTPUT CONFIGURATION ==========
