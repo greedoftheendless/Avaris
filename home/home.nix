@@ -5,6 +5,7 @@
     ./home-packages.nix
     ./modules/fish.nix
     ./modules/cursor.nix
+    inputs.nvf.homeManagerModules.default
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
     inputs.dsearch.homeModules.default
   ];

@@ -6,7 +6,14 @@
 {
 
   #Installing Helix
-  programs.helix.enable = true;
+  programs.helix = {
+    enable = true;
+  };
+
+  #Installing nvf
+  programs.nvf = {
+    enable = true;
+  };
 
   #Enable zoxide
   programs.zoxide = {
@@ -28,8 +35,8 @@
 
   home.packages = with pkgs; [
 
-    (import ./modules/webapp-install.nix { inherit pkgs; })
-    (import ./modules/webapp-uninstall.nix  { inherit pkgs; })
+    (import ./modules/webapp/webapp-install.nix { inherit pkgs; })
+    (import ./modules/webapp/webapp-uninstall.nix  { inherit pkgs; })
 
     #Shells
     bash
@@ -37,6 +44,7 @@
 
     #Hyprland/Niri required packages
     waybar
+    waypaper
     hyprlock
     #hypridle
     #pywal
@@ -48,10 +56,9 @@
     #hyprshot
     hyprpicker
     ffmpeg
-    #inputs.vicinae.packages.${pkgs.system}.default
+    #inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # CLI Tools
-    claude-code
     tmux
     cava
     fastfetch
@@ -92,7 +99,7 @@
     caffeine-ng
     #kdePackages.okular
     typst
-    inputs.wifi-tui.packages.${pkgs.system}.default
+    inputs.wifi-tui.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     #Pentesting and related tools
     netdiscover
@@ -129,8 +136,8 @@
     thunderbird
     #librewolf
     tor-browser
-    gimp3-with-plugins
-    inputs.zen-browser.packages.${pkgs.system}.default
+    gimp
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     wget
     curl
     spotify
