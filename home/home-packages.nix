@@ -15,7 +15,6 @@
     enable = true;
   };
 
-  #Enable zoxide
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;

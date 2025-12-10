@@ -2,10 +2,15 @@
 
 {
   imports = [
+    #Module imports
     ./home-packages.nix
     ./modules/fish.nix
     ./modules/cursor.nix
+    ./modules/nvf/configuration.nix
+
+    #Home Manager modules
     inputs.nvf.homeManagerModules.default
+
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
     inputs.dsearch.homeModules.default
   ];
