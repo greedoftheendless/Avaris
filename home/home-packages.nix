@@ -103,6 +103,7 @@
     #Pentesting and related tools
     netdiscover
     nmap
+    wpscan
     nftables
     ffuf
     wirelesstools
