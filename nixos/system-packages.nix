@@ -57,9 +57,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    #Flake packages
-    #inputs.silent-sddm.packages.${pkgs.stdenv.hostPlatform.system}.default
-
     #Terminal tools
     xwayland
     xwayland-satellite
