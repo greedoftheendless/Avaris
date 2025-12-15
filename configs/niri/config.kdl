@@ -154,11 +154,20 @@ binds {
 
     // Window navigation (focus) using arrow keys
     Mod+Left { focus-column-left; }
+    Mod+C { focus-column-left; }
     Mod+Right { focus-column-right; }
+    Mod+V { focus-column-right; }
+
+    //Similar but for workspace
+    Mod+Shift+W { move-workspace-up; }
+    Mod+Shift+X { move-workspace-down; }
+    Mod+W { focus-workspace-up; }
+    Mod+X { focus-workspace-down; }
+
 
     // Window floating rules
-    Mod+V { toggle-window-floating; }
-    Alt+V { switch-focus-between-floating-and-tiling; }
+    Mod+Z { toggle-window-floating; }
+    Alt+Z { switch-focus-between-floating-and-tiling; }
 
     // Move windows
     // Removed duplicate conflicting binds for Mod+Shift+H/L
