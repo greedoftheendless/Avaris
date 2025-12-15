@@ -7,6 +7,7 @@
   imports = [
     ./hardware-configuration.nix
     ./modules/nvidia.nix
+    ./modules/plymouth.nix
   ];
 
   # Bootloader.
