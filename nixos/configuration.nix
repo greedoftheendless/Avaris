@@ -1,4 +1,5 @@
 {
+
   config,
   pkgs,
   ...
@@ -8,6 +9,7 @@
     ./hardware-configuration.nix
     ./modules/nvidia.nix
     ./modules/plymouth.nix
+    ./modules/power.nix
   ];
 
   # Bootloader.
@@ -24,9 +26,6 @@
 
   #Enable bluetooth
   hardware.bluetooth.enable = true;
-
-  #Enable TLP for power management
-  services.tlp.enable = true;
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
