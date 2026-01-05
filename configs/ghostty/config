@@ -55,7 +55,7 @@ keybind = ctrl+right=text:\x1b[1;5C
 keybind = ctrl+left=text:\x1b[1;5D
 keybind = ctrl+shift+a=select_all
 keybind = ctrl+shift+c=copy_to_clipboard
-keybind = ctrl+e=new_split:down
+keybind = ctrl+alt+o=new_split:down
 keybind = ctrl+shift+i=inspector:toggle
 keybind = ctrl+shift+j=write_screen_file:paste
 keybind = ctrl+shift+n=new_window
