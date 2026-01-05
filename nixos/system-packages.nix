@@ -63,13 +63,10 @@
     xwayland-run
     nh
     #better-control
-    upower
     libsForQt5.qt5.qttools
     upower-notify
     pkgs.adwaita-icon-theme
     swaynotificationcenter
-    tlp
-    power-profiles-daemon
   ];
   #Fonts
   fonts.packages = with pkgs; [
