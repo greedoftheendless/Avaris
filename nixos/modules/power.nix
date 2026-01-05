@@ -1,13 +1,27 @@
-{isLaptop, ...}: {
+{ config, pkgs, ... }:
+
+{
+  _module.args.isLaptop = true;
+
+  # Power management
   powerManagement = {
     enable = true;
-    # disbale USB after sometime of inactivity
-    powertop.enable = isLaptop;
+    # Apply powertop auto-tuning (USB autosuspend etc.)
+    powertop.enable = true;
   };
+
+  # Services
   services = {
+    # Needed for battery info, desktop environments, etc.
     upower.enable = true;
-    power-profiles-daemon.enable = true; # conflict with TLP
+
+    # Modern power profile manager (DO NOT enable TLP with this)
+    power-profiles-daemon.enable = true;
+
+    # Disabled because it conflicts with power-profiles-daemon
     tlp.enable = false;
-    libinput.enable = isLaptop;
+
+    # Touchpad / input handling (laptop only)
+    libinput.enable = true;
   };
 }
