@@ -53,8 +53,10 @@
     swww
     #mpvpaper
     #hyprshot
-    hyprpicker
+    #hyprpicker
+    pastel
     ffmpeg
+    fzf
     #inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # CLI Tools
@@ -82,10 +84,12 @@
     kitty
     git
     tealdeer
+    navi
     nemo
     nautilus
     kdePackages.gwenview
-    lf
+    yazi
+    superfile
     starship
     btop
     binutils
