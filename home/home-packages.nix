@@ -15,6 +15,12 @@
     enable = true;
   };
 
+  #Installing fzf
+  programs.fzf = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;
@@ -56,7 +62,6 @@
     #hyprpicker
     pastel
     ffmpeg
-    fzf
     #inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # CLI Tools
@@ -69,6 +74,7 @@
     bat
     tree
     fd
+    ripgrep
 
     #Languages and their packages
     python3
