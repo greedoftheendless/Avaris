@@ -259,7 +259,7 @@ spawn-at-startup "dms" "run"
 spawn-at-startup "waypaper" "--restore"
 spawn-at-startup "zen-beta"
 //spawn-at-startup "caffeine"
-//spawn-at-startup "hypridle"
+spawn-at-startup "hypridle"
 //spawn-at-startup "sh" "-c" "wal -R && ~/.config/hypr/scripts/wal-theme.sh"
 
 // ========== OUTPUT CONFIGURATION ==========
