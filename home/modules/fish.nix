@@ -4,6 +4,8 @@
 
     shellAliases = {
       #Apps
+      grep = "rg";
+      tf = "superfile";
       lgit = "lazygit";
       zed = "zeditor";
       wiki = "wiki-tui";
