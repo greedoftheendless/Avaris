@@ -51,7 +51,7 @@
     waybar
     waypaper
     hyprlock
-    #hypridle
+    hypridle
     #pywal
     #rofi
     wlogout
@@ -140,6 +140,7 @@
 
     # Web/Common Apps
     onlyoffice-desktopeditors
+    davinci-resolve
     vlc
     catppuccin
     zed-editor
