@@ -6,7 +6,7 @@
     ./home-packages.nix
     ./modules/fish.nix
     ./modules/cursor.nix
-    ./modules/nvf/configuration.nix
+    ./modules/starship.nix
 
     #Home Manager modules
     inputs.nvf.homeManagerModules.default
