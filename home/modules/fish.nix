@@ -25,9 +25,6 @@
       # Greeting
       set -g fish_greeting "🦊 Welcome, $USER!"
 
-      # Starship prompt
-      starship init fish | source
-
       # Atuin shell history
       atuin init fish | sed 's/-k up/up/' | source
 
