@@ -2,20 +2,15 @@
   description = "Greed's Flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     quickshell = {
       url = "github:outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-     zaphkiel = {
-      url = "github:Rexcrazy804/Zaphkiel";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     hjem = {
-      url = "github:/feel-co/hjem";
+      url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -30,7 +25,7 @@
     };
 
     wifi-tui = {
-      url = "github:/shazow/wifitui";
+      url = "github:shazow/wifitui";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -48,6 +43,11 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixcord = {
+        url = "github:kaylorben/nixcord";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
   };
 
   outputs =
@@ -60,17 +60,17 @@
             ./nixos/configuration.nix
             ./nixos/system-packages.nix
 
-            inputs.home-manager.nixosModules.default
-            ({
+            inputs.home-manager.nixosModules.home-manager
+            {
               nix.settings.auto-optimise-store = true;
 
-              #Automatic garbage collection of nix generations
+              # automatic garbage collection of nix generations
               nix.gc = {
                 automatic = true;
                 dates = "daily";
                 options = "--delete-older-than 10d";
               };
-            })
+            }
           ];
         };
       };
