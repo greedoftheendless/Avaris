@@ -1,0 +1,82 @@
+{
+  programs.starship = {
+    enable = true;
+    settings = {
+      custom.podman = {
+        description = "Podman";
+        command = "echo ";
+        files = ["Containerfile" "containerfile" "podman-compose.yml" "podman-compose.yaml"];
+        style = "blue bold";
+      };
+
+      fennel.symbol = " ";
+      fossil_branch.symbol = " ";
+      gcloud.symbol = " ";
+      git_branch.symbol = " ";
+      git_commit.tag_symbol = "  ";
+      golang.symbol = " ";
+      haskell.symbol = " ";
+      hg_branch.symbol = " ";
+      hostname.ssh_symbol = " ";
+      java.symbol = " ";
+      lua.symbol = " ";
+      memory_usage.symbol = "󰍛 ";
+      meson.symbol = "󰔷 ";
+
+      custom.nix_lang = {
+        description = "Nix language";
+        command = "echo ";
+        files = ["*.nix"];
+        when = "ls *.nix >/dev/null 2>&1";
+        style = "blue bold";
+      };
+
+      nodejs.symbol = " ";
+
+      os.symbols = {
+        Alpaquita = " ";
+        Alpine = " ";
+        Amazon = " ";
+        Android = " ";
+        Arch = " ";
+        Artix = " ";
+        CachyOS = " ";
+        CentOS = " ";
+        Debian = " ";
+        EndeavourOS = " ";
+        Fedora = " ";
+        FreeBSD = " ";
+        Garuda = "󰛓 ";
+        Gentoo = " ";
+        Kali = " ";
+        Linux = " ";
+        Macos = " ";
+        Manjaro = " ";
+        Mint = " ";
+        NixOS = " ";
+        OpenBSD = "󰈺 ";
+        openSUSE = " ";
+        Pop = " ";
+        Raspbian = " ";
+        Redhat = " ";
+        RedHatEnterprise = " ";
+        Solus = "󰠳 ";
+        SUSE = " ";
+        Ubuntu = " ";
+        Windows = "󰍲 ";
+      };
+
+      package.symbol = "󰏗 ";
+      perl.symbol = " ";
+      php.symbol = " ";
+      pijul_channel.symbol = " ";
+      pixi.symbol = "󰏗 ";
+      python.symbol = " ";
+      rlang.symbol = "󰟔 ";
+      ruby.symbol = " ";
+      rust.symbol = "󱘗 ";
+      status.symbol = " ";
+      zig.symbol = " ";
+    };
+  };
+}
