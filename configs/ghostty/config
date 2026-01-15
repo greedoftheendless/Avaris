@@ -59,8 +59,6 @@ keybind = ctrl+alt+o=new_split:down
 keybind = ctrl+shift+i=inspector:toggle
 keybind = ctrl+shift+j=write_screen_file:paste
 keybind = ctrl+shift+n=new_window
-keybind = ctrl+o=new_split:right
-keybind = ctrl+shift+o=close_surface
 keybind = ctrl+shift+q=quit
 keybind = alt+t=new_tab
 keybind = ctrl+shift+v=paste_from_clipboard
