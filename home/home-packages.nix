@@ -4,6 +4,15 @@
   ...
 }:
 {
+  #Installing starship
+  programs.starship = {
+    enable = true;
+  };
+
+  #Installing vesktop
+  programs.vesktop = {
+    enable = true;
+  };
 
   #Installing Helix
   programs.helix = {
@@ -52,14 +61,12 @@
     waypaper
     hyprlock
     hypridle
-    #pywal
     #rofi
     wlogout
     #waypaper
     swww
-    #mpvpaper
+    mpvpaper
     #hyprshot
-    #hyprpicker
     pastel
     ffmpeg
     #inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -96,7 +103,6 @@
     kdePackages.gwenview
     yazi
     superfile
-    starship
     btop
     binutils
     lazygit
@@ -106,7 +112,6 @@
     podman
     podman-tui
     caffeine-ng
-    #kdePackages.okular
     typst
     inputs.wifi-tui.packages.${pkgs.stdenv.hostPlatform.system}.default
 
@@ -152,7 +157,6 @@
     wget
     curl
     spotify
-    vesktop
     dropbox
     obsidian
     protonvpn-gui
