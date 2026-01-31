@@ -4,6 +4,8 @@
 
     shellAliases = {
       #Apps
+      sf = "superfile";
+      yz = "yazi";
       grep = "rg";
       tf = "superfile";
       lgit = "lazygit";
