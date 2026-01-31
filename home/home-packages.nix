@@ -144,6 +144,7 @@
     tcpdump
 
     # Web/Common Apps
+    wl-clipboard
     onlyoffice-desktopeditors
     davinci-resolve
     vlc
