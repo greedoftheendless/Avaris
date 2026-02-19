@@ -23,7 +23,6 @@ _: {
             package.symbol = "󰏗 ";
             rust.symbol = " ";
             python.symbol = " ";
-            bash.symbol = " ";
             lua.symbol = " ";
         };
     };
