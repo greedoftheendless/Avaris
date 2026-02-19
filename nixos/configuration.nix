@@ -10,6 +10,7 @@
     ./modules/nvidia.nix
     ./modules/plymouth.nix
     ./modules/power.nix
+    ./font.nix
   ];
 
   # Bootloader.
