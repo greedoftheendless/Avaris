@@ -23,8 +23,13 @@ character = "╎"
 
 # Status line with git info
 [editor.statusline]
-left = ["mode", "spinner", "version-control", "file-name", "file-modification-indicator"]
-right = ["diagnostics", "selections", "position", "file-encoding"]
+left = ["mode", "spinner", "read-only-indicator", "file-modification-indicator"]
+center = ["file-name", "version-control"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
 
 # LSP configuration
 [editor.lsp]
