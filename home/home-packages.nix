@@ -4,6 +4,11 @@
   ...
 }:
 {
+  #Installing podman
+  services.podman = {
+    enable = true;
+  };
+  
   #Installing starship
   programs.starship = {
     enable = true;
@@ -60,7 +65,7 @@
     waybar
     waypaper
     hyprlock
-    hypridle
+    #hypridle
     #rofi
     wlogout
     #waypaper
@@ -101,6 +106,7 @@
     nemo
     nautilus
     kdePackages.gwenview
+    wiki-tui
     yazi
     superfile
     btop
@@ -109,7 +115,6 @@
     gh
     unzip
     openvpn
-    podman
     podman-tui
     caffeine-ng
     typst
