@@ -21,9 +21,7 @@
       "udev.log_priority=3"
       "rd.systemd.show_status=auto"
     ];
-    # Hide the OS choice for bootloaders.
-    # It's still possible to open the bootloader list by pressing any key
-    # It will just not appear on screen unless a key is pressed
+    #This gives 3 second time for bootloader to show(ur generationns) then automatically chooses the default one which is the 1st one.
     loader.timeout = 3;
 
   };
