@@ -285,5 +285,3 @@ debug {
 environment {
 }
 include "dms/binds.kdl"
-
-include "dms/cursor.kdl"

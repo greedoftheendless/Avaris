@@ -284,6 +284,3 @@ debug {
 // ========== ENVIRONMENT VARIABLES ==========
 environment {
 }
-include "dms/binds.kdl"
-
-include "dms/cursor.kdl"
