@@ -8,7 +8,6 @@
     ./modules/cursor.nix
     ./modules/starship.nix
     ./modules/nvf.nix
-    #./modules/vesktop.nix
 
     #DMS shell input import
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
