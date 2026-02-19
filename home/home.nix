@@ -7,11 +7,10 @@
     ./modules/fish.nix
     ./modules/cursor.nix
     ./modules/starship.nix
+    ./modules/nvf.nix
     #./modules/vesktop.nix
 
-    #Home Manager modules
-    inputs.nvf.homeManagerModules.default
-
+    #DMS shell input import
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
     inputs.dsearch.homeModules.default
   ];
