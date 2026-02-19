@@ -19,11 +19,6 @@
     enable = true;
   };
 
-  #Installing Helix
-  programs.helix = {
-    enable = true;
-  };
-
   #Installing nvf
   programs.nvf = {
     enable = true;
