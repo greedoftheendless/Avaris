@@ -138,6 +138,7 @@ binds {
     }
 
     // Applications
+    Mod+Shift+L { spawn "hyprlock"; }
     Mod+Shift+P { spawn "wlogout"; }
     Mod+E { spawn "nemo"; }
     Mod+Return { spawn "ghostty"; }
@@ -171,12 +172,12 @@ binds {
 
     // Move windows
     // Removed duplicate conflicting binds for Mod+Shift+H/L
-    Mod+Shift+H { move-column-right; }
-    Mod+Shift+L { move-column-left; }
+    Mod+Ctrl+L { move-column-right; }
+    Mod+Ctrl+H { move-column-left; }
 
     // Move window to different monitor
-    Mod+Ctrl+H { move-column-to-monitor-left; }
-    Mod+Ctrl+L { move-column-to-monitor-right; }
+    Ctrl+H { move-column-to-monitor-left; }
+    Ctrl+L { move-column-to-monitor-right; }
 
     // Overview mode (workspace overview)
     Mod+Tab { show-hotkey-overlay; }
