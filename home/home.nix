@@ -7,7 +7,7 @@
     ./modules/fish.nix
     ./modules/cursor.nix
     ./modules/starship.nix
-    ./modules/vesktop.nix
+    #./modules/vesktop.nix
 
     #Home Manager modules
     inputs.nvf.homeManagerModules.default
