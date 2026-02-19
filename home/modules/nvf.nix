@@ -104,14 +104,6 @@
 
         # Languages
         languages = {
-            enable = true;
-          };
-        lsp = {
-            enable = true;
-          };
-        treesitter = {
-            enable = true;
-          };
           html.enable = true;
           css.enable = true;
           json.enable = true;
