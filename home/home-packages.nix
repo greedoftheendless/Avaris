@@ -2,13 +2,12 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   #Installing podman
   services.podman = {
     enable = true;
   };
-  
+
   #Installing fish
   programs.fish = {
     enable = true;
@@ -53,9 +52,19 @@
   #programs.hyprpanel.enable = true;
 
   home.packages = with pkgs; [
-
     (import ./modules/webapp/webapp-install.nix {inherit pkgs;})
     (import ./modules/webapp/webapp-uninstall.nix {inherit pkgs;})
+
+    (writeShellApplication
+      {
+        name = "ns";
+        runtimeInputs = with pkgs; [
+          fzf
+          nix-search-tv
+        ];
+        # prevent IFD, thanks @Michael-C-Buckley
+        text = ''exec "${pkgs.nix-search-tv.src}/nixpkgs.sh" "$@"'';
+      })
 
     #Shells
     bash
@@ -73,7 +82,6 @@
     mpvpaper
     #hyprshot
     pastel
-    #inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # CLI Tools
     ffmpeg
