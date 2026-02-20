@@ -9,6 +9,10 @@
     enable = true;
   };
   
+  #Installing fish
+  programs.fish = {
+    enable = true;
+  };
   #Installing starship
   programs.starship = {
     enable = true;
@@ -27,21 +31,22 @@
   #Installing fzf
   programs.fzf = {
     enable = true;
-    enableFishIntegration = true;
   };
 
+  #Installing zoxide
   programs.zoxide = {
     enable = true;
-    enableFishIntegration = true;
-    options = [ "--cmd cd" ];
+    options = ["--cmd cd"];
   };
 
+  #Installing DMS Shell by passing imports
   programs.dankMaterialShell = {
     enable = true;
   };
 
+  #Installing Dsearch by passing imports
   programs.dsearch = {
-      enable = true;
+    enable = true;
   };
 
   #Enable hyprpanel
@@ -49,8 +54,8 @@
 
   home.packages = with pkgs; [
 
-    (import ./modules/webapp/webapp-install.nix { inherit pkgs; })
-    (import ./modules/webapp/webapp-uninstall.nix  { inherit pkgs; })
+    (import ./modules/webapp/webapp-install.nix {inherit pkgs;})
+    (import ./modules/webapp/webapp-uninstall.nix {inherit pkgs;})
 
     #Shells
     bash
@@ -68,10 +73,11 @@
     mpvpaper
     #hyprshot
     pastel
-    ffmpeg
     #inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # CLI Tools
+    ffmpeg
+    jq
     tmux
     cava
     fastfetch
