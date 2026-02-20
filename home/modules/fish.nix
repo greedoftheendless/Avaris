@@ -1,7 +1,5 @@
-{
+{pkgs, ...}: {
   programs.fish = {
-    enable = true;
-
     shellAliases = {
       #Apps
       sf = "superfile";
@@ -22,6 +20,25 @@
       "..." = "cd ../..";
       ".." = "cd ..";
     };
+
+    plugins = with pkgs.fishPlugins; [
+      {
+        name = "grc";
+        src = grc.src;
+      }
+      {
+        name = "z";
+        src = z.src;
+      }
+      {
+        name = "fzf";
+        src = fzf.src;
+      }
+      {
+        name = "done";
+        src = done.src;
+      }
+    ];
 
     interactiveShellInit = ''
       # Greeting
