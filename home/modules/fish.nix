@@ -3,6 +3,7 @@
     shellAliases = {
       #Apps
       sf = "superfile";
+      docker = "podman";
       yz = "yazi";
       grep = "rg";
       tf = "superfile";
