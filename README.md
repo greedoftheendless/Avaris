@@ -34,7 +34,10 @@ This configuration is packed with features to enhance your workflow and aestheti
 > ⚠️ **WARNING**: This setup is intended for **NixOS**. Due to the declarative nature of Nix, following these steps will give you an exact copy of my system.
 
 ### 1. Clone the repository
-**git clone git@github.com:greedoftheendless/Avaris.git**
+
+```bash
+    git clone git@github.com:greedoftheendless/Avaris.git
+```
 
 ### 2. Symlink the .conf files
 Not all files are .nix modules. In that case, you can go to the configs folder and symlink the folder to ~/.config
@@ -43,7 +46,11 @@ Not all files are .nix modules. In that case, you can go to the configs folder a
 Go to /nixos folder and change the name of user to your wish. Do the same for home.nix file found in /home folder. Change the name and line in flake.nix's commented lines.
 
 ### 4. Rebuild system
-In terminal, type **sudo nixos-rebuild** command. Make sure you have sufficient RAM for this, since it might consume around 2-4 Gigs.
+In terminal, type 
+
+```bash
+sudo nixos-rebuild command
+```
 
 📚 Notes & Integrations
 
