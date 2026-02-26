@@ -1,4 +1,0 @@
-[[cable_channel]]
-name = "nix"
-source_command = "nix-search-tv print"
-preview_command = "nix-search-tv preview {}"

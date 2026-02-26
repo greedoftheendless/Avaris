@@ -1,8 +1,0 @@
-[metadata]
-name = "nix"
-
-[preview]
-command = "nix-search-tv preview {}"
-
-[source]
-command = "nix-search-tv print"
