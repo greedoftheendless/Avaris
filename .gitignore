@@ -1,5 +1,9 @@
+# Nushell history
 configs/nushell/history.txt
+
+# btop runtime config (optional if generated)
 configs/btop/btop.conf
-configs/niri/config.kdl.backup1771504011
-configs/niri/config.kdl.backup1771508200
-configs/niri/config.kdl.dmsbackup1771503909
+
+# Niri backups
+configs/niri/*.backup*
+configs/niri/*.dmsbackup*
