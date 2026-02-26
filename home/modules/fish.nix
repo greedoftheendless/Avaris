@@ -16,8 +16,8 @@
       #Everyday commands
       cat = "bat";
       cd = "z";
-      la = "eza --long --color=always -aa";
       ls = "nu -c ls";
+      la = "eza --long --icons --color=always";
       "..." = "cd ../..";
       ".." = "cd ..";
     };

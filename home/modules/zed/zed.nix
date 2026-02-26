@@ -1,0 +1,40 @@
+{
+  config,
+  pkgs,
+  ...
+}: {
+  programs.zed = {
+    settings = {
+      project_panel.button = true;
+
+      disable_ai = true;
+
+      agent = {
+        notify_when_agent_waiting = "all_screens";
+        play_sound_when_agent_done = true;
+      };
+
+      icon_theme = "Catppuccin Mocha";
+
+      telemetry = {
+        diagnostics = false;
+        metrics = false;
+      };
+
+      vim_mode = true;
+
+      ui_font_size = 20;
+      buffer_font_size = 20;
+
+      theme = {
+        mode = "system";
+        light = "Catppuccin Mocha";
+        dark = "Catppuccin Mocha";
+      };
+
+      buffer_font_family = "JetBrainsMono Nerd Font";
+
+      minimap.show = "always";
+    };
+  };
+}
