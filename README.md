@@ -49,7 +49,7 @@ Go to /nixos folder and change the name of user to your wish. Do the same for ho
 In terminal, type 
 
 ```bash
-sudo nixos-rebuild command
+sudo nixos-rebuild switch
 ```
 
 📚 Notes & Integrations
