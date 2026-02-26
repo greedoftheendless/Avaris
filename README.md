@@ -47,18 +47,16 @@ In terminal, type **sudo nixos-rebuild** command. Make sure you have sufficient 
 
 📚 Notes & Integrations
 
-   * Quickshell bar, Wallpapers, settings, themes, all are handled by DMS through their dependet apps.
-    Wallpapers apps you can install to manag: Waypaper, utilizing swww and mpvpaper as the engine.
-    Notifications: Handled by Sway Notifications Control (Swaync).
-    Audio: Managed through pavucontrol and wpctl.
-    Lock Screen: Uses DMS lockscreen which displays notifications, music, time, weather, etc... Hyprlock is used as backup(in case you need to flex 😏.
-    Auto-Start: Configured in '$HOME/.config/hypr/hyprland.conf' '~/dotfiles/configs/hypr/hyprland.conf' under the exec lines and in the configuration file of '~/.config/niri' '~/dotfiles/configs/niri/config.kdl' under STARTUP.
-    Scratchpads (for Hyprland): Configured for quick access to terminals, music, and notes.
-    NVIDIA Drivers: Installed with the latest NVIDIA and AMD drivers. Adjust configuration accordingly.
-    Waybar: Highly modular, supporting various modules for battery, Wi-Fi, media players, and more.
-    Rofi/Vicinae: Rofi offers application search, SSH connections, and terminal/file selection. Vicinae provides similar features plus more — see Vicinae Docs
-
-    .
+*Quickshell bar, Wallpapers, settings, themes, all are handled by DMS through their dependet apps.
+*Wallpapers apps you can install to manag: Waypaper, utilizing swww and mpvpaper as the engine.
+*Notifications: Handled by Sway Notifications Control (Swaync).
+*Audio: Managed through pavucontrol and wpctl.
+*Lock Screen: Uses DMS lockscreen which displays notifications, music, time, weather, etc... Hyprlock is used as backup(in case you need to flex 😏.
+*Auto-Start: Configured in '$HOME/.config/hypr/hyprland.conf' '~/dotfiles/configs/hypr/hyprland.conf' under the exec lines and in the configuration file of '~/.config/niri' '~/dotfiles/configs/niri/config.kdl' under STARTUP.
+*Scratchpads (for Hyprland): Configured for quick access to terminals, music, and notes.
+*NVIDIA Drivers: Installed with the latest NVIDIA and AMD drivers. Adjust configuration accordingly.
+*Waybar: Highly modular, supporting various modules for battery, Wi-Fi, media players, and more.
+*Rofi/Vicinae: Rofi offers application search, SSH connections, and terminal/file selection. Vicinae provides similar features plus more — see Vicinae Docs
 
 🙏 Credits
 
