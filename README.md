@@ -1,6 +1,7 @@
 # Avaris, the Latin root of Greed!
 
-Welcome! This repository contains my personal Nix OS configuration using Niri(Main) and Hyprland, designed for a clean and efficient workspace.
+Welcome! Greed here. 
+This repository contains my personal Nix OS configuration using Niri(Main) and Hyprland, designed for a clean and efficient workspace.
 
 If you find this useful, please consider **starring the repository**!
 
