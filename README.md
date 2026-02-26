@@ -2,12 +2,10 @@
 
 Welcome! This repository contains my personal Nix OS configuration using Niri(Main) and Hyprland, designed for a clean and efficient workspace.
 
-Initially crafted with a **Catppuccin theme**, I've since refined it to a more **cyberpunk-inspired aesthetic**. The goal was a setup that's **clean, attractive, and minimalistic**, perfect for a daily driver without unnecessary animations or distractions.
-
 If you find this useful, please consider **starring the repository**!
 
 Have an idea for a tweak or an improvement? Feel free to **submit a pull request**.
-Enjoy your Nixified OS!
+Enjoy your Nix-ed OS!
 
 ---
 
@@ -15,21 +13,19 @@ Enjoy your Nixified OS!
 
 This configuration is packed with features to enhance your workflow and aesthetics:
 
-* 🚀 **Hyprland/Niri** - A powerful and responsive tiling Wayland Window Manager.
-* 🏃 **Automated Installation** - An included script handles dependencies and file placement with user prompts.
-* 🎨 **Stunning UI** - Beautiful **Waybar**, featuring and a refined **Vicinae(Replaced Rofi, but both are working and usable)** configuration.
+* 🚀 **Hyprland/Niri** - A powerful and responsive tiling/scrolling Wayland Window Manager.
+* 🎨 **Stunning UI** - Beautiful  UI configured and managed by DMS(DankMaterialShell), a beautiful shell manager, which helps you customize your OS to your liking with ease. **Waybar** is also added if you prefer that.
 * 🖥️ **Custom Theming** - A bespoke **GTK theme**, custom cursors, and icon sets.
 * 🖋️️ **Ghostyy Terminal + Kitty(As backup)** - A sleek and functional terminal configuration.
-* 🔒 **Secure & Stylish Lockscreen** - **Hyprlock** provides a seamless, animated lock screen.
-* 🌄 **Dynamic Wallpapers** - A wallpaper daemon using `swww` and `mpvpaper`, controlled by a GUI tool called **Waypaper**.
+* 🔒 **Secure & Stylish Lockscreen** - **DMS** lock screen enabled with **Hyprlock** (as backup) provides a seamless lock screen.
+* 🌄 **Dynamic Wallpapers** - A wallpaper daemon using `swww` and `mpvpaper`, controlled by a GUI tool called by DMS.
 * 🧩 **Smart Workspaces** - Efficient **scratchpads(Hyprland)** and dynamic workspaces for enhanced productivity.
-* 🤖 **Multi-Management** - Streamlined control with the `better-control` application.
-* 🐚 **Fish & Starship** - A powerful **Fish shell+Nu shell** with a visually appealing **Starship prompt**.
+* 🤖 **Multi-Management** - Streamlined control with the `better-control` application(Recommended to use if you prefer not using DMS.
+* 🐚 **Fish & Starship** - A powerful **Fish shell+Nu shell** with a visually appealing yet simple **Starship prompt**.
 * 🔄 **Auto-Start** - Configured for automatic application and script execution on startup.
 * ⚡ **Lightweight & Responsive** - A highly optimized configuration for optimal performance.
 
-> **Need help with keybindings?** Just press `Tab'  to access the keybinding guide on Niri.
-> Need to make a keybind one for hyprpanel though I'm not active on hyprland so much. Will make it if possible
+> **Need help with keybindings?** Just press `Super+Tab' or go to keybinds section in DMS settings  to access the keybinding guide on Niri.
 
 ---
 
@@ -38,42 +34,28 @@ This configuration is packed with features to enhance your workflow and aestheti
 > ⚠️ **WARNING**: This setup is intended for **NixOS**. Due to the declarative nature of Nix, following these steps will give you an exact copy of my system.
 
 ### 1. Clone the repository
+**git clone git@github.com:greedoftheendless/Avaris.git**
 
-```bash
-git clone https://github.com/greedoftheendless/Hyprland-files
+### 2. Symlink the .conf files
+Not all files are .nix modules. In that case, you can go to the configs folder and symlink the folder to ~/.config
 
-2. Prepare the dotfiles
+### 3. Change the user-name
+Go to /nixos folder and change the name of user to your wish. Do the same for home.nix file found in /home folder. Change the name and line in flake.nix's commented lines.
 
-Place the contents of the cloned repository into a folder of your choice (e.g., ~/dotfiles).
-3. Things to remember before running the implementation command
-
-Make sure that the duplicate Nix folder in /etc/nixos is deleted.
-To make this operation work smoothly, make sure to symlink all the folders in dotfiles/.config to ~/.config, and symlink the folder dotfiles/nixos to /etc/nixos.
-That way, any future configuration changes will apply cleanly.
-4. Rebuild your system
-
-Rebuild your system using the following command to apply the configuration.
-
-sudo nixos-rebuild switch
+### 4. Rebuild system
+In terminal, type **sudo nixos-rebuild** command. Make sure you have sufficient RAM for this, since it might consume around 2-4 Gigs.
 
 📚 Notes & Integrations
 
-    Wallpapers: Managed by Waypaper, utilizing swww and mpvpaper as the engine.
-
+   * Quickshell bar, Wallpapers, settings, themes, all are handled by DMS through their dependet apps.
+    Wallpapers apps you can install to manag: Waypaper, utilizing swww and mpvpaper as the engine.
     Notifications: Handled by Sway Notifications Control (Swaync).
-
     Audio: Managed through pavucontrol and wpctl.
-
-    Lock Screen: Uses Hyprlock with a music player widget (currently under development; includes shutdown, lock, sleep options, and custom theming).
-
-    Auto-Start: Configured in $HOME/.config/hypr/hyprland.conf under the exec lines and in the configuration file of ~/.config/niri.
-
+    Lock Screen: Uses DMS lockscreen which displays notifications, music, time, weather, etc... Hyprlock is used as backup(in case you need to flex 😏.
+    Auto-Start: Configured in '$HOME/.config/hypr/hyprland.conf' '~/dotfiles/configs/hypr/hyprland.conf' under the exec lines and in the configuration file of '~/.config/niri' '~/dotfiles/configs/niri/config.kdl' under STARTUP.
     Scratchpads (for Hyprland): Configured for quick access to terminals, music, and notes.
-
     NVIDIA Drivers: Installed with the latest NVIDIA and AMD drivers. Adjust configuration accordingly.
-
     Waybar: Highly modular, supporting various modules for battery, Wi-Fi, media players, and more.
-
     Rofi/Vicinae: Rofi offers application search, SSH connections, and terminal/file selection. Vicinae provides similar features plus more — see Vicinae Docs
 
     .
@@ -86,14 +68,14 @@ Inspired by and based on the incredible work from:
 
     r/unixporn
 
-    Aeon Remnant (for file structure and Nix mentoring)
+    Aeon Remnant (for convincing me to join Nix and use it.)
 
-    The VimJoyers Discord community (for making Nix exploration fun and collaborative)
+    The VimJoyers Discord community (A big-ass community that made Nix fun, and helped me to learn)
 
 And many others — your contributions are never forgotten!
 📝 To-Do List
 
-    Create a Bash script to automate the installation process for non-NixOS users.
+    Create a Bash script to automate the installation process for new-NixOS users.
 
     Transition all .config setups to Nix modules for easier management.
 
