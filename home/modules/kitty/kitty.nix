@@ -12,13 +12,13 @@
     };
 
     settings = {
+      include = "current-theme.conf";
+
       fallback_family = "Noto Sans Arabic";
       bold_font = "auto";
       italic_font = "auto";
       bold_italic_font = "auto";
       cursor_shape = "beam";
-
-      include = "current-theme.conf";
 
       shell = "fish";
       background_opacity = "0.8";
@@ -52,17 +52,9 @@
 
       "alt+shift+f" = "change_font_size current +1.00";
       "alt+f" = "change_font_size current -1.00";
-
-      include = "current-theme.conf";
     };
   };
 
   xdg.configFile."kitty/current-theme.conf".source =
     ./current-theme.conf;
-
-  xdg.configFile."kitty/dank-theme.conf".source =
-    ./dank-theme.conf;
-
-  xdg.configFile."kitty/dank-tabs.conf".source =
-    ./dank-tabs.conf;
 }
