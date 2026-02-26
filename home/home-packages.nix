@@ -8,6 +8,26 @@
     enable = true;
   };
 
+  #Installing zed
+  programs.zed-editor = {
+    enable = true;
+  };
+
+  #Installing kitty
+  programs.kitty = {
+    enable = true;
+  };
+
+  #Installing cava
+  programs.cava = {
+    enable = true;
+  };
+
+  #Installing fastfetch
+  programs.fastfetch = {
+    enable = true;
+  };
+
   #Installing fish
   programs.fish = {
     enable = true;
@@ -55,7 +75,8 @@
     (import ./modules/webapp/webapp-install.nix {inherit pkgs;})
     (import ./modules/webapp/webapp-uninstall.nix {inherit pkgs;})
 
-    (writeShellApplication
+    (
+      writeShellApplication
       {
         name = "ns";
         runtimeInputs = with pkgs; [
@@ -64,7 +85,8 @@
         ];
         # prevent IFD, thanks @Michael-C-Buckley
         text = ''exec "${pkgs.nix-search-tv.src}/nixpkgs.sh" "$@"'';
-      })
+      }
+    )
 
     #Shells
     bash
@@ -87,8 +109,6 @@
     ffmpeg
     jq
     tmux
-    cava
-    fastfetch
     atuin
     eza
     openssl
@@ -101,6 +121,7 @@
     python3
 
     # Necessary tools
+    cacert
     playerctl
     bc
     brightnessctl
@@ -108,7 +129,6 @@
     usbguard-notifier
     ghostty
     #alacritty
-    kitty
     git
     tealdeer
     navi
@@ -163,7 +183,6 @@
     davinci-resolve
     vlc
     catppuccin
-    zed-editor
     thunderbird
     #librewolf
     tor-browser
