@@ -68,9 +68,6 @@
     enable = true;
   };
 
-  #Enable hyprpanel
-  #programs.hyprpanel.enable = true;
-
   home.packages = with pkgs; [
     (import ./modules/webapp/webapp-install.nix {inherit pkgs;})
     (import ./modules/webapp/webapp-uninstall.nix {inherit pkgs;})
@@ -96,8 +93,6 @@
     waybar
     waypaper
     hyprlock
-    #hypridle
-    #rofi
     wlogout
     #waypaper
     swww
@@ -128,7 +123,6 @@
     usbguard
     usbguard-notifier
     ghostty
-    #alacritty
     git
     tealdeer
     navi
@@ -184,7 +178,6 @@
     vlc
     catppuccin
     thunderbird
-    #librewolf
     tor-browser
     gimp
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
