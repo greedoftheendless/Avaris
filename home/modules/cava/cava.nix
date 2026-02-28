@@ -47,4 +47,9 @@
     [smoothing]
     noise_reduction = 77
   '';
+
+  xdg.configFile."cava/shaders".source =
+    ./shaders;
+  xdg.configFile."cava/themes".source =
+    ./themes;
 }
