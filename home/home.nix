@@ -7,10 +7,10 @@
   imports = [
     #Module imports
     ./home-packages.nix
-    ./modules/fish.nix
-    ./modules/cursor.nix
-    ./modules/starship.nix
-    ./modules/nvf.nix
+    ./modules/fish/fish.nix
+    ./modules/cursor/cursor.nix
+    ./modules/starship/starship.nix
+    ./modules/nvf/nvf.nix
     ./modules/fastfetch/fastfetch.nix
     ./modules/cava/cava.nix
     ./modules/kitty/kitty.nix

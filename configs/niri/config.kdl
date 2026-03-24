@@ -145,7 +145,6 @@ binds {
     Mod+B { spawn "zen-beta"; }
     //Mod+Shift+Comma { spawn "waypaper"; }
     //Mod+Space { spawn "rofi" "-show" "drun"; }
-    //Mod+L { spawn "hyprlock"; }
 
 
     // Basic window management
@@ -216,6 +215,9 @@ binds {
     // Window resizing
     Mod+Shift+Right { set-column-width "+10%"; }
     Mod+Shift+Left { set-column-width "-10%"; }
+    //Mod+Shift+Up { set-column-height "+10%"; }
+    //Mod+Shift+Down { set-column-height "-10%"; }
+
 
     // Preset column widths cycling
     Mod+R { switch-preset-column-width; }
@@ -260,7 +262,6 @@ spawn-at-startup "dms" "run"
 spawn-at-startup "waypaper" "--restore"
 spawn-at-startup "zen-beta"
 //spawn-at-startup "caffeine"
-spawn-at-startup "hypridle"
 //spawn-at-startup "sh" "-c" "wal -R && ~/.config/hypr/scripts/wal-theme.sh"
 
 // ========== OUTPUT CONFIGURATION ==========
