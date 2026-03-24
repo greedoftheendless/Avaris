@@ -1,0 +1,128 @@
+[
+  {
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w l": "workspace::ActivatePaneRight"
+    },
+    "context": "Dock"
+  },
+  {
+    "bindings": {
+      "g f": "editor::OpenExcerpts",
+      "space a c": "assistant::ToggleFocus",
+      "space c z": "workspace::ToggleCenteredLayout",
+      "space f M": "editor::FormatSelections",
+      "space f m": "editor::Format",
+      "space f p": "projects::OpenRecent",
+      "space g h d": "editor::ToggleHunkDiff",
+      "space g h r": "editor::RevertSelectedHunks",
+      "space m P": "markdown::OpenPreviewToTheSide",
+      "space m p": "markdown::OpenPreview",
+      "space s w": "pane::DeploySearch",
+      "space t i": "editor::ToggleInlayHints",
+      "space u w": "editor::ToggleSoftWrap"
+    },
+    "context": "Editor && (vim_mode == normal || vim_mode == visual)"
+  },
+  {
+    "bindings": {
+      "j j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore"
+    },
+    "context": "Editor && vim_mode == insert && !menu"
+  },
+  {
+    "bindings": {
+      "[ d": "editor::GoToPrevDiagnostic",
+      "[ e": "editor::GoToPrevDiagnostic",
+      "[ h": "editor::GoToPrevHunk",
+      "] d": "editor::GoToDiagnostic",
+      "] e": "editor::GoToDiagnostic",
+      "] h": "editor::GoToHunk",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-q": "pane::CloseActiveItem",
+      "ctrl-s": "workspace::Save",
+      "g D": "editor::GoToDefinitionSplit",
+      "g I": "editor::GoToImplementationSplit",
+      "g T": "editor::GoToTypeDefinitionSplit",
+      "g d": "editor::GoToDefinition",
+      "g i": "editor::GoToImplementation",
+      "g r": "editor::FindAllReferences",
+      "g t": "editor::GoToTypeDefinition",
+      "s S": "project_symbols::Toggle",
+      "s s": "outline::Toggle",
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-l": "pane::ActivateNextItem",
+      "shift-q": "pane::CloseActiveItem",
+      "space .": "editor::ToggleCodeActions",
+      "space /": "pane::DeploySearch",
+      "space b d": "pane::CloseActiveItem",
+      "space b o": "pane::CloseInactiveItems",
+      "space c a": "editor::ToggleCodeActions",
+      "space c r": "editor::Rename",
+      "space e": "pane::RevealInProjectPanel",
+      "space space": "file_finder::Toggle",
+      "space x x": "diagnostics::Deploy"
+    },
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu"
+  },
+  {
+    "bindings": {
+      "g c": "editor::ToggleComments"
+    },
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu"
+  },
+  {
+    "bindings": {
+      "a": "editor::ToggleCodeActions",
+      "c": "vim::CurrentLine"
+    },
+    "context": "Editor && vim_operator == c"
+  },
+  {
+    "bindings": {
+      "space f p": "projects::OpenRecent",
+      "space space": "file_finder::Toggle"
+    },
+    "context": "EmptyPane || SharedScreen"
+  },
+  {
+    "bindings": {
+      "A": "project_panel::NewDirectory",
+      "a": "project_panel::NewFile",
+      "c": "project_panel::Copy",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "d": "project_panel::Delete",
+      "p": "project_panel::Paste",
+      "q": "workspace::ToggleRightDock",
+      "r": "project_panel::Rename",
+      "space e": "workspace::ToggleRightDock",
+      "x": "project_panel::Cut"
+    },
+    "context": "ProjectPanel && not_editing"
+  },
+  {
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight"
+    },
+    "context": "Terminal"
+  },
+  {
+    "bindings": {
+      "ctrl-\\": "terminal_panel::ToggleFocus",
+      "ctrl-b": "workspace::ToggleRightDock"
+    },
+    "context": "Workspace"
+  }
+]
