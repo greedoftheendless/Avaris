@@ -59,7 +59,7 @@
   };
 
   #Installing DMS Shell by passing imports
-  programs.dankMaterialShell = {
+  programs.dank-material-shell = {
     enable = true;
   };
 
@@ -90,6 +90,7 @@
     nushell
 
     #Hyprland/Niri required packages
+    inputs.scratchpad.packages.${pkgs.stdenv.hostPlatform.system}.default
     waybar
     waypaper
     hyprlock
