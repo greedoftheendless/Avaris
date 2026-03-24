@@ -101,6 +101,7 @@
     pastel
 
     # CLI Tools
+    onefetch
     ffmpeg
     jq
     tmux
@@ -124,6 +125,7 @@
     usbguard-notifier
     ghostty
     git
+    gource
     tealdeer
     navi
     nemo
@@ -180,6 +182,7 @@
     tor-browser
     gimp
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    firefox
     wget
     curl
     spotify
