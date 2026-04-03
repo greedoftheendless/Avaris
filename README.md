@@ -55,7 +55,7 @@ sudo nixos-rebuild switch
 
 📚 Notes & Integrations
 
-* Quickshell bar, Wallpapers, settings, themes, all are handled by DMS through their dependet apps.
+* Quickshell bar, Wallpapers, settings, themes, all are handled by DMS through their dependent apps.
 *   Wallpapers apps you can install to manag: Waypaper, utilizing swww and mpvpaper as the engine.
 *   Notifications: Handled by Sway Notifications Control (Swaync).
 *   Audio: Managed through pavucontrol and wpctl.
