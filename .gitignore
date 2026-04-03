@@ -1,6 +1,9 @@
 # Nushell history
 configs/nushell/history.txt
 
+#Excluding pre-commit file from githooks
+/.pre-commit-config.yaml
+
 # btop runtime config (optional if generated)
 configs/btop/btop.conf
 
