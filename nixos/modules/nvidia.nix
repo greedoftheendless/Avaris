@@ -3,16 +3,18 @@
   config,
   pkgs,
   ...
-}: let
+}:
+let
   cfg = config.modules.nvidia;
-in {
+in
+{
   options.modules.nvidia = {
     enable = lib.mkEnableOption "nvidia drivers with prime";
     withSpecialisation = lib.mkEnableOption "gaming specialization";
   };
   config = lib.mkIf cfg.enable {
     services.xserver = {
-      videoDrivers = ["nvidia"];
+      videoDrivers = [ "nvidia" ];
     };
 
     hardware.nvidia = {
@@ -31,15 +33,15 @@ in {
             sha256 = "sha256-YuJjSUXE6jYSuZySYGnWSNG5sfVei7vvxDcHx3K+IN4=";
           };
 
-      # Patch the appropriate driver based on config.hardware.nvidia.open
-      driverAttr = if config.hardware.nvidia.open then "open" else "bin";
-    in
-      base
+          # Patch the appropriate driver based on config.hardware.nvidia.open
+          driverAttr = if config.hardware.nvidia.open then "open" else "bin";
+        in
+        base
         // {
-        ${driverAttr} = base.${driverAttr}.overrideAttrs (oldAttrs: {
-        patches = (oldAttrs.patches or [ ]) ++ [ cachyos-nvidia-patch ];
-        });
-      };
+          ${driverAttr} = base.${driverAttr}.overrideAttrs (oldAttrs: {
+            patches = (oldAttrs.patches or [ ]) ++ [ cachyos-nvidia-patch ];
+          });
+        };
 
       prime = {
         offload = {
