@@ -34,9 +34,9 @@ out vec4 fragColor;
 // bar values. defaults to left channels first (low to high), then right (high to low).
 uniform float bars[512];
 
-uniform int bars_count;    // number of bars (left + right) (configurable)
-uniform int bar_width;    // bar width (configurable), not used here
-uniform int bar_spacing;    // space bewteen bars (configurable)
+uniform int bars_count; // number of bars (left + right) (configurable)
+uniform int bar_width; // bar width (configurable), not used here
+uniform int bar_spacing; // space between bars (configurable)
 
 uniform vec3 u_resolution; // window resolution
 
@@ -47,7 +47,7 @@ uniform vec3 fg_color; // foreground color
 uniform int gradient_count;
 uniform vec3 gradient_colors[8]; // gradient colors
 
-vec3 normalize_C(float y,vec3 col_1, vec3 col_2, float y_min, float y_max)
+vec3 normalize_C(float y, vec3 col_1, vec3 col_2, float y_min, float y_max)
 {
     //create color based on fraction of this color and next color
     float yr = (y - y_min) / (y_max - y_min);
@@ -64,19 +64,19 @@ void main()
     float bar_size = u_resolution.x / bars_count;
 
     //the y coordinate is stretched by 4X to resemble Winamp
-    float y =  min(bars[bar] * 4.0, 1.0);
+    float y = min(bars[bar] * 4.0, 1.0);
 
     // make sure there is a thin line at bottom
     if (y * u_resolution.y < 1.0)
     {
-      y = 1.0 / u_resolution.y;
+        y = 1.0 / u_resolution.y;
     }
 
     vec4 bar_color;
 
     if (gradient_count == 0)
     {
-        bar_color = vec4(fg_color,1.0);
+        bar_color = vec4(fg_color, 1.0);
     }
     else
     {
@@ -91,14 +91,13 @@ void main()
         bar_color = vec4(normalize_C(y, gradient_colors[color], gradient_colors[color + 1], y_min, y_max), 1.0);
     }
 
-
     //draw the bar up to current height
     if (y > fragCoord.y)
     {
         //make some space between bars based on settings
         if (x > (bar + 1) * (bar_size) - bar_spacing)
         {
-            fragColor = vec4(bg_color,1.0);
+            fragColor = vec4(bg_color, 1.0);
         }
         else
         {
@@ -107,6 +106,6 @@ void main()
     }
     else
     {
-        fragColor = vec4(bg_color,1.0);
+        fragColor = vec4(bg_color, 1.0);
     }
 }
