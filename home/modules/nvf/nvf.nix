@@ -2,10 +2,12 @@
   inputs,
   pkgs,
   ...
-}: {
-  imports = [inputs.nvf.homeManagerModules.default];
+}:
+{
+  imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.nvf = {
+    enable = true;
     defaultEditor = true;
     settings = {
       vim = {
@@ -225,7 +227,7 @@
                 show_end = false;
               };
               exclude = {
-                filetypes = ["dashboard"];
+                filetypes = [ "dashboard" ];
               };
             };
           };
@@ -253,7 +255,7 @@
           extensions = [
             {
               name = "fzf";
-              packages = [pkgs.vimPlugins.telescope-fzf-native-nvim];
+              packages = [ pkgs.vimPlugins.telescope-fzf-native-nvim ];
               setup = {
                 fzf = {
                   fuzzy = true;
