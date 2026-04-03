@@ -3,7 +3,8 @@
   pkgs,
   inputs,
   ...
-}: {
+}:
+{
   imports = [
     #Module imports
     ./home-packages.nix
@@ -14,7 +15,7 @@
     ./modules/fastfetch/fastfetch.nix
     ./modules/cava/cava.nix
     ./modules/kitty/kitty.nix
-    #./modules/zed/zed.nix
+    ./modules/zed/zed.nix
 
     #DMS shell input import
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
