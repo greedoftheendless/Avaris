@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   programs.kitty = {
     enable = true;
 
@@ -55,6 +56,5 @@
     };
   };
 
-  xdg.configFile."kitty/current-theme.conf".source =
-    ./current-theme.conf;
+  xdg.configFile."kitty/current-theme.conf".source = ./current-theme.conf;
 }
