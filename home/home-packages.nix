@@ -2,62 +2,8 @@
   pkgs,
   inputs,
   ...
-}: {
-  #Installing podman
-  services.podman = {
-    enable = true;
-  };
-
-  #Installing zed
-  programs.zed-editor = {
-    enable = true;
-  };
-
-  #Installing kitty
-  programs.kitty = {
-    enable = true;
-  };
-
-  #Installing cava
-  programs.cava = {
-    enable = true;
-  };
-
-  #Installing fastfetch
-  programs.fastfetch = {
-    enable = true;
-  };
-
-  #Installing fish
-  programs.fish = {
-    enable = true;
-  };
-  #Installing starship
-  programs.starship = {
-    enable = true;
-  };
-
-  #Installing vesktop
-  programs.vesktop = {
-    enable = true;
-  };
-
-  #Installing nvf
-  programs.nvf = {
-    enable = true;
-  };
-
-  #Installing fzf
-  programs.fzf = {
-    enable = true;
-  };
-
-  #Installing zoxide
-  programs.zoxide = {
-    enable = true;
-    options = ["--cmd cd"];
-  };
-
+}:
+{
   #Installing DMS Shell by passing imports
   programs.dank-material-shell = {
     enable = true;
@@ -69,28 +15,27 @@
   };
 
   home.packages = with pkgs; [
-    (import ./modules/webapp/webapp-install.nix {inherit pkgs;})
-    (import ./modules/webapp/webapp-uninstall.nix {inherit pkgs;})
+    (import ./modules/webapp/webapp-install.nix { inherit pkgs; })
+    (import ./modules/webapp/webapp-uninstall.nix { inherit pkgs; })
 
-    (
-      writeShellApplication
-      {
-        name = "ns";
-        runtimeInputs = with pkgs; [
-          fzf
-          nix-search-tv
-        ];
-        # prevent IFD, thanks @Michael-C-Buckley
-        text = ''exec "${pkgs.nix-search-tv.src}/nixpkgs.sh" "$@"'';
-      }
-    )
+    (writeShellApplication {
+      name = "ns";
+      runtimeInputs = with pkgs; [
+        fzf
+        nix-search-tv
+      ];
+      # prevent IFD, thanks @Michael-C-Buckley
+      text = ''exec "${pkgs.nix-search-tv.src}/nixpkgs.sh" "$@"'';
+    })
+
+    #Game Mods
+    lovely-injector
 
     #Shells
     bash
     nushell
 
     #Hyprland/Niri required packages
-    inputs.scratchpad.packages.${pkgs.stdenv.hostPlatform.system}.default
     waybar
     waypaper
     hyprlock
@@ -102,11 +47,13 @@
     pastel
 
     # CLI Tools
+    zoxide
     onefetch
     ffmpeg
     jq
     tmux
     atuin
+    fzf
     eza
     openssl
     bat
@@ -132,7 +79,6 @@
     nemo
     nautilus
     kdePackages.gwenview
-    wiki-tui
     yazi
     superfile
     btop
@@ -141,7 +87,6 @@
     gh
     unzip
     openvpn
-    podman-tui
     caffeine-ng
     typst
     inputs.wifi-tui.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -169,7 +114,6 @@
     unixtools.netstat
     burpsuite
     stegseek
-    wpscan
     theharvester
     binwalk
     tcpdump
@@ -193,5 +137,6 @@
     cava
     obs-studio
     protonplus
+    vesktop
   ];
 }
