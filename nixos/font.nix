@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:  # Remove comma here
+{ pkgs, inputs, ... }: # Remove comma here
 {
   #Fonts
   fonts.packages = with pkgs; [
@@ -18,4 +18,4 @@
     papirus-icon-theme
     tokyonight-gtk-theme
   ];
-} 
+}

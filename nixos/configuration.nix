@@ -10,6 +10,7 @@
     ./modules/nvidia.nix
     ./modules/plymouth.nix
     ./modules/power.nix
+    ./modules/podman.nix
     ./font.nix
   ];
 
@@ -73,11 +74,11 @@
 
   boot.loader.systemd-boot.memtest86.enable = true;
 
-   environment.variables = {
-      NIXOS_OZONE_WL = "1";
+  environment.variables = {
+    NIXOS_OZONE_WL = "1";
 
-      ELECTRON_LAUNCH_FLAGS = "--enable-wayland-ime --wayland-text-input-version=3 --enable-features=WaylandLinuxDrmSyncobj";
-    };
+    ELECTRON_LAUNCH_FLAGS = "--enable-wayland-ime --wayland-text-input-version=3 --enable-features=WaylandLinuxDrmSyncobj";
+  };
 
   modules.nvidia.enable = true;
   modules.nvidia.withSpecialisation = true;
