@@ -105,7 +105,7 @@
         greed = inputs.nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
-            ./nixos/configuration.nix
+            ./nixos/default.nix
             ./nixos/system-packages.nix
             inputs.home-manager.nixosModules.home-manager
             {
