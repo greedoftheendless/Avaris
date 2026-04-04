@@ -29,12 +29,6 @@ overview {
     }
 }
 
-// Make the wallpaper stationary, rather than moving with workspaces.
-layer-rule {
-    match namespace="^quickshell$"
-    place-within-backdrop true
-}
-
 // Disable the hot corners.
 gestures {
     hot-corners {
@@ -113,37 +107,49 @@ animations {
 
 // ========== KEYBINDINGS ==========
 binds {
+
+      //DMS keybinds
     // === Application Launchers ===
-    Mod+Space hotkey-overlay-title="Application Launcher" {
-        spawn "dms" "ipc" "call" "spotlight" "toggle";
-    }
-    Mod+Alt+L hotkey-overlay-title="Clipboard Manager" {
-        spawn "dms" "ipc" "call" "clipboard" "toggle";
-    }
-    Mod+M hotkey-overlay-title="Task Manager" {
-        spawn "dms" "ipc" "call" "processlist" "toggle";
-    }
-    Mod+Alt+S hotkey-overlay-title="Settings" {
-        spawn "dms" "ipc" "call" "settings" "toggle";
-    }
-    Mod+Y hotkey-overlay-title="Browse Wallpapers" {
-        spawn "dms" "ipc" "call" "dankdash" "wallpaper";
-    }
-    Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
-    Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+    //Mod+Space hotkey-overlay-title="Application Launcher" {
+        //spawn "dms" "ipc" "call" "spotlight" "toggle";
+    //}
+    //Mod+Alt+L hotkey-overlay-title="Clipboard Manager" {
+        //spawn "dms" "ipc" "call" "clipboard" "toggle";
+    //}
+    //Mod+M hotkey-overlay-title="Task Manager" {
+        //spawn "dms" "ipc" "call" "processlist" "toggle";
+    //}
+    //Mod+Alt+S hotkey-overlay-title="Settings" {
+        //spawn "dms" "ipc" "call" "settings" "toggle";
+    //}
+    //Mod+Y hotkey-overlay-title="Browse Wallpapers" {
+        //spawn "dms" "ipc" "call" "dankdash" "wallpaper";
+    //}
+    //Mod+N hotkey-overlay-title="Notification Center" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    //Mod+Shift+N hotkey-overlay-title="Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
 
     // === Security ===
-    Mod+L hotkey-overlay-title="Lock Screen" {
-        spawn "dms" "ipc" "call" "lock" "lock";
-    }
+    //Mod+L hotkey-overlay-title="Lock Screen" {
+        //spawn "dms" "ipc" "call" "lock" "lock";
+    //}
+
+    //Noctalia binds
+
+    //Search bar
+    Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+
+    // Session menu (has poweroff, reboot, logout, etc.)
+    Mod+Shift+P { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
+
+    // Lock screen directly
+    Mod+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
 
     // Applications
     Mod+Shift+L { spawn "hyprlock"; }
-    Mod+Shift+P { spawn "wlogout"; }
+    //Mod+Shift+P { spawn "wlogout"; }
     Mod+E { spawn "nemo"; }
     Mod+Return { spawn "ghostty"; }
     Mod+B { spawn "zen-beta"; }
-    //Mod+Shift+Comma { spawn "waypaper"; }
     //Mod+Space { spawn "rofi" "-show" "drun"; }
 
 
@@ -226,7 +232,7 @@ binds {
     Mod+Comma { consume-window-into-column; }
     Mod+Period { expel-window-from-column; }
 
-    // Alternative resize mode
+   // Alternative resize mode
     Mod+A { switch-preset-column-width; }
 
     // Multimedia keys
@@ -242,8 +248,8 @@ binds {
 
     // === Screenshots ===
     Mod+S { screenshot; }
+    Ctrl+S { screenshot-window; }
     Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 }
 
@@ -256,13 +262,20 @@ draw-border-with-background false
 
 }
 
+//Wallpaper in overview
+// Set the overview wallpaper on the backdrop.
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
+
 // ========== AUTOSTART ==========
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-spawn-at-startup "dms" "run"
-spawn-at-startup "waypaper" "--restore"
+//spawn-at-startup "dms" "run"
+spawn-at-startup "noctalia-shell"
+//spawn-at-startup "waypaper" "--restore"
 spawn-at-startup "zen-beta"
 //spawn-at-startup "caffeine"
-//spawn-at-startup "sh" "-c" "wal -R && ~/.config/hypr/scripts/wal-theme.sh"
 
 // ========== OUTPUT CONFIGURATION ==========
  output "eDP-1" {
@@ -285,8 +298,11 @@ debug {
 // ========== ENVIRONMENT VARIABLES ==========
 environment {
 }
-include "dms/binds.kdl"
+//include "dms/binds.kdl"
 
-include "dms/cursor.kdl"
+//include "dms/cursor.kdl"
 
-include "dms/windowrules.kdl"
+//include "dms/windowrules.kdl"
+
+include "./noctalia.kdl"
+
