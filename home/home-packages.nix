@@ -36,10 +36,9 @@
     nushell
 
     #Hyprland/Niri required packages
-    waybar
-    waypaper
+    #waybar
     hyprlock
-    wlogout
+    #wlogout
     #waypaper
     swww
     mpvpaper
@@ -47,6 +46,7 @@
     pastel
 
     # CLI Tools
+    evtest
     zoxide
     onefetch
     ffmpeg
@@ -65,6 +65,7 @@
     python3
 
     # Necessary tools
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     cacert
     playerctl
     bc
