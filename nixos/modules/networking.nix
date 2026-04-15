@@ -7,6 +7,10 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  #Enable firewall
+  networking.firewall = {
+  };
+
   # Enable SSH
   services.openssh.enable = true;
 
