@@ -1,0 +1,8 @@
+{
+  "autoMount": false,
+  "fileBrowser": "xdg-open",
+  "terminalCommand": "ghostty",
+  "showNotifications": true,
+  "hideWhenEmpty": true,
+  "showBadge": true
+}

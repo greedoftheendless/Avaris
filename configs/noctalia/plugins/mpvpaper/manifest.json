@@ -1,0 +1,33 @@
+{
+  "id": "mpvpaper",
+  "name": "Mpvpaper",
+  "version": "1.6.3",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "spiros132",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "A plugin that allows having video wallpapers using mpvpaper.",
+  "tags": [
+    "Bar",
+    "Panel",
+    "Fun",
+    "System"
+  ],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "mpvSocket": "/tmp/mpv-socket",
+      "wallpapersFolder": "~/Pictures/Wallpapers",
+      "profile": "default",
+      "fillMode": "fit"
+    }
+  }
+}

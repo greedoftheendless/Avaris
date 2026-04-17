@@ -1,0 +1,19 @@
+{
+  "pollIntervalMs": 2250,
+  "leftClickAction": "panel",
+  "launchBehavior": "minimized-to-tray",
+  "barLabelMode": "short-label",
+  "videosPath": "~/Videos/OBS",
+  "videosOpener": "nemo",
+  "autoCloseManagedObs": true,
+  "openVideosAfterStop": true,
+  "showBarWhenRecording": true,
+  "showBarWhenReplay": true,
+  "showBarWhenStreaming": false,
+  "showBarWhenReady": true,
+  "showControlCenterWhenRecording": true,
+  "showControlCenterWhenReplay": true,
+  "showControlCenterWhenStreaming": false,
+  "showControlCenterWhenReady": false,
+  "showElapsedInBar": false
+}

@@ -1,0 +1,22 @@
+{
+  "mpvSocket": "/tmp/mpv-socket",
+  "wallpapersFolder": "/home/greed/Pictures/Pics/Live",
+  "profile": "fast",
+  "fillMode": "fit",
+  "thumbCacheReady": true,
+  "currentWallpaper": "/home/greed/Pictures/Pics/Live/tranquil-japan-lake-view.1920x1080.mp4",
+  "isPlaying": true,
+  "active": true,
+  "hardwareAcceleration": false,
+  "automation": false,
+  "automationMode": "random",
+  "automationTime": 300,
+  "oldWallpapers": {
+    "eDP-1": {
+      "light": "/home/greed/.cache/noctalia/images/wallpapers/thumbnails/mpvpaper/echoes-of-a-fallen-world.1920x1080.mp4.bmp",
+      "dark": "/home/greed/.cache/noctalia/images/wallpapers/thumbnails/mpvpaper/tranquil-japan-lake-view.1920x1080.mp4.bmp"
+    }
+  },
+  "volume": 0
+}
+
