@@ -858,7 +858,7 @@ Item {
   Process {
     id: obsProbeProcess
     running: false
-    command: ["pgrep", "-x", "obs"]
+    command: ["pidof", "obs"]
 
     onExited: function(exitCode) {
       const callbacks = root.obsProbeCallbacks
