@@ -1,20 +1,17 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.fish = {
     enable = true;
     shellAliases = {
       #Apps
       sf = "superfile";
       docker = "podman";
-      yz = "yazi";
       grep = "rg";
-      tf = "superfile";
       lgit = "lazygit";
       zed = "zeditor";
       wiki = "wiki-tui";
       #for nh/nix update and switch
-      update = "nix fmt && nh os switch -u";
-      rebuild = "nix fmt && nh os switch";
+      update = "nh os switch -u";
+      rebuild = "nh os switch";
       #Everyday commands
       cat = "bat";
       cd = "z";
