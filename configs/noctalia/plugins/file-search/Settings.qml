@@ -117,7 +117,7 @@ ColumnLayout {
       NSlider {
         Layout.fillWidth: true
         from: 0
-        to: 200
+        to: 1000
         stepSize: 10
         value: root.valueMaxResults
         onMoved: root.valueMaxResults = Math.round(value)
