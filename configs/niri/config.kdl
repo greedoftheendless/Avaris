@@ -148,8 +148,8 @@ binds {
     Mod+Shift+L { spawn "hyprlock"; }
     //Mod+Shift+P { spawn "wlogout"; }
     Mod+E { spawn "nemo"; }
-    Mod+Shift+Return { spawn "ghostty"; }
-    Mod+Return { spawn "kitty"; }
+    Mod+Shift+Return { spawn "kitty"; }
+    Mod+Return { spawn "ghostty"; }
     Mod+B { spawn "zen-beta"; }
     //Mod+Space { spawn "rofi" "-show" "drun"; }
 
