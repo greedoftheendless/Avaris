@@ -1,7 +1,7 @@
 {
     "id": "file-search",
     "name": "File Search",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "minNoctaliaVersion": "4.1.2",
     "author": "ericbreh",
     "license": "MIT",

@@ -1,0 +1,61 @@
+{
+  "widget": {
+    "tooltip": "Notes adhésives"
+  },
+  "menu": {
+    "settings": "Paramètres du widget"
+  },
+  "time": {
+    "just-now": "À l'instant",
+    "minutes-ago": "Il y a {n}min",
+    "hours-ago": "Il y a {n}h",
+    "days-ago": "Il y a {n}j"
+  },
+  "notes": {
+    "new": "Nouvelle note",
+    "empty": "Aucune note pour le moment",
+    "create-first": "Cliquez sur + pour créer votre première note",
+    "hint-unselect": "ÉCHAP pour déselectionner",
+    "hint-click-select": "Cliquer pour sélectionner",
+    "delete-confirm": "Supprimer cette note ?",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "window-title": "Note adhésive",
+    "mode-preview": "Aperçu",
+    "mode-edit": "Édition",
+    "switch-preview": "Aperçu",
+    "switch-edit": "Éditer"
+  },
+  "editor": {
+    "back": "Retour à la liste",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "placeholder": "Commencez à écrire en Markdown...",
+    "hint": "Ctrl+S pour enregistrer",
+    "hint-esc-save": "ÉCHAP pour enregistrer"
+  },
+  "settings": {
+    "saved": "Paramètres des notes adhésives enregistrés",
+    "syncNow": "Synchroniser maintenant",
+    "syncEnabled": {
+      "label": "Activer la synchronisation GitHub Gist",
+      "desc": "Synchroniser automatiquement les notes vers un gist privé après modification."
+    },
+    "githubToken": {
+      "label": "Jeton GitHub",
+      "desc": "Jeton d'accès personnel avec permission gist.",
+      "placeholder": "ghp_xxx",
+      "help": "Le plugin crée ou réutilise un gist privé nommé `noctalia-sticky-notes`. Chaque note est stockée sous forme de fichier dont le nom est l'ID de la note."
+    }
+  },
+  "sync": {
+    "syncing": "Synchronisation des notes vers GitHub Gist...",
+    "success": {
+      "created": "Gist créé et notes synchronisées.",
+      "updated": "Notes synchronisées vers GitHub Gist."
+    },
+    "errors": {
+      "missing-token": "Le jeton GitHub est requis avant la synchronisation."
+    }
+  }
+}

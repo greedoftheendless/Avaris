@@ -29,7 +29,8 @@
     },
     "audio": {
         "mprisBlacklist": [
-            "zen-browser"
+            "zen-browser",
+            "vesktop"
         ],
         "preferredPlayer": "spotify",
         "spectrumFrameRate": 120,
@@ -46,7 +47,7 @@
         "backgroundOpacity": 0,
         "barType": "floating",
         "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
+        "capsuleOpacity": 0,
         "contentPadding": 0,
         "density": "comfortable",
         "displayMode": "always_visible",
@@ -75,7 +76,7 @@
         "showCapsule": true,
         "showOnWorkspaceSwitch": true,
         "showOutline": true,
-        "useSeparateOpacity": true,
+        "useSeparateOpacity": false,
         "widgetSpacing": 4,
         "widgets": {
             "center": [
@@ -162,8 +163,31 @@
                     "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
-                        "OBS Studio"
+                        "OBS Studio",
+                        "Vesktop"
                     ]
+                },
+                {
+                    "defaultSettings": {
+                        "autoCloseManagedObs": true,
+                        "barLabelMode": "short-label",
+                        "launchBehavior": "minimized-to-tray",
+                        "leftClickAction": "panel",
+                        "openVideosAfterStop": true,
+                        "pollIntervalMs": 2500,
+                        "showBarWhenReady": true,
+                        "showBarWhenRecording": true,
+                        "showBarWhenReplay": false,
+                        "showBarWhenStreaming": true,
+                        "showControlCenterWhenReady": false,
+                        "showControlCenterWhenRecording": true,
+                        "showControlCenterWhenReplay": true,
+                        "showControlCenterWhenStreaming": true,
+                        "showElapsedInBar": false,
+                        "videosOpener": "xdg-open",
+                        "videosPath": ""
+                    },
+                    "id": "plugin:obs-control"
                 },
                 {
                     "defaultSettings": {
@@ -260,6 +284,9 @@
                         "terminalCommand": "kitty"
                     },
                     "id": "plugin:usb-drive-manager"
+                },
+                {
+                    "id": "plugin:sticky-notes"
                 },
                 {
                     "hideWhenZero": false,
@@ -782,7 +809,7 @@
         ],
         "overviewBlur": 0,
         "overviewEnabled": true,
-        "overviewTint": 0,
+        "overviewTint": 0.54,
         "panelPosition": "follow_bar",
         "randomIntervalSec": 300,
         "setWallpaperOnAllMonitors": true,

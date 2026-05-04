@@ -14,6 +14,7 @@
   },
   "device": {
     "mounted": "Monté",
+    "loading": "Chargement...",
     "used": "{size} utilisé",
     "free": "{size} libre",
     "action-open": "Ouvrir",
@@ -26,6 +27,7 @@
     "open": "Ouvrir le gestionnaire USB",
     "refresh": "Actualiser les périphériques",
     "unmount-all": "Tout démonter",
+    "eject-all": "Tout éjecter",
     "settings": "Paramètres"
   },
   "notifications": {
