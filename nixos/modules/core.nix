@@ -3,11 +3,12 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
+  #Enabling NVIDIA and its respective modules
   modules.nvidia.enable = true;
   modules.nvidia.withSpecialisation = true;
 
+  #Niri WM
   programs.niri.enable = true;
 
   #Enabling SSDM login screen
@@ -20,7 +21,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = {inherit inputs;};
     users = {
       greed = import ../../home/default.nix;
     };
