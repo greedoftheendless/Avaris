@@ -260,6 +260,28 @@ draw-border-with-background false
 
     match app-id="zen-beta"
     opacity 0.95
+}
+
+window-rule {
+open-maximized true
+
+  match app-id="zen-beta"
+
+}
+
+window-rule {
+open-maximized true
+
+  match app-id="spotify"
+
+}
+
+
+
+window-rule {
+open-maximized true
+
+  match app-id="vesktop"
 
 }
 
