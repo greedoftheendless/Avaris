@@ -2,21 +2,20 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   #Installing DMS Shell by passing imports
-  programs.dank-material-shell = {
-    enable = true;
-  };
+  #programs.dank-material-shell = {
+  #enable = true;
+  #};
 
   #Installing Dsearch by passing imports
-  programs.dsearch = {
-    enable = true;
-  };
+  #programs.dsearch = {
+  #enable =true;
+  #};
 
   home.packages = with pkgs; [
-    (import ./modules/webapp/webapp-install.nix { inherit pkgs; })
-    (import ./modules/webapp/webapp-uninstall.nix { inherit pkgs; })
+    (import ./modules/webapp/webapp-install.nix {inherit pkgs;})
+    (import ./modules/webapp/webapp-uninstall.nix {inherit pkgs;})
 
     (writeShellApplication {
       name = "ns";
@@ -26,6 +25,18 @@
       ];
       # prevent IFD, thanks @Michael-C-Buckley
       text = ''exec "${pkgs.nix-search-tv.src}/nixpkgs.sh" "$@"'';
+    })
+
+    (writeShellApplication {
+      name = "nix-check";
+      runtimeInputs = with pkgs; [
+        nix
+        curl
+        jq
+        coreutils
+        gnused
+      ];
+      text = builtins.readFile ./modules/nix-check/nix-check.sh;
     })
 
     #Game Mods
@@ -38,10 +49,11 @@
     #Hyprland/Niri required packages
     #waybar
     hyprlock
+    hyprshot
     #wlogout
     #waypaper
-    swww
-    mpvpaper
+    awww
+    #mpvpaper
     #hyprshot
     pastel
 
@@ -80,7 +92,6 @@
     nemo
     nautilus
     kdePackages.gwenview
-    yazi
     superfile
     btop
     binutils
@@ -127,6 +138,7 @@
     thunderbird
     tor-browser
     gimp
+    localsend
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     firefox
     wget
@@ -134,10 +146,10 @@
     spotify
     dropbox
     obsidian
-    protonvpn-gui
+    proton-vpn
     cava
     obs-studio
     protonplus
-    vesktop
+    opencode
   ];
 }
