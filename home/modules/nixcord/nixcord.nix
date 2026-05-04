@@ -3,24 +3,28 @@
     enable = true;
 
     #Choosing discord client
-    discord.vencord.enable = true;
+    discord.enable = false;
+    vesktop.enable = true;
 
     # Theming
     quickCss = "/* css goes here */";
     config = {
       useQuickCss = true;
       themeLinks = [
-        ~/.config/vesktop/themes/ClearVision-v7-BetterDiscord.theme.css
+        "https://raw.githubusercontent.com/ClearVision/ClearVision-v7/master/ClearVision-v7.theme.css"
       ];
       frameless = true;
 
+      disableMinSize = true;
       plugins = {
-        hideAttachments.enable = true;
-        ignoreActivities = {
-          enable = true;
-          ignorePlaying = true;
-          ];
-        };
+        crashHandler.enable = true;
+        fakeNitro.enable = true;
+        webScreenShareFixes.enable = true;
+        petpet.enable = true;
+        noTypingAnimation.enable = true;
+        silentTyping.enable = true;
+        validReply.enable = true;
+        quickReply.enable = true;
       };
     };
   };
