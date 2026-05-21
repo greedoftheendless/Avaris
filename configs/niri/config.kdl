@@ -320,12 +320,5 @@ debug {
 
 // ========== ENVIRONMENT VARIABLES ==========
 environment {
+  DISPLAY ":0"
 }
-//include "dms/binds.kdl"
-
-//include "dms/cursor.kdl"
-
-//include "dms/windowrules.kdl"
-
-include "./noctalia.kdl"
-
