@@ -127,8 +127,8 @@
                 {
                     "clockColor": "none",
                     "customFont": "JetBrainsMonoNL NF ExtraBold",
-                    "formatHorizontal": "HH:mm:ss AP MMM dd, ddd",
-                    "formatVertical": "HH mm | dd MM",
+                    "formatHorizontal": "hh:mm:ss AP MMM dd, ddd",
+                    "formatVertical": "hh mm | dd MM",
                     "id": "Clock",
                     "tooltipFormat": "h:mm:ss AP MMM d ddd",
                     "useCustomFont": true
@@ -284,9 +284,6 @@
                         "terminalCommand": "kitty"
                     },
                     "id": "plugin:usb-drive-manager"
-                },
-                {
-                    "id": "plugin:sticky-notes"
                 },
                 {
                     "hideWhenZero": false,
@@ -510,8 +507,8 @@
         "compactLockScreen": false,
         "dimmerOpacity": 0,
         "enableBlurBehind": true,
-        "enableLockScreenCountdown": true,
-        "enableLockScreenMediaControls": false,
+        "enableLockScreenCountdown": false,
+        "enableLockScreenMediaControls": true,
         "enableShadows": true,
         "forceBlackScreenCorners": false,
         "iRadiusRatio": 0.81,
@@ -543,11 +540,11 @@
         "lockOnSuspend": true,
         "lockScreenAnimations": true,
         "lockScreenBlur": 0,
-        "lockScreenCountdownDuration": 10000,
+        "lockScreenCountdownDuration": 1000,
         "lockScreenMonitors": [
         ],
         "lockScreenTint": 0,
-        "passwordChars": false,
+        "passwordChars": true,
         "radiusRatio": 1.02,
         "reverseScroll": false,
         "scaleRatio": 1,
@@ -594,7 +591,7 @@
         "firstDayOfWeek": 1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
-        "name": "Bengaluru",
+        "name": "Doha",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
@@ -777,9 +774,9 @@
     },
     "ui": {
         "boxBorderEnabled": true,
-        "fontDefault": "JetBrainsMono NF Medium",
+        "fontDefault": "JetBrainsMono NF",
         "fontDefaultScale": 1,
-        "fontFixed": "monospace",
+        "fontFixed": "JetBrainsMono NF",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.4,
         "panelsAttachedToBar": true,
