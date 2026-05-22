@@ -63,7 +63,6 @@ layout {
 }
 
 // ========== DECORATION & APPEARANCE ==========
-prefer-no-csd
 
 cursor {
     xcursor-theme "BreezeX-RosePine-Linux"
@@ -172,9 +171,9 @@ binds {
     Mod+X { focus-workspace-down; }
 
 
-    // Window floating rules
-    Mod+Z { toggle-window-floating; }
-    Alt+Z { switch-focus-between-floating-and-tiling; }
+    // window floating rules
+    mod+z { toggle-window-floating; }
+    alt+z { switch-focus-between-floating-and-tiling; }
 
     // Move windows
     // Removed duplicate conflicting binds for Mod+Shift+H/L

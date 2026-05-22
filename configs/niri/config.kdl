@@ -26,6 +26,8 @@ output "eDP-1" {
     mode "1920x1080@120"
 }
 
+prefer-no-csd
+
 //GUESTURES
 gestures {
     hot-corners {
@@ -220,6 +222,8 @@ binds {
     Mod+Page_Up    { focus-window-up; }
     Mod+Left  { focus-column-left; }
     Mod+Right { focus-column-right; }
+    Mod+C { focus-column-left; }
+    Mod+V { focus-column-right; }
 
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+Up    { move-window-up; }
@@ -309,9 +313,6 @@ binds {
     // Makes the column "fill the rest of the space".
     Mod+Ctrl+F { expand-column-to-available-width; }
 
-    Mod+C { center-column; }
-
-    // Center all fully visible columns on screen.
     Mod+Ctrl+C { center-visible-columns; }
 
     //Setting column height
@@ -323,8 +324,8 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    mod+z { toggle-window-floating; }
+    alt+z { switch-focus-between-floating-and-tiling; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Ctrl+Alt+Delete { quit; }
