@@ -2,8 +2,7 @@
   pkgs,
   inputs,
   ...
-}:
-{
+}: {
   #Installing Packages
   programs.steam.enable = true;
 
