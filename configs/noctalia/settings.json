@@ -163,8 +163,8 @@
                     "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
-                        "OBS Studio",
-                        "Vesktop"
+                        "Vesktop",
+                        "OBS Studio"
                     ]
                 },
                 {
