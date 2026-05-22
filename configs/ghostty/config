@@ -12,6 +12,9 @@ command = fish
 # Background
 background-opacity = 0.9
 
+# Disabling directory inheritance
+window-inherit-working-directory = false
+
 # Colors (Catppuccin Mocha)
 foreground = CDD6F4
 background = 1E1E2E
