@@ -1,9 +1,9 @@
-{ pkgs, ... }: # Remove comma here
-{
+{pkgs, ...}: {
   #Fonts
   fonts = {
     fontconfig.enable = true;
     packages = with pkgs; [
+      merriweather
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
