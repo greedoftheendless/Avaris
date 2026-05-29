@@ -218,7 +218,7 @@ binds {
 
     Mod+Page_Down   { focus-window-down; }
     Mod+Page_Up     { focus-window-up; }
-    Mod+J           { focus-window-up; }
+    Mod+J           { focus-window-down; }
     Mod+K           { focus-window-up; }
     Mod+Shift+Down  { focus-window-down; }
     Mod+Shift+Up    { focus-window-up; }
@@ -330,3 +330,5 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Ctrl+Alt+Delete { quit; }
 }
+include "././burn.kdl"
+include "././fold-window.kdl"
