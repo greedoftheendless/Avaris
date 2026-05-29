@@ -1,9 +1,10 @@
 {inputs, ...}: {
   imports = [
     #Module imports
-    ./packages/home-packages.nix
+    ./packages/system-tools.nix
     ./packages/pentest-packages.nix
     ./packages/game.nix
+    ./packages/common-apps.nix
     ./modules/fish.nix
     ./modules/cursor.nix
     ./modules/starship.nix
