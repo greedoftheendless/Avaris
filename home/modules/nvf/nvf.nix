@@ -2,9 +2,8 @@
   inputs,
   pkgs,
   ...
-}:
-{
-  imports = [ inputs.nvf.homeManagerModules.default ];
+}: {
+  imports = [inputs.nvf.homeManagerModules.default];
 
   programs.nvf = {
     enable = true;
@@ -184,6 +183,7 @@
           enableFormat = true;
           enableTreesitter = true;
           html.enable = true;
+          typescript.enable = true;
           css.enable = true;
           json.enable = true;
           lua.enable = true;
@@ -198,6 +198,11 @@
         #LSP server
         lsp = {
           enable = true;
+          servers.nil = {
+            enable = true;
+            settings.nil.flake.autoArchive = true;
+          };
+
           formatOnSave = true;
           inlayHints.enable = true;
           lspconfig.enable = true;
@@ -227,7 +232,7 @@
                 show_end = false;
               };
               exclude = {
-                filetypes = [ "dashboard" ];
+                filetypes = ["dashboard"];
               };
             };
           };
@@ -236,7 +241,7 @@
 
         statusline.lualine = {
           enable = true;
-          theme = "catppuccin";
+          theme = "auto";
           sectionSeparator = {
             left = "";
             right = "";
@@ -247,15 +252,44 @@
           };
         };
 
-        extraPlugins = {
+        binds = {
+          whichKey = {
+            enable = true;
+          };
         };
 
+        filetree = {
+          nvimTree = {
+            enable = true;
+            openOnSetup = false;
+          };
+        };
+
+        formatter = {
+          conform-nvim = {
+            enable = true;
+            setupOpts = {
+              format_on_save = {
+                enable = true;
+              };
+            };
+          };
+        };
+
+        utility = {
+          "oil-nvim" = {
+            enable = true;
+          };
+        };
+
+        extraPlugins = {
+        };
         telescope = {
           enable = true;
           extensions = [
             {
               name = "fzf";
-              packages = [ pkgs.vimPlugins.telescope-fzf-native-nvim ];
+              packages = [pkgs.vimPlugins.telescope-fzf-native-nvim];
               setup = {
                 fzf = {
                   fuzzy = true;
@@ -336,7 +370,7 @@
                   icon = "  ";
                   desc = "Edit nvf config";
                   key = "n";
-                  action = "edit ~/dotfiles/home/modules/nvf.nix";
+                  action = "edit ~/dotfiles/home/modules/nvf/nvf.nix";
                 }
                 {
                   icon = "  ";

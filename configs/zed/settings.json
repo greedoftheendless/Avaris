@@ -1,9 +1,20 @@
 {
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "project_panel": {
+    "dock": "left",
     "button": true,
   },
   "disable_ai": false,
   "agent": {
+    "dock": "right",
     "default_profile": "say",
     "default_model": {
       "provider": "copilot_chat",

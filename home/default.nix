@@ -1,7 +1,9 @@
 {inputs, ...}: {
   imports = [
     #Module imports
-    ./home-packages.nix
+    ./packages/home-packages.nix
+    ./packages/pentest-packages.nix
+    ./packages/game.nix
     ./modules/fish.nix
     ./modules/cursor.nix
     ./modules/starship.nix
@@ -12,17 +14,10 @@
     ./modules/kitty/kitty.nix
     ./modules/nixcord/nixcord.nix
 
-    #Window manager imports
-    #./window-managers/niri.nix
-
     #Importing home
     ./home.nix
 
     #Nixcord import
     inputs.nixcord.homeModules.nixcord
-
-    #DMS shell input import
-    #inputs.dankMaterialShell.homeModules.dankMaterialShell.default
-    #inputs.dsearch.homeModules.default
   ];
 }

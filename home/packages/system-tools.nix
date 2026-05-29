@@ -1,0 +1,88 @@
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  #Installing web-apps
+  home.packages = with pkgs; [
+    (import ../modules/webapp/webapp-install.nix {inherit pkgs;})
+    (import ../modules/webapp/webapp-uninstall.nix {inherit pkgs;})
+
+    (writeShellApplication {
+      name = "ns";
+      runtimeInputs = with pkgs; [
+        fzf
+        nix-search-tv
+      ];
+      #Nix-search TV
+      text = ''exec "${pkgs.nix-search-tv}/nixpkgs.sh" "$@"'';
+    })
+
+    (writeShellApplication {
+      name = "nix-check";
+      runtimeInputs = with pkgs; [
+        nix
+        curl
+        jq
+        coreutils
+        gnused
+      ];
+      text = builtins.readFile ../modules/nix-check/nix-check.sh;
+    })
+
+    #Shells
+    bash
+    nushell
+
+    #System/Hyprland/Niri required packages
+    hyprlock
+    hyprshot
+    awww
+    pastel
+
+    # CLI Tools
+    evtest
+    zoxide
+    onefetch
+    ffmpeg
+    jq
+    tmux
+    atuin
+    fzf
+    eza
+    openssl
+    bat
+    tree
+    fd
+    ripgrep
+
+    #Languages and their packages
+    python3
+
+    # Necessary tools
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    cacert
+    playerctl
+    bc
+    brightnessctl
+    usbguard
+    usbguard-notifier
+    ghostty
+    git
+    gource
+    tealdeer
+    navi
+    nemo
+    nautilus
+    kdePackages.gwenview
+    superfile
+    btop
+    binutils
+    lazygit
+    gh
+    unzip
+    openvpn
+    typst
+    inputs.wifi-tui.packages.${pkgs.stdenv.hostPlatform.system}.default
+  ];
+}

@@ -16,6 +16,7 @@
     xwayland
     xwayland-satellite
     xwayland-run
+    xdg-desktop-portal-gnome
     nh
     #better-control
     libsForQt5.qt5.qttools

@@ -20,11 +20,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    mangowm = {
-      url = "github:mangowm/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     wifi-tui = {
       url = "github:shazow/wifitui";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -55,7 +50,6 @@
   outputs = inputs @ {
     self,
     systems,
-    mangowm,
     ...
   }: let
   in {
@@ -65,7 +59,6 @@
         modules = [
           ./nixos/default.nix
           ./nixos/system-packages.nix
-          mangowm.nixosModules.mango
           inputs.home-manager.nixosModules.home-manager
           {
             nix.settings.auto-optimise-store = true;

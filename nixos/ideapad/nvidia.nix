@@ -3,18 +3,16 @@
   config,
   pkgs,
   ...
-}:
-let
+}: let
   cfg = config.modules.nvidia;
-in
-{
+in {
   options.modules.nvidia = {
     enable = lib.mkEnableOption "nvidia drivers with prime";
     withSpecialisation = lib.mkEnableOption "gaming specialization";
   };
   config = lib.mkIf cfg.enable {
     services.xserver = {
-      videoDrivers = [ "nvidia" ];
+      videoDrivers = ["nvidia"];
     };
 
     hardware.nvidia = {

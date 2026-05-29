@@ -164,7 +164,8 @@
                     "id": "Tray",
                     "pinned": [
                         "Vesktop",
-                        "OBS Studio"
+                        "OBS Studio",
+                        "steam"
                     ]
                 },
                 {
@@ -602,7 +603,7 @@
         "weatherTaliaMascotAlways": false
     },
     "network": {
-        "bluetoothAutoConnect": true,
+        "bluetoothAutoConnect": false,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
         "bluetoothRssiPollIntervalMs": 10000,
