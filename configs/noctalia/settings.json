@@ -293,6 +293,12 @@
                     "id": "NotificationHistory",
                     "showUnreadBadge": true,
                     "unreadBadgeColor": "secondary"
+                },
+                {
+                    "id": "plugin:sticky-notes"
+                },
+                {
+                    "id": "plugin:niri-animation-picker"
                 }
             ]
         }
