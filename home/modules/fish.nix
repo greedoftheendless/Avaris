@@ -15,7 +15,7 @@
       cat = "bat";
       cd = "z";
       ls = "nu -c ls";
-      la = "eza --long --icons --color=always";
+      la = "eza -a --long --icons --color=always";
       "..." = "cd ../..";
       ".." = "cd ..";
     };
