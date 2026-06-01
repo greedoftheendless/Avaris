@@ -1,0 +1,22 @@
+{
+  "hideInactive": true,
+  "iconColor": "none",
+  "directory": "",
+  "filenamePattern": "recording_yyyyMMdd_HHmmss",
+  "frameRate": "120",
+  "audioCodec": "opus",
+  "videoCodec": "h264",
+  "quality": "very_high",
+  "colorRange": "limited",
+  "showCursor": true,
+  "copyToClipboard": false,
+  "audioSource": "default_output",
+  "videoSource": "portal",
+  "resolution": "1920x1080",
+  "replayEnabled": false,
+  "replayDuration": "30",
+  "customReplayDuration": "30",
+  "replayStorage": "ram",
+  "restorePortalSession": false,
+  "customFrameRate": "60"
+}
