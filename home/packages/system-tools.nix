@@ -8,16 +8,7 @@
     (import ../modules/webapp/webapp-install.nix {inherit pkgs;})
     (import ../modules/webapp/webapp-uninstall.nix {inherit pkgs;})
 
-    (writeShellApplication {
-      name = "ns";
-      runtimeInputs = with pkgs; [
-        fzf
-        nix-search-tv
-      ];
-      #Nix-search TV
-      text = ''exec "${pkgs.nix-search-tv}/nixpkgs.sh" "$@"'';
-    })
-
+    #Nix-check tool
     (writeShellApplication {
       name = "nix-check";
       runtimeInputs = with pkgs; [
