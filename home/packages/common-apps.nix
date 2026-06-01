@@ -4,6 +4,7 @@
   ...
 }: {
   home.packages = with pkgs; [
+    syncthing
     wl-clipboard
     onlyoffice-desktopeditors
     vlc
@@ -17,12 +18,12 @@
     wget
     curl
     spotify
-    dropbox
     obsidian
     proton-vpn
     cava
     obs-studio
     protonplus
     opencode
+    gpu-screen-recorder
   ];
 }
