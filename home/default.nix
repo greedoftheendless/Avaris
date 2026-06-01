@@ -6,6 +6,7 @@
     ./packages/game.nix
     ./packages/common-apps.nix
     ./modules/fish.nix
+    ./modules/ns.nix
     ./modules/cursor.nix
     ./modules/starship.nix
     ./modules/zed.nix
