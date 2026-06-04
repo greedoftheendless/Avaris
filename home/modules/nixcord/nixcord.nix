@@ -20,7 +20,6 @@
         crashHandler.enable = true;
         fakeNitro.enable = true;
         webScreenShareFixes.enable = true;
-        petpet.enable = true;
         noTypingAnimation.enable = true;
         silentTyping.enable = true;
         validReply.enable = true;
