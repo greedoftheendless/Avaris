@@ -1,0 +1,62 @@
+set realname = ""
+set smtp_pass = ""
+set imap_pass = ""
+set smtp_url = ""
+set folder = ""
+
+set from = ""
+set envelope_from
+set use_from = "yes"
+# Main Inbox
+set spoolfile = "+INBOX"
+
+
+# Sent Mail
+set record = "+[Gmail]/Sent Mail"
+
+# Drafts
+set postponed = "+[Gmail]/Drafts"
+
+# Trash (Bin)
+set trash = "+[Gmail]/Trash"
+
+# Define Mailboxes (Including Archive & Spam)
+mailboxes =INBOX \
+           ="[Gmail]/All Mail" \
+           ="[Gmail]/Sent Mail" \
+           =[Gmail]/Drafts \
+           =[Gmail]/Spam \
+           =[Gmail]/Trash
+
+# Allow Mutt to open a new IMAP connection automatically.
+unset imap_passive
+
+#Setting editor
+set editor = "nvim"
+
+# Keep the IMAP connection alive by polling intermittently (time in seconds).
+set imap_keepalive = 300
+
+# Cache directory settings for speed
+set header_cache = "~/.config/neomutt/cache/headers"
+set message_cachedir = "~/.config/neomutt/cache/bodies"
+
+# Sidebar Configuration
+set sidebar_visible = yes
+set sidebar_width = 24
+set sidebar_short_path = yes
+set sidebar_component_depth = 1
+set sidebar_folder_indent = yes
+
+# Sorting Emails
+set sort = threads
+set sort_aux = reverse-date-received
+
+# HTML Rendering Setup
+set mailcap_path = "~/.config/neomutt/mailcap"
+auto_view text/html
+alternative_order text/plain text/html
+
+## Hook -- IMPORTANT!
+account-hook $folder "set imap_pass="
+

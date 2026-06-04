@@ -1,0 +1,16 @@
+# Office documents
+application/msword; onlyoffice-desktopeditors %s
+application/vnd.ms-excel; onlyoffice-desktopeditors %s
+application/vnd.openxmlformats-officedocument.presentationml.presentation; onlyoffice-desktopeditors %s
+application/vnd.oasis.opendocument.text; onlyoffice-desktopeditors %s
+
+# HTML
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+text/plain; nvim %s
+
+#PDFs
+application/pdf; zathura %s
+
+#Images
+image/png; gwenview %s
+image/jpeg; gwenview %s
