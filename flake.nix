@@ -48,7 +48,6 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./nixos/default.nix
-          ./nixos/system-packages.nix
           inputs.home-manager.nixosModules.home-manager
           {
             nix.settings.auto-optimise-store = true;
