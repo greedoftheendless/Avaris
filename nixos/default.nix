@@ -1,5 +1,6 @@
-{
+{...}: {
   imports = [
+    ./modules/system-packages.nix
     ./modules/core.nix
     ./modules/networking.nix
     ./modules/flake-point.nix
