@@ -1,9 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}:
-{
+{pkgs, ...}: {
   #Adding nix-experimental command features and nix flakes
   nix.settings.experimental-features = [
     "nix-command"
