@@ -3,6 +3,7 @@
     enable = true;
     shellAliases = {
       #Apps
+      nm = "neomutt";
       sf = "superfile";
       docker = "podman";
       grep = "rg";
