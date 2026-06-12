@@ -84,8 +84,7 @@ layout {
 
 //AUTOSTART OF APPLICATIONS
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
-//spawn-at-startup "noctalia-shell"
-spawn-at-startup "noctalia"
+spawn-at-startup "noctalia-shell"
 spawn-at-startup "zen-beta"
 
 hotkey-overlay {
@@ -194,8 +193,8 @@ open-maximized true
 //Wallpaper in overview
 // Set the overview wallpaper on the backdrop.
 layer-rule {
-    match namespace="^noctalia-backdrop"
-    place-within-backdrop true
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
 }
 
 binds {
@@ -207,45 +206,29 @@ binds {
     Alt+Print { screenshot-window; }
 
 
-    // //Noctalia-shell binds
-    // //Recorder
-    // Mod+Shift+R { spawn-sh "noctalia-shell ipc call plugin:screen-recorder toggle"; }
-    //
-    // //Search bar
-    // Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
-    //
-    // //Cheat sheet
-    // Mod+Ctrl+C { spawn-sh "noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
-    //
-    // //Clipboard
-    // Ctrl+Shift+L { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
-    //
-    // // Session menu (has poweroff, reboot, logout, etc.)
-    // Mod+Shift+P { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
-    //
-    // // Lock screen directly
-    // Mod+Shift+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
-
-
     //Noctalia binds
     //Recorder
-    Mod+Shift+R { spawn-sh "noctalia msg panel-toggle screen_recorder"; }
+    Mod+Shift+R { spawn-sh "noctalia-shell ipc call plugin:screen-recorder toggle"; }
 
     //Search bar
-    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+
+    //Cheat sheet
+    Mod+Ctrl+C { spawn-sh "noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
 
     //Clipboard
-    Ctrl+Shift+L { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Ctrl+L { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
 
     // Session menu (has poweroff, reboot, logout, etc.)
-    Mod+Shift+P { spawn-sh "noctalia msg panel-toggle session"; }
+    Mod+Shift+P { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
 
     // Lock screen directly
-    Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
+    Mod+Shift+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
 
     // Applications
     Mod+E { spawn "nemo"; }
-    Mod+Return { spawn "kitty"; }
+    Mod+Shift+Return { spawn "kitty"; }
+    Mod+Return { spawn "ghostty"; }
     Mod+B { spawn "zen-beta"; }
 
     //Keybind showcase
@@ -375,4 +358,20 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     Ctrl+Alt+Delete { quit; }
 }
-include "./Effects/unravel.kdl"
+include "././burn.kdl"
+include "././fold-window.kdl"
+include "././roll-drop.kdl"
+include "././burn-ashes.kdl"
+include "././ribbons.kdl"
+include "././roll-drop.kdl"
+include "././unravel.kdl"
+include "././burn.kdl"
+include "././burn-multicolor.kdl"
+include "././glitch.kdl"
+include "././bloom.kdl"
+include "././pixelate.kdl"
+include "././explode.kdl"
+include "././halftone.kdl"
+include "././glitch-cyberpunk.kdl"
+include "././halftone.kdl"
+include "././unravel.kdl"
