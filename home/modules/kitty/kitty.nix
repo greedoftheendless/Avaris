@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}:
-{
+{...}: {
   programs.kitty = {
     enable = true;
 
@@ -14,6 +9,11 @@
 
     settings = {
       include = "current-theme.conf";
+
+      cursor_trail = "1";
+      cursor_trail_decay = "0.15 0.3";
+      cursor_trail_start_threshold = "2";
+      mouse_hide_wait = "2.0";
 
       fallback_family = "Noto Sans Arabic";
       bold_font = "auto";
@@ -37,6 +37,7 @@
     };
 
     keybindings = {
+      #Tab management
       "alt+t" = "new_tab";
       "alt+q" = "close_tab";
       "alt+1" = "goto_tab 1";
@@ -49,10 +50,12 @@
       "alt+8" = "goto_tab 8";
       "alt+9" = "goto_tab 9";
       "alt+0" = "select_tab";
-      "alt+h" = "previous_tab";
 
-      "alt+shift+f" = "change_font_size current +1.00";
-      "alt+f" = "change_font_size current -1.00";
+      "ctrl+a" = "select_all";
+
+      #Size management
+      "alt+f" = "change_font_size current +1.00";
+      "alt+shift+f" = "change_font_size current -1.00";
     };
   };
 
