@@ -7,7 +7,6 @@
       sf = "superfile";
       docker = "podman";
       grep = "rg";
-      lgit = "lazygit";
       zed = "zeditor";
       #for nh/nix update and switch
       update = "nh os switch -u";
@@ -19,6 +18,12 @@
       la = "eza -a --long --icons --color=always";
       "..." = "cd ../..";
       ".." = "cd ..";
+      #for git commands
+      lgit = "lazygit";
+      ga = "git add";
+      gs = "git status";
+      gc = "git commit -m";
+      gp = "git push";
     };
 
     plugins = with pkgs.fishPlugins; [
@@ -29,10 +34,6 @@
       {
         name = "fzf";
         src = fzf.src;
-      }
-      {
-        name = "done";
-        src = done.src;
       }
     ];
 
@@ -45,9 +46,6 @@
 
        # Zoxide integration
        zoxide init fish | source
-
-       # Navi widget
-       navi widget fish | source
 
        # Pipx user bin path
        set -gx PATH $PATH $HOME/.local/bin
