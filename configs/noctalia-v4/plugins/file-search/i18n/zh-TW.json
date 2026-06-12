@@ -1,0 +1,55 @@
+{
+  "provider": {
+    "name": "檔案搜尋"
+  },
+  "launcher": {
+    "command": {
+      "description": "搜尋檔案與資料夾"
+    },
+    "errors": {
+      "fdNotFound": {
+        "title": "找不到 fd",
+        "description": "請安裝 fd 以使用檔案搜尋"
+      }
+    },
+    "prompts": {
+      "emptyQuery": {
+        "title": "輸入以搜尋檔案與資料夾",
+        "description": "開始輸入以在 {{root}} 中搜尋"
+      },
+      "searching": {
+        "title": "正在搜尋…",
+        "description": "正在尋找符合 {{query}} 的檔案與資料夾"
+      },
+      "noResults": {
+        "title": "找不到結果",
+        "description": "沒有符合 '{{query}}' 的檔案或資料夾"
+      }
+    }
+  },
+  "settings": {
+    "showHidden": {
+      "label": "包含隱藏檔案"
+    },
+    "fileOpener": {
+      "label": "檔案開啟命令",
+      "description": "用於開啟檔案與資料夾的命令",
+      "placeholder": "xdg-open"
+    },
+    "searchDirectory": {
+      "label": "搜尋目錄",
+      "description": "用於搜尋檔案與資料夾的目錄",
+      "placeholder": "~"
+    },
+    "fdCommand": {
+      "label": "fd 命令路徑",
+      "description": "命令名稱或完整路徑",
+      "placeholder": "fd"
+    },
+    "maxResults": {
+      "label": "最大結果數",
+      "unlimited": "無限制",
+      "description": "限制顯示的搜尋結果數量（設為 0 表示無限制）"
+    }
+  }
+}

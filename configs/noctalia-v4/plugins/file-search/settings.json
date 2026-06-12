@@ -1,0 +1,7 @@
+{
+  "showHidden": false,
+  "maxResults": 0,
+  "fileOpener": "nemo",
+  "searchDirectory": "~",
+  "fdCommand": "fd"
+}

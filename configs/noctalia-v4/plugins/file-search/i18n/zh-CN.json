@@ -1,0 +1,55 @@
+{
+  "provider": {
+    "name": "文件搜索"
+  },
+  "launcher": {
+    "command": {
+      "description": "搜索文件和文件夹"
+    },
+    "errors": {
+      "fdNotFound": {
+        "title": "未找到 fd",
+        "description": "请安装 fd 以使用文件搜索"
+      }
+    },
+    "prompts": {
+      "emptyQuery": {
+        "title": "输入以搜索文件和文件夹",
+        "description": "开始输入以在 {{root}} 中搜索"
+      },
+      "searching": {
+        "title": "正在搜索…",
+        "description": "正在查找匹配 {{query}} 的文件和文件夹"
+      },
+      "noResults": {
+        "title": "未找到结果",
+        "description": "没有匹配 '{{query}}' 的文件或文件夹"
+      }
+    }
+  },
+  "settings": {
+    "showHidden": {
+      "label": "包含隐藏文件"
+    },
+    "fileOpener": {
+      "label": "文件打开命令",
+      "description": "用于打开文件和文件夹的命令",
+      "placeholder": "xdg-open"
+    },
+    "searchDirectory": {
+      "label": "搜索目录",
+      "description": "用于搜索文件和文件夹的目录",
+      "placeholder": "~"
+    },
+    "fdCommand": {
+      "label": "fd 命令路径",
+      "description": "命令名称或完整路径",
+      "placeholder": "fd"
+    },
+    "maxResults": {
+      "label": "最大结果数",
+      "unlimited": "无限制",
+      "description": "限制显示的搜索结果数量（设为 0 表示无限制）"
+    }
+  }
+}
