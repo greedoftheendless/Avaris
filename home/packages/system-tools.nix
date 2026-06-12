@@ -24,6 +24,7 @@
     #Shells
     bash
     nushell
+    noctalia-shell
 
     #System/Hyprland/Niri required packages
     hyprlock
@@ -39,7 +40,6 @@
     jq
     tmux
     atuin
-    fzf
     eza
     openssl
     bat

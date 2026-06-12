@@ -4,15 +4,20 @@
   ...
 }: {
   home.packages = with pkgs; [
+    emacs
     syncthing
     wl-clipboard
     onlyoffice-desktopeditors
+    zathura
+    w3m
     vlc
     catppuccin
     thunderbird
     tor-browser
     gimp
+    imagemagick
     localsend
+    telegram-desktop
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     firefox
     wget
