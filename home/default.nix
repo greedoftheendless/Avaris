@@ -5,6 +5,7 @@
     ./packages/pentest-packages.nix
     ./packages/game.nix
     ./packages/common-apps.nix
+    ./modules/fzf.nix
     ./modules/fish.nix
     ./modules/ns.nix
     ./modules/cursor.nix
