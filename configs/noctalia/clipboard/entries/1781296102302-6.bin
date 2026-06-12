@@ -1,0 +1,38 @@
+    //Noctalia-shell binds
+    //Recorder
+    Mod+Shift+R { spawn-sh "noctalia-shell ipc call plugin:screen-recorder toggle"; }
+
+    //Search bar
+    Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+
+    //Cheat sheet
+    Mod+Ctrl+C { spawn-sh "noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
+
+    //Clipboard
+    Ctrl+Shift+L { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
+
+    // Session menu (has poweroff, reboot, logout, etc.)
+    Mod+Shift+P { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
+
+    // Lock screen directly
+    Mod+Shift+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
+
+    //Noctalia binds
+        //Noctalia-shell binds
+    //Recorder
+    Mod+Shift+R { spawn-sh "noctalia ipc call plugin:screen-recorder toggle"; }
+
+    //Search bar
+    Mod+Space { spawn-sh "noctalia ipc call launcher toggle"; }
+
+    //Cheat sheet
+    Mod+Ctrl+C { spawn-sh "noctalia ipc call plugin:keybind-cheatsheet toggle"; }
+
+    //Clipboard
+    Ctrl+Shift+L { spawn-sh "noctalia ipc call launcher clipboard"; }
+
+    // Session menu (has poweroff, reboot, logout, etc.)
+    Mod+Shift+P { spawn-sh "noctalia ipc call sessionMenu toggle"; }
+
+    // Lock screen directly
+    Mod+Shift+L { spawn-sh "noctalia ipc call lockScreen lock"; }

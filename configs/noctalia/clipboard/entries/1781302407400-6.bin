@@ -1,0 +1,15 @@
+    [[shell.session.actions]]
+    action = "command"
+    command = "notify-send 'Noctalia' 'userspaceReboot'"
+    enabled = true
+    label = "Safe reboot"
+    shortcut = "q"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "userspaceReboot"
+    enabled = true
+    label = "UEFI"
+    shortcut = "u"
+    variant = "default"

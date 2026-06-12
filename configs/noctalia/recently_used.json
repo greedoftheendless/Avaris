@@ -1,0 +1,7 @@
+{
+  "Applications": [
+    "/etc/profiles/per-user/greed/share/applications/vesktop.desktop",
+    "/etc/profiles/per-user/greed/share/applications/emacsclient.desktop",
+    "/etc/profiles/per-user/greed/share/applications/spotify.desktop"
+  ]
+}

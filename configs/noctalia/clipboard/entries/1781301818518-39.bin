@@ -1,0 +1,6 @@
+[widget.cat]
+audio_spectrum = true
+input_device = "/dev/input/event1"
+                "/dev/input/event2"
+                "/dev/input/event0"
+                "/dev/input/event9"

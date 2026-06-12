@@ -1,0 +1,2 @@
+❯ mv noctalia ~/dotfiles/configs/
+mv: cannot overwrite '/home/greed/dotfiles/configs/noctalia': Directory not empty

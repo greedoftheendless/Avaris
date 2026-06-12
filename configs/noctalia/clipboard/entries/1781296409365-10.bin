@@ -1,0 +1,18 @@
+// Noctalia binds
+// Recorder
+Mod+Shift+R { spawn-sh "qs -c noctalia ipc call plugin:screen-recorder toggle"; }
+
+// Search bar / App Launcher
+Mod+Space { spawn-sh "qs -c noctalia ipc call launcher toggle"; }
+
+// Cheat sheet
+Mod+Ctrl+C { spawn-sh "qs -c noctalia ipc call plugin:keybind-cheatsheet toggle"; }
+
+// Clipboard
+Ctrl+Shift+L { spawn-sh "qs -c noctalia ipc call launcher toggle-clipboard"; }
+
+// Session menu (has poweroff, reboot, logout, etc.)
+Mod+Shift+P { spawn-sh "qs -c noctalia ipc call sessionMenu toggle"; }
+
+// Lock screen directly
+Mod+Shift+L { spawn-sh "qs -c noctalia ipc call lockScreen lock"; }

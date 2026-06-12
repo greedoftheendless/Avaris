@@ -1,0 +1,449 @@
+[audio]
+enable_sounds = true
+
+[backdrop]
+blur_intensity = 0.099999997764825821
+enabled = true
+tint_intensity = 0.0
+
+[bar]
+order = [ "Top-Bar", "Left-bar", "Right-Bar" ]
+
+    [bar.Left-bar]
+    auto_hide = true
+    center = [ "cpu", "temp", "ram", "network_rx", "network_tx" ]
+    enabled = true
+    end = []
+    icon_color = "primary"
+    layer = "overlay"
+    position = "left"
+    scale = 1.4500000141561031
+    start = []
+    thickness = 86
+
+    [bar.Right-Bar]
+    auto_hide = true
+    center = [ "cat_2", "media", "audio_visualizer" ]
+    enabled = true
+    end = []
+    layer = "overlay"
+    padding = 0
+    position = "right"
+    scale = 4.0
+    start = []
+    thickness = 120
+
+    [bar.Top-Bar]
+    background_opacity = 0.0
+    capsule = true
+    capsule_border = "primary"
+    capsule_fill = "on_primary"
+    capsule_foreground = "on_surface"
+    capsule_padding = 4.0
+    center = [ "control-center" ]
+    end = [ "network", "bluetooth", "volume", "input_volume", "brightness", "battery", "notifications" ]
+    margin_edge = 0
+    margin_ends = 20
+    padding = 0
+    panel_overlap = 0
+    scale = 1.7500000186264515
+    shadow = false
+    start = [ "launcher", "date", "workspaces", "tray", "cat", "recorder", "clock" ]
+    thickness = 47
+    widget_spacing = 5
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[[control_center.shortcuts]]
+type = "session"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-0000000000000002" ]
+
+    [desktop_widgets.grid]
+    cell_size = 24
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 1088.0
+    box_width = 1920.0
+    cx = 960.0
+    cy = 540.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        aspect_ratio = 2.5
+        bands = 32
+        show_when_idle = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 192.0
+    box_width = 576.0
+    cx = 944.0
+    cy = 984.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "media_player"
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+pre_action_fade_seconds = 0
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660
+
+[location]
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.099999997764825821
+tint_intensity = 0.0
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-widget-0000000000000005",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000006"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 64
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 780.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 1.0
+        background_radius = 32.0
+        input_opacity = 1.0
+        input_radius = 18.0
+        show_login_button = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 256.0
+    box_width = 640.0
+    cx = 656.0
+    cy = 316.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = true
+        background_color = "surface"
+        background_opacity = 1.0
+        background_padding = 10.0
+        background_radius = 12.0
+        circle = true
+        clock_style = "digital"
+        color = "on_surface"
+        font_family = ""
+        format = "{:%-I:%M:%S %p}"
+        shadow = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 480.0
+    box_width = 512.0
+    cx = 336.0
+    cy = 579.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = false
+        bar_width = 0.5
+        bloom_intensity = 0.5
+        fade_when_idle = true
+        inner_diameter = 0.85000000000000009
+        ring_opacity = 0.5
+        rotation_speed = 0.70000000000000007
+        sensitivity = 1.6000000000000001
+        visualization_mode = "wave_rings"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 192.0
+    box_width = 528.0
+    cx = 1608.0
+    cy = 540.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        aspect_ratio = 6.0
+        background_opacity = 0.0
+        background_padding = 22.0
+        background_radius = 32.0
+        bands = 128.0
+        show_when_idle = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 192.0
+    box_width = 576.0
+    cx = 988.0
+    cy = 604.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "media_player"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        background_opacity = 1.0
+        background_padding = 7.0
+        background_radius = 32.0
+        layout = "horizontal"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 160.0
+    box_width = 416.0
+    cx = 960.0
+    cy = 80.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
+    box_height = 256.0
+    box_width = 320.0
+    cx = 1264.0
+    cy = 316.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
+        background_opacity = 1.0
+        background_padding = 32.0
+        background_radius = 32.0
+        clock_style = "analog"
+
+[osd]
+position = "top_right"
+
+[plugin_settings."noctalia/screen_recorder"]
+copy_to_clipboard = true
+directory = "/home/greed/videos/Recordings"
+
+[plugins]
+enabled = [ "noctalia/bongocat", "noctalia/screen_recorder" ]
+
+    [[plugins.source]]
+    auto_update = true
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    auto_update = true
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+[shell]
+avatar_path = "/home/greed/dotfiles/Pics/Icons-profile pics/absdark_small.png"
+corner_radius_scale = 0.70000001043081284
+font_family = "JetBrainsMono Nerd Font"
+lang = "en"
+niri_overview_type_to_launch_enabled = true
+password_style = "random"
+polkit_agent = true
+screen_time_enabled = true
+settings_show_advanced = true
+time_format = "{:%-I:%M %p}"
+ui_scale = 1.300000011920929
+
+    [shell.mpris]
+    blacklist = [ "zen-beta", "reddit", "vesktop" ]
+
+    [shell.panel]
+    clipboard_placement = "floating"
+    control_center_placement = "floating"
+    launcher_placement = "floating"
+    launcher_session_search = true
+    open_near_click_session = true
+    open_near_click_wallpaper = true
+    session_placement = "centered"
+    transparency_mode = "glass"
+    wallpaper_placement = "floating"
+
+    [shell.screen_corners]
+    size = 1
+
+    [shell.screenshot]
+    directory = "/home/greed/Pictures/Screenshots"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    shortcut = "s"
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+    shortcut = "l"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    shortcut = "e"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    shortcut = "r"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "notify-send 'Noctalia' 'userspaceReboot'"
+    enabled = true
+    label = "Safe reboot"
+    shortcut = "q"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "notify-send 'Noctalia' 'userspaceReboot'"
+    enabled = true
+    label = "UEFI"
+    shortcut = "u"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    enabled = false
+    shortcut = "3"
+    variant = "default"
+
+[theme]
+builtin = "Dracula"
+mode = "auto"
+
+[wallpaper]
+directory = "/home/greed/dotfiles/Pics/Wallpapers"
+fill_mode = "fit"
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/greed/dotfiles/Pics/Wallpapers/skull.png"
+
+    [wallpaper.last]
+    path = "/home/greed/dotfiles/Pics/Wallpapers/skull.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/greed/dotfiles/Pics/Wallpapers/skull.png"
+
+[widget.audio_visualizer]
+bands = 30
+scale = 1.1500000000000001
+show_when_idle = true
+width = 91.0
+
+[widget.battery]
+display_mode = "graphic"
+font_weight = 600
+
+[widget.bluetooth]
+show_label = true
+
+[widget.cat]
+audio_spectrum = true
+input_device = "/dev/input/event1",
+                "/dev/input/event2",
+                "/dev/input/event0",
+                "/dev/input/event9"
+rave_mode = true
+type = "noctalia/bongocat:cat"
+
+[widget.cat_2]
+audio_spectrum = true
+rave_mode = true
+tappy_mode = true
+type = "noctalia/bongocat:cat"
+use_mpris_filter = true
+
+[widget.clock]
+format = "{:%-I:%M %p}"
+
+[widget.control-center]
+anchor = true
+custom_image = "/run/current-system/sw/share/icons/hicolor/scalable/apps/nix-snowflake-white.svg"
+
+[widget.custom_button_2]
+glyph = "storage"
+label = "/"
+type = "custom_button"
+
+[widget.launcher]
+anchor = true
+
+[widget.media]
+art_size = 95.0
+hide_when_no_media = true
+max_length = 187
+min_length = 0
+scale = 0.85000000000000009
+title_scroll = "on_hover"
+
+[widget.notifications]
+hide_when_no_unread = true
+
+[widget.recorder]
+type = "noctalia/screen_recorder:recorder"
+
+[widget.sysmon]
+display = "graph"
+
+[widget.tray]
+hidden = [ "bluetooth" ]
+pinned = [ "vesktop", "steam" ]
+
+[widget.workspaces]
+hide_when_empty = true

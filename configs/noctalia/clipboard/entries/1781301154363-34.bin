@@ -1,0 +1,51 @@
+error parsing flag -E: grep config error: unknown encoding: Name=|Handlers=
+~ ❯ cat /proc/bus/input/devices | rg "Name=|Handlers="
+N: Name="AT Translated Set 2 keyboard"
+H: Handlers=sysrq kbd event0 leds 
+N: Name="ITE Tech. Inc. ITE Device(8176) Keyboard"
+H: Handlers=sysrq kbd event5 leds 
+N: Name="ITE Tech. Inc. ITE Device(8176) Wireless Radio Control"
+H: Handlers=kbd event6 rfkill 
+N: Name="Video Bus"
+H: Handlers=kbd event12 
+N: Name="Lid Switch"
+H: Handlers=event13 
+N: Name="Sleep Button"
+H: Handlers=kbd event14 
+N: Name="Power Button"
+H: Handlers=kbd event17 
+N: Name="Power Button"
+H: Handlers=kbd event18 
+N: Name="Ideapad extra buttons"
+H: Handlers=kbd event19 rfkill 
+N: Name="HD-Audio Generic HDMI/DP,pcm=3"
+H: Handlers=event15 
+N: Name="MSFT0002:00 04F3:31AD Mouse"
+H: Handlers=event16 mouse2 
+N: Name="MSFT0002:00 04F3:31AD Touchpad"
+H: Handlers=event20 mouse3 
+N: Name="HDA Digital PCBeep"
+H: Handlers=kbd event21 
+N: Name="HD-Audio Generic Mic"
+H: Handlers=event22 
+N: Name="HD-Audio Generic Headphone"
+H: Handlers=kbd event23 
+N: Name="Evision RGB Keyboard"
+H: Handlers=sysrq kbd event1 leds 
+N: Name="Evision RGB Keyboard"
+H: Handlers=kbd event2 
+N: Name="Evision RGB Keyboard"
+H: Handlers=event3 
+N: Name="Evision RGB Keyboard Mouse"
+H: Handlers=event4 mouse0 
+N: Name="2.4G Mouse"
+H: Handlers=sysrq kbd event7 leds 
+N: Name="2.4G Mouse"
+H: Handlers=event8 
+N: Name="2.4G Mouse"
+H: Handlers=event9 mouse1 
+N: Name="2.4G Mouse Consumer Control"
+H: Handlers=kbd event10 
+N: Name="2.4G Mouse System Control"
+H: Handlers=kbd event11 
+~ ❯ 

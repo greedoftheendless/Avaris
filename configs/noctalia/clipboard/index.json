@@ -1,0 +1,981 @@
+{
+  "entries": [
+    {
+      "byte_size": 117,
+      "captured_at_ms": 1781302962748,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302962748-5",
+      "mime_types": [
+        "application/glfw+clipboard-2761",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING",
+        "text/plain;charset=utf-8",
+        "text/plain"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302962748-5.bin",
+      "pinned": false,
+      "text_preview": "❯ mv noctalia ~/dotfiles/configs/ mv: cannot overwrite '/home/greed/dotfiles/configs/noctalia': Directory not empty"
+    },
+    {
+      "byte_size": 157,
+      "captured_at_ms": 1781302796659,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302796659-3",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302796659-3.bin",
+      "pinned": false,
+      "text_preview": "    [[shell.session.actions]]     action = \"command\"     command = \"     enabled = true     label = \"Safe reboot\"     shortcut = \"q\"     variant = \"default\" "
+    },
+    {
+      "byte_size": 182,
+      "captured_at_ms": 1781302702429,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302702429-2",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302702429-2.bin",
+      "pinned": false,
+      "text_preview": "                \"action\": \"userspaceReboot\",                 \"command\": \"\",                 \"countdownEnabled\": true,                 \"enabled\": true,                 \"keybind\": \"Q\" "
+    },
+    {
+      "byte_size": 79,
+      "captured_at_ms": 1781302624118,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302624118-1",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302624118-1.bin",
+      "pinned": false,
+      "text_preview": "    command = \"notify-send 'Noctalia' 'Safe rebooting...' && systemctl reboot\" "
+    },
+    {
+      "byte_size": 50,
+      "captured_at_ms": 1781302505396,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302470359-10",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302470359-10.bin",
+      "pinned": false,
+      "text_preview": "    command = \"systemctl reboot --firmware-setup\" "
+    },
+    {
+      "byte_size": 79,
+      "captured_at_ms": 1781302493129,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302493129-14",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302493129-14.bin",
+      "pinned": false,
+      "text_preview": "    command = \"notify-send 'Noctalia' 'Safe rebooting...' && systemctl reboot\" "
+    },
+    {
+      "byte_size": 74,
+      "captured_at_ms": 1781302483255,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302475577-11",
+      "mime_types": [
+        "text/html",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302475577-11.bin",
+      "pinned": false,
+      "text_preview": "command = \"notify-send 'Noctalia' 'Safe rebooting...' && systemctl reboot\""
+    },
+    {
+      "byte_size": 32,
+      "captured_at_ms": 1781302479967,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302479967-12",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302479967-12.bin",
+      "pinned": false,
+      "text_preview": "    command = \"userspaceReboot\" "
+    },
+    {
+      "byte_size": 57,
+      "captured_at_ms": 1781302465303,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302465303-9",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302465303-9.bin",
+      "pinned": false,
+      "text_preview": "    command = \"notify-send 'Noctalia' 'userspaceReboot'\" "
+    },
+    {
+      "byte_size": 45,
+      "captured_at_ms": 1781302460246,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302460246-8",
+      "mime_types": [
+        "text/html",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302460246-8.bin",
+      "pinned": false,
+      "text_preview": "command = \"systemctl reboot --firmware-setup\""
+    },
+    {
+      "byte_size": 33,
+      "captured_at_ms": 1781302449892,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302449892-7",
+      "mime_types": [
+        "text/html",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302449892-7.bin",
+      "pinned": false,
+      "text_preview": "systemctl reboot --firmware-setup"
+    },
+    {
+      "byte_size": 365,
+      "captured_at_ms": 1781302407400,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302407400-6",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302407400-6.bin",
+      "pinned": false,
+      "text_preview": "    [[shell.session.actions]]     action = \"command\"     command = \"notify-send 'Noctalia' 'userspaceReboot'\"     enabled = true     label = \"Safe reboot\"     shortcut = \"q\"     variant = \"default\"   "
+    },
+    {
+      "byte_size": 1,
+      "captured_at_ms": 1781302393073,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302393073-5",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302393073-5.bin",
+      "pinned": false,
+      "text_preview": "'"
+    },
+    {
+      "byte_size": 24,
+      "captured_at_ms": 1781302389574,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302389574-4",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302389574-4.bin",
+      "pinned": false,
+      "text_preview": "notify-send 'Noctalia' '"
+    },
+    {
+      "byte_size": 57,
+      "captured_at_ms": 1781302332034,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302332034-2",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302332034-2.bin",
+      "pinned": false,
+      "text_preview": "    command = \"notify-send 'Noctalia' 'userspaceReboot'\" "
+    },
+    {
+      "byte_size": 110,
+      "captured_at_ms": 1781302124084,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781302124084-43",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781302124084-43.bin",
+      "pinned": false,
+      "text_preview": "                \"/dev/input/event2\",                 \"/dev/input/event0\",                 \"/dev/input/event9\" "
+    },
+    {
+      "byte_size": 10580,
+      "captured_at_ms": 1781301889544,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301889544-42",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301889544-42.bin",
+      "pinned": false,
+      "text_preview": "[audio] enable_sounds = true  [backdrop] blur_intensity = 0.099999997764825821 enabled = true tint_intensity = 0.0  [bar] order = [ \"Top-Bar\", \"Left-bar\", \"Right-Bar\" ]      [bar.Left-bar]     auto_hi"
+    },
+    {
+      "byte_size": 1,
+      "captured_at_ms": 1781301885278,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301885278-41",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301885278-41.bin",
+      "pinned": false,
+      "text_preview": "]"
+    },
+    {
+      "byte_size": 62841,
+      "captured_at_ms": 1781301864051,
+      "data_mime_type": "image/png",
+      "id": "1781301864051-40",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301864051-40.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 178,
+      "captured_at_ms": 1781301818518,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301818518-39",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301818518-39.bin",
+      "pinned": false,
+      "text_preview": "[widget.cat] audio_spectrum = true input_device = \"/dev/input/event1\"                 \"/dev/input/event2\"                 \"/dev/input/event0\"                 \"/dev/input/event9\" "
+    },
+    {
+      "byte_size": 46544,
+      "captured_at_ms": 1781301675501,
+      "data_mime_type": "image/png",
+      "id": "1781301675501-37",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301675501-37.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 19007,
+      "captured_at_ms": 1781301543144,
+      "data_mime_type": "image/png",
+      "id": "1781301543144-36",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301543144-36.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 18455,
+      "captured_at_ms": 1781301253230,
+      "data_mime_type": "image/png",
+      "id": "1781301253230-35",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301253230-35.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 1560,
+      "captured_at_ms": 1781301154363,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301154363-34",
+      "mime_types": [
+        "application/glfw+clipboard-292431",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING",
+        "text/plain;charset=utf-8",
+        "text/plain"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301154363-34.bin",
+      "pinned": false,
+      "text_preview": "error parsing flag -E: grep config error: unknown encoding: Name=|Handlers= ~ ❯ cat /proc/bus/input/devices | rg \"Name=|Handlers=\" N: Name=\"AT Translated Set 2 keyboard\" H: Handlers=sysrq kbd event0"
+    },
+    {
+      "byte_size": 50,
+      "captured_at_ms": 1781301140082,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301140082-33",
+      "mime_types": [
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301140082-33.bin",
+      "pinned": false,
+      "text_preview": "cat /proc/bus/input/devices | rg \"Name=|Handlers=\""
+    },
+    {
+      "byte_size": 169,
+      "captured_at_ms": 1781301132332,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301132332-32",
+      "mime_types": [
+        "application/glfw+clipboard-292431",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING",
+        "text/plain;charset=utf-8",
+        "text/plain"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301132332-32.bin",
+      "pinned": false,
+      "text_preview": "🦊 Welcome, greed! ~ ❯ cat /proc/bus/input/devices | grep -E 'Name=|Handlers=' rg: error parsing flag -E: grep config error: unknown encoding: Name=|Handlers= ~ ❯ "
+    },
+    {
+      "byte_size": 55,
+      "captured_at_ms": 1781301098048,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781301098048-31",
+      "mime_types": [
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781301098048-31.bin",
+      "pinned": false,
+      "text_preview": "cat /proc/bus/input/devices | grep -E 'Name=|Handlers='"
+    },
+    {
+      "byte_size": 742,
+      "captured_at_ms": 1781300930684,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781300930684-29",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781300930684-29.bin",
+      "pinned": false,
+      "text_preview": "  \"inputDevices\": [     \"/dev/input/event3\",     \"/dev/input/event1\",     \"/dev/input/event4\",     \"/dev/input/event12\",     \"/dev/input/event10\",     \"/dev/input/event5\",     \"/dev/input/event2\",    "
+    },
+    {
+      "byte_size": 25,
+      "captured_at_ms": 1781300866822,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781300866822-28",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781300866822-28.bin",
+      "pinned": false,
+      "text_preview": "    \"/dev/input/event3\", "
+    },
+    {
+      "byte_size": 718,
+      "captured_at_ms": 1781300751054,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781300751054-27",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781300751054-27.bin",
+      "pinned": false,
+      "text_preview": "    \"/dev/input/event3\",     \"/dev/input/event1\",     \"/dev/input/event4\",     \"/dev/input/event12\",     \"/dev/input/event10\",     \"/dev/input/event5\",     \"/dev/input/event2\",     \"/dev/input/event15"
+    },
+    {
+      "byte_size": 12,
+      "captured_at_ms": 1781299355327,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781299355327-26",
+      "mime_types": [
+        "text/html",
+        "text/_moz_htmlcontext",
+        "text/_moz_htmlinfo",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "text/x-moz-url-priv",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781299355327-26.bin",
+      "pinned": false,
+      "text_preview": "{:%-I:%M %p}"
+    },
+    {
+      "byte_size": 15,
+      "captured_at_ms": 1781298940895,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781298940895-25",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781298940895-25.bin",
+      "pinned": false,
+      "text_preview": "userspaceReboot"
+    },
+    {
+      "byte_size": 1,
+      "captured_at_ms": 1781297798442,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297798442-24",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297798442-24.bin",
+      "pinned": false,
+      "text_preview": "e"
+    },
+    {
+      "byte_size": 49,
+      "captured_at_ms": 1781297650111,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297650111-23",
+      "mime_types": [
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297650111-23.bin",
+      "pinned": false,
+      "text_preview": "https://github.com/noctalia-dev/legacy-v4-plugins"
+    },
+    {
+      "byte_size": 100,
+      "captured_at_ms": 1781297355462,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297355462-21",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297355462-21.bin",
+      "pinned": false,
+      "text_preview": "    //Cheat sheet     Mod+Ctrl+C { spawn-sh \"noctalia ipc call plugin:keybind-cheatsheet toggle\"; } "
+    },
+    {
+      "byte_size": 7,
+      "captured_at_ms": 1781297309557,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297309557-20",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297309557-20.bin",
+      "pinned": false,
+      "text_preview": "plugin:"
+    },
+    {
+      "byte_size": 71,
+      "captured_at_ms": 1781297236366,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297236366-19",
+      "mime_types": [
+        "text/html",
+        "text/_moz_htmlcontext",
+        "text/_moz_htmlinfo",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "text/x-moz-url-priv",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297236366-19.bin",
+      "pinned": false,
+      "text_preview": "    match namespace=\"^noctalia-backdrop\"     place-within-backdrop true"
+    },
+    {
+      "byte_size": 69,
+      "captured_at_ms": 1781297222581,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297222581-18",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297222581-18.bin",
+      "pinned": false,
+      "text_preview": "  match namespace =\"^noctalia-backdrop\"   place-within-backdrop true "
+    },
+    {
+      "byte_size": 68,
+      "captured_at_ms": 1781297214881,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297214881-16",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297214881-16.bin",
+      "pinned": false,
+      "text_preview": "  match namespace=\"^noctalia-overview*\"   place-within-backdrop tru "
+    },
+    {
+      "byte_size": 1,
+      "captured_at_ms": 1781297213066,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781297213066-15",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781297213066-15.bin",
+      "pinned": false,
+      "text_preview": "e"
+    },
+    {
+      "byte_size": 142180,
+      "captured_at_ms": 1781296838503,
+      "data_mime_type": "image/png",
+      "id": "1781296838503-14",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296838503-14.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 82,
+      "captured_at_ms": 1781296687715,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296687715-13",
+      "mime_types": [
+        "text/html",
+        "text/_moz_htmlcontext",
+        "text/_moz_htmlinfo",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "text/x-moz-url-priv",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296687715-13.bin",
+      "pinned": false,
+      "text_preview": "layer-rule {   match namespace=\"^noctalia-backdrop\"   place-within-backdrop true }"
+    },
+    {
+      "byte_size": 64,
+      "captured_at_ms": 1781296568234,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296568234-12",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296568234-12.bin",
+      "pinned": false,
+      "text_preview": "    Mod+Space { spawn-sh \"noctalia ipc call launcher toggle\"; } "
+    },
+    {
+      "byte_size": 60,
+      "captured_at_ms": 1781296559058,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296559058-11",
+      "mime_types": [
+        "text/html",
+        "text/_moz_htmlcontext",
+        "text/_moz_htmlinfo",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "text/x-moz-url-priv",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296559058-11.bin",
+      "pinned": false,
+      "text_preview": "Mod+Space { spawn-sh \"noctalia msg panel-toggle launcher\"; }"
+    },
+    {
+      "byte_size": 618,
+      "captured_at_ms": 1781296409365,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296409365-10",
+      "mime_types": [
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296409365-10.bin",
+      "pinned": false,
+      "text_preview": "// Noctalia binds // Recorder Mod+Shift+R { spawn-sh \"qs -c noctalia ipc call plugin:screen-recorder toggle\"; }  // Search bar / App Launcher Mod+Space { spawn-sh \"qs -c noctalia ipc call launcher tog"
+    },
+    {
+      "byte_size": 587,
+      "captured_at_ms": 1781296403089,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296403089-9",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296403089-9.bin",
+      "pinned": false,
+      "text_preview": "    //Recorder     Mod+Shift+R { spawn-sh \"noctalia ipc call plugin:screen-recorder toggle\"; }      //Search bar     Mod+Space { spawn-sh \"noctalia ipc call launcher toggle\"; }      //Cheat sheet     "
+    },
+    {
+      "byte_size": 608,
+      "captured_at_ms": 1781296348507,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296348507-8",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296348507-8.bin",
+      "pinned": false,
+      "text_preview": "    //Noctalia binds     //Recorder     Mod+Shift+R { spawn-sh \"noctalia ipc call plugin:screen-recorder toggle\"; }      //Search bar     Mod+Space { spawn-sh \"noctalia ipc call launcher toggle\"; }   "
+    },
+    {
+      "byte_size": 31,
+      "captured_at_ms": 1781296216709,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296216709-7",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296216709-7.bin",
+      "pinned": false,
+      "text_preview": "        //Noctalia-shell binds "
+    },
+    {
+      "byte_size": 1290,
+      "captured_at_ms": 1781296102302,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781296102302-6",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781296102302-6.bin",
+      "pinned": false,
+      "text_preview": "    //Noctalia-shell binds     //Recorder     Mod+Shift+R { spawn-sh \"noctalia-shell ipc call plugin:screen-recorder toggle\"; }      //Search bar     Mod+Space { spawn-sh \"noctalia-shell ipc call laun"
+    },
+    {
+      "byte_size": 650,
+      "captured_at_ms": 1781295994037,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781295994037-5",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781295994037-5.bin",
+      "pinned": false,
+      "text_preview": "    //Noctalia-shell binds     //Recorder     Mod+Shift+R { spawn-sh \"noctalia-shell ipc call plugin:screen-recorder toggle\"; }      //Search bar     Mod+Space { spawn-sh \"noctalia-shell ipc call laun"
+    },
+    {
+      "byte_size": 80,
+      "captured_at_ms": 1781295317775,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781295317775-4",
+      "mime_types": [
+        "chromium/x-internal-source-rfh-token",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "STRING",
+        "TEXT",
+        "text/html",
+        "chromium/x-source-url"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781295317775-4.bin",
+      "pinned": false,
+      "text_preview": "/run/current-system/sw/share/icons/hicolor/scalable/apps/nix-snowflake-white.svg"
+    },
+    {
+      "byte_size": 74,
+      "captured_at_ms": 1781295303358,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781295303358-3",
+      "mime_types": [
+        "chromium/x-internal-source-rfh-token",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "STRING",
+        "TEXT",
+        "text/html",
+        "chromium/x-source-url"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781295303358-3.bin",
+      "pinned": false,
+      "text_preview": "/run/current-system/sw/share/icons/hicolor/scalable/apps/nix-snowflake.svg"
+    },
+    {
+      "byte_size": 3126213,
+      "captured_at_ms": 1781281531187,
+      "data_mime_type": "image/png",
+      "id": "1781281531187-2",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781281531187-2.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 43395,
+      "captured_at_ms": 1781279662009,
+      "data_mime_type": "image/png",
+      "id": "1781279662009-2",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781279662009-2.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 13716,
+      "captured_at_ms": 1781279254810,
+      "data_mime_type": "image/png",
+      "id": "1781279254810-1",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781279254810-1.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 381164,
+      "captured_at_ms": 1781278962776,
+      "data_mime_type": "image/png",
+      "id": "1781278962776-2",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781278962776-2.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 92171,
+      "captured_at_ms": 1781278576349,
+      "data_mime_type": "image/png",
+      "id": "1781278576349-1",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781278576349-1.bin",
+      "pinned": false,
+      "text_preview": ""
+    }
+  ]
+}

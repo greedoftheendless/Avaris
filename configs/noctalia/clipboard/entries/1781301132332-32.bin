@@ -1,0 +1,4 @@
+🦊 Welcome, greed!
+~ ❯ cat /proc/bus/input/devices | grep -E 'Name=|Handlers='
+rg: error parsing flag -E: grep config error: unknown encoding: Name=|Handlers=
+~ ❯ 

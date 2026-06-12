@@ -1,0 +1,5 @@
+                "action": "userspaceReboot",
+                "command": "",
+                "countdownEnabled": true,
+                "enabled": true,
+                "keybind": "Q"
