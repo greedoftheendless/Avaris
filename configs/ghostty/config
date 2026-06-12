@@ -1,6 +1,6 @@
 # Font Settings
 font-family = JetBrainsMono Nerd Font
-font-size = 14
+font-size = 16
 
 # Cursor
 cursor-style = bar
@@ -43,22 +43,9 @@ palette = 13=F5C2E7
 palette = 14=94E2D5
 palette = 15=A6ADC8
 
-# --- Default Keybindings (Manually added from ghostty +list-keybinds --default) ---
-keybind = ctrl+shift+plus=equalize_splits
-keybind = ctrl+shift+up=resize_split:up,5
-keybind = ctrl+shift+down=resize_split:down,5
-keybind = ctrl+shift+right=resize_split:right,5
-keybind = ctrl+shift+left=resize_split:left,5
-keybind = ctrl+alt+shift+j=write_screen_file:open
-keybind = super+ctrl+left_bracket=goto_split:previous
-keybind = super+ctrl+right_bracket=goto_split:next
-keybind = ctrl+up=goto_split:up
-keybind = ctrl+down=goto_split:down
-keybind = ctrl+right=text:\x1b[1;5C
-keybind = ctrl+left=text:\x1b[1;5D
+# Default Keybindings
 keybind = ctrl+shift+a=select_all
 keybind = ctrl+shift+c=copy_to_clipboard
-keybind = ctrl+alt+o=new_split:down
 keybind = ctrl+shift+i=inspector:toggle
 keybind = ctrl+shift+j=write_screen_file:paste
 keybind = ctrl+shift+n=new_window
@@ -66,7 +53,7 @@ keybind = ctrl+shift+q=quit
 keybind = alt+t=new_tab
 keybind = ctrl+shift+v=paste_from_clipboard
 keybind = alt+q=close_tab
-keybind = ctrl+shift+comma=reload_config
+keybind = ctrl+shift+r=reload_config
 keybind = alt+one=goto_tab:1
 keybind = alt+two=goto_tab:2
 keybind = alt+three=goto_tab:3
@@ -76,23 +63,13 @@ keybind = alt+six=goto_tab:6
 keybind = alt+seven=goto_tab:7
 keybind = alt+eight=goto_tab:8
 keybind = alt+nine=last_tab
-keybind = alt+f4=close_window
-keybind = ctrl+zero=reset_font_size
-keybind = ctrl+comma=open_config
 keybind = ctrl+minus=decrease_font_size:1
 keybind = ctrl+plus=increase_font_size:1
 keybind = ctrl+equal=increase_font_size:1
-keybind = ctrl+insert=copy_to_clipboard
-keybind = ctrl+page_up=previous_tab
-keybind = ctrl+page_down=next_tab
-keybind = ctrl+enter=toggle_fullscreen
 keybind = ctrl+tab=next_tab
 keybind = shift+up=adjust_selection:up
 keybind = shift+down=adjust_selection:down
 keybind = shift+right=adjust_selection:right
 keybind = shift+left=adjust_selection:left
-keybind = shift+home=scroll_to_top
-keybind = shift+end=scroll_to_bottom
-keybind = shift+insert=paste_from_selection
 keybind = shift+page_up=scroll_page_up
 keybind = shift+page_down=scroll_page_down
