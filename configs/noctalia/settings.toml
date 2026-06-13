@@ -17,6 +17,7 @@ order = [ "Top-Bar", "Left-bar", "Right-Bar" ]
     icon_color = "primary"
     layer = "overlay"
     position = "left"
+    reserve_space = false
     scale = 1.4500000141561031
     start = []
     thickness = 86
@@ -29,6 +30,7 @@ order = [ "Top-Bar", "Left-bar", "Right-Bar" ]
     layer = "overlay"
     padding = 0
     position = "right"
+    reserve_space = false
     scale = 4.0
     start = []
     thickness = 120
@@ -90,8 +92,9 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
         aspect_ratio = 2.5
+        background_opacity = 0.0
         bands = 32
-        show_when_idle = true
+        show_when_idle = false
 
     [desktop_widgets.widget.desktop-widget-0000000000000002]
     box_height = 192.0
@@ -101,6 +104,10 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     output = "eDP-1"
     rotation = 0.0
     type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        hide_when_no_media = true
+        shadow = true
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -132,7 +139,6 @@ tint_intensity = 0.0
 enabled = true
 schema_version = 2
 widget_order = [
-    "lockscreen-widget-0000000000000005",
     "lockscreen-login-box@eDP-1",
     "lockscreen-widget-0000000000000002",
     "lockscreen-widget-0000000000000003",
@@ -149,8 +155,8 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 0.0
     box_width = 0.0
-    cx = 960.0
-    cy = 780.0
+    cx = 932.0
+    cy = 771.0
     output = "eDP-1"
     rotation = 0.0
     type = "login_box"
@@ -164,10 +170,10 @@ widget_order = [
         show_login_button = true
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 256.0
-    box_width = 640.0
-    cx = 656.0
-    cy = 316.0
+    box_height = 320.0
+    box_width = 704.0
+    cx = 960.0
+    cy = 179.0
     output = "eDP-1"
     rotation = 0.0
     type = "clock"
@@ -188,7 +194,7 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
     box_height = 480.0
     box_width = 512.0
-    cx = 336.0
+    cx = 320.0
     cy = 579.0
     output = "eDP-1"
     rotation = 0.0
@@ -208,7 +214,7 @@ widget_order = [
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
     box_height = 192.0
     box_width = 528.0
-    cx = 1608.0
+    cx = 1592.0
     cy = 540.0
     output = "eDP-1"
     rotation = 0.0
@@ -220,12 +226,12 @@ widget_order = [
         background_padding = 22.0
         background_radius = 32.0
         bands = 128.0
-        show_when_idle = true
+        show_when_idle = false
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
     box_height = 192.0
     box_width = 576.0
-    cx = 988.0
+    cx = 960.0
     cy = 604.0
     output = "eDP-1"
     rotation = 0.0
@@ -235,22 +241,14 @@ widget_order = [
         background_opacity = 1.0
         background_padding = 7.0
         background_radius = 32.0
+        hide_when_no_media = true
         layout = "horizontal"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
-    box_height = 160.0
-    box_width = 416.0
-    cx = 960.0
-    cy = 80.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "weather"
 
     [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
     box_height = 256.0
     box_width = 320.0
-    cx = 1264.0
-    cy = 316.0
+    cx = 932.0
+    cy = 952.0
     output = "eDP-1"
     rotation = 0.0
     type = "clock"
@@ -282,6 +280,8 @@ enabled = [ "noctalia/bongocat", "noctalia/screen_recorder" ]
     kind = "git"
     location = "https://github.com/noctalia-dev/community-plugins"
     name = "community"
+
+
 
 [shell]
 avatar_path = "/home/greed/dotfiles/Pics/Icons-profile pics/absdark_small.png"
@@ -356,7 +356,7 @@ ui_scale = 1.300000011920929
 
 [theme]
 builtin = "Dracula"
-mode = "auto"
+mode = "dark"
 
 [wallpaper]
 directory = "/home/greed/dotfiles/Pics/Wallpapers"
@@ -431,7 +431,7 @@ type = "noctalia/screen_recorder:recorder"
 display = "graph"
 
 [widget.tray]
-hidden = [ "bluetooth" ]
+hidden = [ "blueman" ]
 pinned = [ "vesktop", "steam" ]
 
 [widget.workspaces]

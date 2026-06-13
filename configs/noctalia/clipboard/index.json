@@ -1,6 +1,119 @@
 {
   "entries": [
     {
+      "byte_size": 118128,
+      "captured_at_ms": 1781333458900,
+      "data_mime_type": "image/png",
+      "id": "1781333458900-5",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781333458900-5.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 131097,
+      "captured_at_ms": 1781332846392,
+      "data_mime_type": "image/png",
+      "id": "1781332846392-4",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781332846392-4.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 405806,
+      "captured_at_ms": 1781332739437,
+      "data_mime_type": "image/png",
+      "id": "1781332739437-3",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781332739437-3.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 491253,
+      "captured_at_ms": 1781332714199,
+      "data_mime_type": "image/png",
+      "id": "1781332714199-2",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781332714199-2.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 298095,
+      "captured_at_ms": 1781332591420,
+      "data_mime_type": "image/png",
+      "id": "1781332591420-1",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781332591420-1.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 37,
+      "captured_at_ms": 1781332187191,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781332187191-2",
+      "mime_types": [
+        "x-special/gnome-copied-files",
+        "text/uri-list",
+        "application/vnd.portal.filetransfer",
+        "application/vnd.portal.files",
+        "text/plain;charset=utf-8",
+        "UTF8_STRING",
+        "COMPOUND_TEXT",
+        "TEXT",
+        "text/plain",
+        "STRING",
+        "text/plain;charset=utf-8",
+        "text/plain",
+        "SAVE_TARGETS"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781332187191-2.bin",
+      "pinned": false,
+      "text_preview": "/home/greed/dotfiles/configs/noctalia"
+    },
+    {
+      "byte_size": 161281,
+      "captured_at_ms": 1781332103918,
+      "data_mime_type": "image/png",
+      "id": "1781332103918-1",
+      "mime_types": [
+        "image/png"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781332103918-1.bin",
+      "pinned": false,
+      "text_preview": ""
+    },
+    {
+      "byte_size": 22,
+      "captured_at_ms": 1781304095079,
+      "data_mime_type": "text/plain;charset=utf-8",
+      "id": "1781304095079-1",
+      "mime_types": [
+        "text/plain",
+        "text/plain",
+        "text/plain;charset=utf-8",
+        "TEXT",
+        "STRING",
+        "UTF8_STRING"
+      ],
+      "payload_path": "/home/greed/.local/state/noctalia/clipboard/entries/1781304095079-1.bin",
+      "pinned": false,
+      "text_preview": "      nm = \"neomutt\"; "
+    },
+    {
       "byte_size": 117,
       "captured_at_ms": 1781302962748,
       "data_mime_type": "text/plain;charset=utf-8",
