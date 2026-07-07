@@ -41,11 +41,6 @@
           key = "│ ";
         }
         {
-          type = "host";
-          format = "{1}";
-          key = "├──";
-        }
-        {
           type = "cpu";
           format = "{1}";
           key = "│ ";
