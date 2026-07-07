@@ -14,7 +14,6 @@
     xwayland-run
     xdg-desktop-portal-gnome
     nh
-    libsForQt5.qt5.qttools
     upower-notify
     pkgs.adwaita-icon-theme
     swaynotificationcenter
