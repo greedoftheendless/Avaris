@@ -25,10 +25,9 @@
     bash
     nushell
     noctalia-shell
+    quickshell
 
     #System/Hyprland/Niri required packages
-    hyprlock
-    hyprshot
     awww
     pastel
 
@@ -52,6 +51,7 @@
 
     # Necessary tools
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+
     cacert
     playerctl
     bc
@@ -59,21 +59,21 @@
     usbguard
     usbguard-notifier
     ghostty
+    jujutsu
     git
+    gh
     gource
     tealdeer
     navi
-    nemo
     nautilus
     kdePackages.gwenview
     superfile
     btop
     binutils
-    lazygit
-    gh
     unzip
     openvpn
     typst
-    inputs.wifi-tui.packages.${pkgs.stdenv.hostPlatform.system}.default
+    qt6.qt5compat
+    qt5.qtgraphicaleffects
   ];
 }
