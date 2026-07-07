@@ -19,6 +19,7 @@
       ".." = "cd ..";
       #for git commands
       lgit = "lazygit";
+      gd = "git diff";
       ga = "git add";
       gs = "git status";
       gc = "git commit -m";
