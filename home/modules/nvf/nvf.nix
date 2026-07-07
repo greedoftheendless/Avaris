@@ -340,15 +340,6 @@
           };
         };
 
-        terminal.toggleterm = {
-          enable = true;
-          mappings.open = "<leader>g";
-          lazygit = {
-            enable = true;
-            mappings.open = "<leader>lg";
-          };
-        };
-
         dashboard.dashboard-nvim = {
           enable = true;
 
