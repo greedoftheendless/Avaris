@@ -5,11 +5,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixcord.url = "github:FlameFlag/nixcord";
 
-    quickshell = {
-      url = "github:outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,13 +15,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    wifi-tui = {
-      url = "github:shazow/wifitui";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
+    iNiR = {
+      url = "github:snowarch/iNiR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -55,7 +50,7 @@
             nix.gc = {
               automatic = true;
               dates = "daily";
-              options = "--delete-older-than 10d";
+              options = "--delete-older-than 5d";
             };
           }
         ];
