@@ -18,7 +18,8 @@
   networking.hostName = "greed";
 
   # Set your time zone.
-  time.timeZone = "Asia/Qatar";
+  time.timeZone = "Asia/Kolkata";
+  #time.timeZone = "Asia/Qatar";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
