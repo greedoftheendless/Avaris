@@ -1,6 +1,4 @@
-{ config, pkgs, ... }:
-
-{
+{...}: {
   _module.args.isLaptop = true;
 
   # Power management
