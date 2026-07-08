@@ -17,21 +17,31 @@
       la = "eza -a --long --icons --color=always";
       "..." = "cd ../..";
       ".." = "cd ..";
-      #for git commands
-      lgit = "lazygit";
-      gd = "git diff";
-      ga = "git add";
-      gs = "git status";
-      gc = "git commit -m";
-      gp = "git push";
-      #Alias for jj
-      jjs = "jj status";
-      jjl = "jj log";
-      jjm = "jj describe -m";
-      jjd = "jj diff";
-    };
+       #for git commands
+       lgit = "lazygit";
+       gd = "git diff";
+       ga = "git add";
+       gs = "git status";
+       gc = "git commit -m";
+       gp = "git push";
+       #Alias for jj
+       jjs = "jj status";
+       jjl = "jj log";
+       jjm = "jj describe -m";
+       jjd = "jj diff";
+       jjp = "jj git push -c main";
+     };
 
-    plugins = with pkgs.fishPlugins; [
+     functions = {
+       jjc = {
+         description = "Describe, push as main, then new";
+         body = ''
+           jj describe -m $argv && jj git push -c main && jj new
+         '';
+       };
+     };
+
+     plugins = with pkgs.fishPlugins; [
       {
         name = "z";
         src = z.src;
