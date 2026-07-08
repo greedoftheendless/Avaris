@@ -11,6 +11,7 @@
     zathura
     w3m
     vlc
+    yazi
     catppuccin
     thunderbird
     tor-browser
