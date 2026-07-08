@@ -73,7 +73,5 @@
     unzip
     openvpn
     typst
-    qt6.qt5compat
-    qt5.qtgraphicaleffects
   ];
 }

@@ -59,7 +59,7 @@ overview {
 //LAYOUT
 layout {
     gaps 2
-    center-focused-column "never"
+    center-focused-column "always"
     default-column-width {
         proportion 0.66667
     }
@@ -142,21 +142,6 @@ window-rule {
 open-maximized true
 
   match app-id="zen-beta"
-
-}
-
-
-window-rule {
-open-maximized true
-
-  match app-id="kitty"
-
-}
-
-window-rule {
-open-maximized true
-
-  match app-id="ghostty"
 
 }
 
@@ -244,7 +229,7 @@ binds {
     Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
 
     // Applications
-    Mod+E { spawn "nemo"; }
+    Mod+E { spawn "nautilus"; }
     Mod+Return { spawn "kitty"; }
     Mod+B { spawn "zen-beta"; }
 
