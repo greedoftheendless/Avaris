@@ -32,7 +32,6 @@
     pastel
 
     # CLI Tools
-    evtest
     zoxide
     onefetch
     ffmpeg
