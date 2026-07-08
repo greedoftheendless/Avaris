@@ -10,3 +10,6 @@ configs/btop/btop.conf
 # Niri backups
 configs/niri/*.backup*
 configs/niri/*.dmsbackup*
+
+#Noctalia
+configs/noctalia/plugins/
