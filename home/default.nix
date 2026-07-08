@@ -16,6 +16,7 @@
     ./modules/cava/cava.nix
     ./modules/kitty/kitty.nix
     ./modules/nixcord/nixcord.nix
+    ./modules/tmux.nix
 
     #Importing home
     ./home.nix
