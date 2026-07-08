@@ -24,6 +24,11 @@
       gs = "git status";
       gc = "git commit -m";
       gp = "git push";
+      #Alias for jj
+      jjs = "jj status";
+      jjl = "jj log";
+      jjm = "jj describe -m";
+      jjd = "jj diff";
     };
 
     plugins = with pkgs.fishPlugins; [
