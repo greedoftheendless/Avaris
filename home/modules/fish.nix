@@ -29,14 +29,14 @@
        jjl = "jj log";
        jjm = "jj describe -m";
        jjd = "jj diff";
-       jjp = "jj git push -c main";
+       jjp = "jj git push --bookmark main";
      };
 
      functions = {
        jjc = {
-         description = "Describe, push as main, then new";
+         description = "Describe, set main, push, then new";
          body = ''
-           jj describe -m $argv && jj git push -c main && jj new
+           jj describe -m $argv && jj bookmark set main -r @ && jj git push --bookmark main && jj new
          '';
        };
      };
