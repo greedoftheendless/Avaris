@@ -10,13 +10,16 @@ in {
 
     #extensions
     enabledExtensions = with spicePkgs.extensions; [
-      adblockify
       hidePodcasts
       shuffle
+      oneko
+      catJamSynced
+      spicyLyrics
+      availabilityMap
     ];
 
     #themes and colorSchemes
     theme = spicePkgs.themes.starryNight;
-    colorScheme = "mocha";
+    colorScheme = "Base";
   };
 }
