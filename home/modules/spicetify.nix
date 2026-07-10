@@ -12,7 +12,7 @@ in {
       hidePodcasts
       shuffle
     ];
-    theme = spicePkgs.themes.catppuccin;
+    theme = spicePkgs.themes.starryNight;
     colorScheme = "mocha";
   };
 }

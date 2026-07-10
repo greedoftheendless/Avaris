@@ -19,6 +19,9 @@
     ./modules/tmux.nix
     ./modules/spicetify.nix
 
+    #Spicetify import
+    inputs.spicetify-nix.homeManagerModules.spicetify
+
     #Importing home
     ./home.nix
 
