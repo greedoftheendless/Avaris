@@ -17,6 +17,7 @@
     ./modules/kitty/kitty.nix
     ./modules/nixcord/nixcord.nix
     ./modules/tmux.nix
+    ./modules/spicetify.nix
 
     #Importing home
     ./home.nix

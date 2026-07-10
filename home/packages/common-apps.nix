@@ -23,7 +23,6 @@
     firefox
     wget
     curl
-    spotify
     obsidian
     proton-vpn
     cava
