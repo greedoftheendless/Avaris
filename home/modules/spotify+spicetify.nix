@@ -7,11 +7,15 @@
 in {
   programs.spicetify = {
     enable = true;
+
+    #extensions
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       hidePodcasts
       shuffle
     ];
+
+    #themes and colorSchemes
     theme = spicePkgs.themes.starryNight;
     colorScheme = "mocha";
   };
