@@ -8,9 +8,6 @@ _: {
       line_break = {
         disabled = true;
       };
-      git_status = {
-        disabled = true;
-      };
       directory = {
         truncation_length = 3;
         truncate_to_repo = false;
