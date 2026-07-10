@@ -17,7 +17,7 @@
     ./modules/kitty/kitty.nix
     ./modules/nixcord/nixcord.nix
     ./modules/tmux.nix
-    ./modules/spicetify.nix
+    ./modules/spotify+spicetify.nix
 
     #Spicetify import
     inputs.spicetify-nix.homeManagerModules.spicetify
