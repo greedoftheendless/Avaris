@@ -261,6 +261,8 @@ binds {
     Mod+Page_Up     { focus-window-up; }
     Mod+Shift+Down  { focus-window-down; }
     Mod+Shift+Up    { focus-window-up; }
+    Mod+Shift+J  { focus-window-down; }
+    Mod+Shift+K    { focus-window-up; }
     Mod+Left        { focus-column-left; }
     Mod+Right       { focus-column-right; }
     Mod+H           { focus-column-left; }

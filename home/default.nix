@@ -18,6 +18,7 @@
     ./modules/nixcord/nixcord.nix
     ./modules/tmux.nix
     ./modules/spotify+spicetify.nix
+    ./modules/default-app.nix
 
     #Spicetify import
     inputs.spicetify-nix.homeManagerModules.spicetify
