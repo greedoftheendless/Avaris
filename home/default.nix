@@ -19,6 +19,10 @@
     ./modules/tmux.nix
     ./modules/spotify+spicetify.nix
     ./modules/default-app.nix
+    ./modules/inir.nix
+
+    #iNiR import
+    inputs.iNiR.homeModules.inir
 
     #Spicetify import
     inputs.spicetify-nix.homeManagerModules.spicetify

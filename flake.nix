@@ -22,7 +22,7 @@
     };
 
     iNiR = {
-      url = "github:snowarch/iNiR";
+      url = "github:snowarch/iNiR/prerelease";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
