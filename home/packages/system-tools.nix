@@ -8,19 +8,6 @@
     (import ../modules/webapp/webapp-install.nix {inherit pkgs;})
     (import ../modules/webapp/webapp-uninstall.nix {inherit pkgs;})
 
-    #Nix-check tool
-    (writeShellApplication {
-      name = "nix-check";
-      runtimeInputs = with pkgs; [
-        nix
-        curl
-        jq
-        coreutils
-        gnused
-      ];
-      text = builtins.readFile ../modules/nix-check/nix-check.sh;
-    })
-
     #Shells
     bash
     nushell

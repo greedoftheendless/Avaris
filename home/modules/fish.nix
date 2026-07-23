@@ -28,7 +28,7 @@
       jjb = "jj bookmark list";
       jjs = "jj status";
       jjl = "jj log";
-      jjd = "jj diff";
+      jjd = "jj diff -r";
       jjc = "jj commit -m";
       jjt = "jj bookmark advance --to @-";
       jjp = "jj git push --bookmark";
