@@ -85,7 +85,7 @@ layout {
 //AUTOSTART OF APPLICATIONS
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 //spawn-at-startup "noctalia-shell"
-spawn-at-startup "noctalia"
+// spawn-at-startup "noctalia"
 spawn-at-startup "zen-beta"
 
 hotkey-overlay {
