@@ -7,6 +7,8 @@
     emacs
     syncthing
     wl-clipboard
+    cliphist
+    libqalculate
     onlyoffice-desktopeditors
     zathura
     w3m
@@ -24,6 +26,7 @@
     wget
     curl
     obsidian
+    inputs.zen-notes.packages.${pkgs.system}.zennotes-desktop
     proton-vpn
     cava
     obs-studio
