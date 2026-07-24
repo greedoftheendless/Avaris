@@ -16,6 +16,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-notes = {
+      url = "github:ZenNotes/zennotes";
+    };
+
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
