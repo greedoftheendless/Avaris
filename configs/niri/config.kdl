@@ -14,12 +14,13 @@ input {
         dwt
         dwtp
         accel-speed 0.0
+        middle-emulation
     }
 
     mouse {
         accel-speed 0.0
     }
-}
+    }
 
 //MONITOR CONFIGURATION
 output "eDP-1" {
@@ -58,7 +59,7 @@ overview {
 
 //LAYOUT
 layout {
-    gaps 2
+    gaps 10
     center-focused-column "always"
     default-column-width {
         proportion 0.66667
@@ -80,10 +81,13 @@ layout {
         active-color "#33ccff"
         inactive-color "#595959"
     }
+    default-column-display "normal"
 }
 
 //AUTOSTART OF APPLICATIONS
-spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
+spawn-at-startup "bash" "-c" "wl-paste --type text --watch cliphist store &"
+spawn-at-startup "bash" "-c" "wl-paste --type image --watch cliphist store &"
+spawn-at-startup "bash" "-c" "wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &"
 //spawn-at-startup "noctalia-shell"
 // spawn-at-startup "noctalia"
 spawn-at-startup "zen-beta"
@@ -177,20 +181,17 @@ open-maximized true
 }
 
 //Wallpaper in overview
-// Set the overview wallpaper on the backdrop.
 layer-rule {
     match namespace="^noctalia-backdrop"
     place-within-backdrop true
 }
 
+layer-rule {
+    match namespace="quickshell:iiBackdrop"
+    place-within-backdrop true
+}
+
 binds {
-
-    //Screenshot(in-built in niri)
-    Mod+S { screenshot; }
-    Mod+Shift+S { screenshot-window; }
-    Print { screenshot; }
-    Alt+Print { screenshot-window; }
-
 
     // //Noctalia-shell binds
     // //Recorder
@@ -213,20 +214,33 @@ binds {
 
 
     //Noctalia binds
-    //Recorder
-    Mod+Shift+R { spawn-sh "noctalia msg panel-toggle screen_recorder"; }
+    // //Search bar
+    // Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    //
+    // //Clipboard
+    // Ctrl+Shift+L { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    //
+    // // Session menu (has poweroff, reboot, logout, etc.)
+    // Mod+Shift+P { spawn-sh "noctalia msg panel-toggle session"; }
+    //
+    // // Lock screen directly
+    // Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
 
-    //Search bar
-    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    //iNiR binds
+    Ctrl+Shift+L { spawn "inir" "clipboard" "toggle"; }
+    Mod+D { spawn "inir" "dashboard" "toggle"; }
+    Mod+Comma { spawn "inir" "settings"; }
+    Mod+Slash { spawn "inir" "cheatsheet" "toggle"; }
+    Mod+Space { spawn "inir" "overview" "toggle"; }
+    Mod+Shift+L allow-when-locked=true { spawn "inir" "lock" "activate"; }
+    Mod+Shift+R { spawn "inir" "region" "record"; }
+    Mod+Shift+P { spawn "inir" "session" "toggle"; }
 
-    //Clipboard
-    Ctrl+Shift+L { spawn-sh "noctalia msg panel-toggle clipboard"; }
-
-    // Session menu (has poweroff, reboot, logout, etc.)
-    Mod+Shift+P { spawn-sh "noctalia msg panel-toggle session"; }
-
-    // Lock screen directly
-    Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
+    //Screenshot(in-built in niri)
+    Mod+S { screenshot; }
+    Mod+Shift+S { screenshot-window; }
+    Print { screenshot; }
+    Alt+Print { screenshot-window; }
 
     // Applications
     Mod+E { spawn "nautilus"; }
@@ -328,11 +342,6 @@ binds {
 
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
-
-    // Consume one window from the right to the bottom of the focused column.
-    Mod+Comma  { consume-window-into-column; }
-    // Expel the bottom window from the focused column to the right.
-    Mod+Period { expel-window-from-column; }
 
     // Cycle through widths set in preset-column-widths.
     Mod+R { switch-preset-column-width; }
