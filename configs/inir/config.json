@@ -445,9 +445,9 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/doom-kingdom.png",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/skull.png",
                 "workspaceFirst": 1,
-                "workspaceLast": 4
+                "workspaceLast": 5
             }
         ],
         "widgets": {
@@ -776,15 +776,15 @@
             },
             "visualizer": {
                 "backgroundOpacity": 0,
-                "barCount": 48,
-                "barMinHeight": 0,
-                "barRadius": 0,
-                "barSpacing": 8,
+                "barCount": 52,
+                "barMinHeight": 1,
+                "barRadius": 2,
+                "barSpacing": 2,
                 "borderOpacity": 0,
                 "borderWidth": 0,
                 "colorMode": "auto",
-                "contentHeight": 270,
-                "contentWidth": 800,
+                "contentHeight": 193,
+                "contentWidth": 868,
                 "cornerRadius": -1,
                 "dim": 0,
                 "enable": true,
@@ -792,13 +792,13 @@
                 "placementStrategy": "free",
                 "preset": "wide",
                 "showBackground": false,
-                "showBorder": true,
+                "showBorder": false,
                 "useBlur": false,
                 "vizType": "bars",
                 "waveOpacity": -1,
                 "widgetOpacity": 100,
                 "widgetScale": 100,
-                "x": 574,
+                "x": 540,
                 "y": 396
             },
             "weather": {
@@ -837,7 +837,7 @@
         "activeWindow": {
             "showTitle": true
         },
-        "appearanceStyle": "classic",
+        "appearanceStyle": "pill",
         "autoHide": {
             "enable": false,
             "hoverRegionWidth": 2,
@@ -867,7 +867,7 @@
             ]
         },
         "floatStyleShadow": true,
-        "height": 44,
+        "height": 50,
         "indicators": {
             "notifications": {
                 "showUnreadCount": true
@@ -939,7 +939,7 @@
         "opacity": 1,
         "pill": {
             "appGap": 0.8,
-            "barMode": false,
+            "barMode": true,
             "clockSeconds": true,
             "compactAnnounces": true,
             "glyphs": {
@@ -962,14 +962,14 @@
                 "sysmon": "",
                 "workspaces": ""
             },
-            "iconSize": 17,
-            "iconSpacing": 10,
+            "iconSize": 20,
+            "iconSpacing": 16,
             "modules": {
                 "battery": true,
                 "inbox": true,
                 "mixer": true,
                 "power": true,
-                "sidebars": true,
+                "sidebars": false,
                 "tray": true,
                 "weather": true,
                 "wifi": true,
@@ -983,7 +983,7 @@
             "showGlyphs": true,
             "soul": {
                 "enable": true,
-                "size": 1,
+                "size": 1.1,
                 "style": "ring"
             },
             "surfaces": {
@@ -1280,7 +1280,7 @@
         "lockBeforeSleep": true,
         "lockTimeout": 600,
         "onBattery": {
-            "enable": false,
+            "enable": true,
             "lockTimeout": 300,
             "screenOffTimeout": 120,
             "suspendTimeout": 600
@@ -1649,7 +1649,7 @@
     },
     "policies": {
         "ai": 0,
-        "weeb": 1
+        "weeb": 0
     },
     "powerProfiles": {
         "preferredProfile": "performance",
@@ -1708,7 +1708,7 @@
             "safetyMarginMb": 0.5,
             "targetSizeMb": 10
         },
-        "enableFallback": true,
+        "enableFallback": false,
         "fps": 60,
         "hardwareDevice": "/dev/dri/renderD128",
         "microphoneSource": "",
@@ -1720,7 +1720,7 @@
             "autoHide": false
         },
         "savePath": "",
-        "showNotifications": true,
+        "showNotifications": false,
         "showOsd": false,
         "systemAudioSource": "",
         "vaapiFilter": "scale_vaapi=format=nv12:out_range=full",
@@ -1839,7 +1839,7 @@
         "news": {
             "enable": true,
             "mode": "local",
-            "topic": "WORLD"
+            "topic": "NATION"
         },
         "openFolderOnDownload": false,
         "plugins": {
@@ -1941,7 +1941,7 @@
             }
         },
         "software": {
-            "enable": true
+            "enable": false
         },
         "style": "island",
         "tools": {
