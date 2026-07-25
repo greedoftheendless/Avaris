@@ -60,14 +60,14 @@ overview {
 //LAYOUT
 layout {
     gaps 10
-    center-focused-column "always"
+    center-focused-column "never"
     default-column-width {
-        proportion 0.66667
+        proportion 0.5
     }
 
     preset-column-widths {
         proportion 0.66667
-        proportion 0.99999
+        proportion 0.5
     }
 
     focus-ring {
@@ -353,8 +353,6 @@ binds {
     Mod+F { fullscreen-window; }
 
     Mod+M { maximize-window-to-edges; }
-
-    Mod+Shift+C { center-visible-columns; }
 
     //Setting column height
     Mod+Minus { set-column-width "-10%"; }
