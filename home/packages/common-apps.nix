@@ -32,6 +32,5 @@
     obs-studio
     protonplus
     opencode
-    gpu-screen-recorder
   ];
 }
