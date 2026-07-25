@@ -7,6 +7,8 @@
   modules.nvidia.enable = true;
   modules.nvidia.withSpecialisation = true;
 
+  services.envfs.enable = true;
+
   #Niri WM
   programs.niri.enable = true;
 
