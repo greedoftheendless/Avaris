@@ -1,0 +1,31 @@
+{
+  "applied": [
+    "001-gamemode-animation-toggle",
+    "003-qt-theming-kde",
+    "007-brightness-keybinds",
+    "008-media-keybinds",
+    "010-terminal-keybinds-dynamic",
+    "011-gtk4-nautilus-css",
+    "012-plasma-integration-qt-theming",
+    "013-kde-material-you-colors-stop",
+    "014-malloc-arena-optimization",
+    "015-config-cleanup-blur-rename",
+    "016-launcher-structure-compat",
+    "017-dedupe-hardware-keybinds",
+    "018-modularize-niri-config",
+    "019-config-dir-rename-compat",
+    "020-rename-venv-env-var",
+    "021-systemd-single-instance",
+    "022-service-compositor-wants",
+    "023-cliphist-typed-watchers",
+    "024-steam-millennium",
+    "025-sddm-dropin-rename",
+    "026-fix-duplicate-keybind",
+    "028-bar-modular-layout",
+    "030-unified-snip-keybind",
+    "031-remove-reddit-panel",
+    "032-cliphist-strip-browser-markup",
+    "033-settings-panel-legibility"
+  ],
+  "skipped": []
+}
