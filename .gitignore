@@ -13,3 +13,6 @@ configs/niri/*.dmsbackup*
 
 #Noctalia
 configs/noctalia/plugins/
+
+# Nix build artifacts
+result
