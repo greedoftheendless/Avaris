@@ -278,7 +278,7 @@
                 "saturation": 0.65
             },
             "terminalGenerationProps": {
-                "forceDarkMode": true,
+                "forceDarkMode": false,
                 "harmonizeThreshold": 100,
                 "harmony": 0.4,
                 "termFgBoost": 0.35
@@ -445,7 +445,7 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/skull.png",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/wallhaven red forest.jpg",
                 "workspaceFirst": 1,
                 "workspaceLast": 5
             }
@@ -559,7 +559,7 @@
             },
             "dynamicOpacity": 0,
             "editGrid": {
-                "size": 48,
+                "size": 16,
                 "snap": true
             },
             "japaneseTypography": {
@@ -568,8 +568,8 @@
                 "borderWidth": 0,
                 "colorMode": "auto",
                 "columnGap": 14,
-                "contentHeight": 993,
-                "contentWidth": 464,
+                "contentHeight": 990,
+                "contentWidth": 469,
                 "cornerRadius": -1,
                 "dateSize": 12,
                 "dateText": "7.12 — 8.31",
@@ -625,7 +625,7 @@
                 "widgetOpacity": 100,
                 "widgetScale": 100,
                 "x": 12,
-                "y": 53
+                "y": 62
             },
             "layerOrder": [
             ],
@@ -639,19 +639,19 @@
                 "cornerRadius": -1,
                 "customPath": "",
                 "dim": 0,
-                "enable": false,
+                "enable": true,
                 "locked": false,
                 "placementStrategy": "free",
-                "pose": "reading",
-                "poseFilter": "all",
+                "pose": "panel-sitter",
+                "poseFilter": "loops",
                 "posePickerMode": "buttons",
                 "showBackground": false,
                 "showBorder": false,
                 "useBlur": false,
                 "widgetOpacity": 100,
                 "widgetScale": 100,
-                "x": 1516,
-                "y": 364
+                "x": 124,
+                "y": 812
             },
             "mediaControls": {
                 "colorMode": "auto",
@@ -867,7 +867,7 @@
             ]
         },
         "floatStyleShadow": true,
-        "height": 50,
+        "height": 40,
         "indicators": {
             "notifications": {
                 "showUnreadCount": true
@@ -939,7 +939,7 @@
         "opacity": 1,
         "pill": {
             "appGap": 0.8,
-            "barMode": true,
+            "barMode": false,
             "clockSeconds": true,
             "compactAnnounces": true,
             "glyphs": {
@@ -962,7 +962,7 @@
                 "sysmon": "",
                 "workspaces": ""
             },
-            "iconSize": 20,
+            "iconSize": 22,
             "iconSpacing": 16,
             "modules": {
                 "battery": true,
@@ -977,7 +977,7 @@
             },
             "musicViz": true,
             "opacity": 1,
-            "osd": true,
+            "osd": false,
             "rowSpacing": 20,
             "scale": 1,
             "showGlyphs": true,
@@ -995,7 +995,7 @@
             },
             "time12h": true,
             "toasts": true,
-            "topGap": 1
+            "topGap": 0
         },
         "resources": {
             "alwaysShowCpu": true,
@@ -1179,7 +1179,7 @@
     },
     "dock": {
         "cardStyle": false,
-        "enable": true,
+        "enable": false,
         "enableBlurGlass": true,
         "enableDragReorder": true,
         "height": 60,
@@ -1205,10 +1205,10 @@
         "screenList": [
         ],
         "separatePinnedFromRunning": true,
-        "showAllWindowDots": true,
+        "showAllWindowDots": false,
         "showBackground": true,
         "showOnDesktop": true,
-        "smartIndicator": true,
+        "smartIndicator": false,
         "style": "island"
     },
     "enabledPanels": [
@@ -1222,11 +1222,9 @@
         "iiMediaControls",
         "iiNotificationPopup",
         "iiOnScreenDisplay",
-        "iiOnScreenKeyboard",
         "iiOverlay",
         "iiOverview",
         "iiPolkit",
-        "iiRegionSelector",
         "iiScreenCorners",
         "iiSessionScreen",
         "iiSidebarLeft",
@@ -1252,21 +1250,24 @@
         "wSessionScreen",
         "iiMascotCompanion",
         "iiDashboard",
-        "iiWorkspaceStrip"
+        "iiWorkspaceStrip",
+        "iiOnScreenKeyboard",
+        "iiShellUpdate",
+        "iiRecordingOsd"
     ],
     "familyTransitionAnimation": true,
     "gameMode": {
         "autoDetect": true,
         "checkInterval": 5000,
         "disableAnimations": false,
-        "disableDiscoverOverlay": true,
-        "disableEffects": true,
+        "disableDiscoverOverlay": false,
+        "disableEffects": false,
         "disableNiriAnimations": false,
         "disableReloadToasts": true,
-        "minimalMode": true,
+        "minimalMode": false,
         "niriWindowListUpdateIntervalMs": 100,
         "niriWindowListUpdateIntervalMsGameMode": 500,
-        "suppressNotifications": false
+        "suppressNotifications": true
     },
     "hacks": {
         "arbitraryRaceConditionDelay": 20
@@ -1353,7 +1354,10 @@
         "wTaskView",
         "wLock",
         "wPolkit",
-        "wSessionScreen"
+        "wSessionScreen",
+        "iiOnScreenKeyboard",
+        "iiShellUpdate",
+        "iiRecordingOsd"
     ],
     "language": {
         "translator": {
@@ -1376,7 +1380,7 @@
     },
     "lock": {
         "blur": {
-            "enable": true,
+            "enable": false,
             "extraZoom": 1.1,
             "radius": 100
         },
@@ -1454,7 +1458,7 @@
                 "notification": true,
                 "screenshot": true,
                 "unlock": true,
-                "update": true,
+                "update": false,
                 "wallpaper": true,
                 "workspace": true
             },
@@ -1466,12 +1470,12 @@
             "slideMs": 400,
             "visibleSeconds": 8
         },
-        "enable": false,
+        "enable": true,
         "personality": {
             "commentary": true,
             "enabled": true,
             "idleMoodIntervalMinutes": 30,
-            "voiceMode": "adaptive"
+            "voiceMode": "chaotic"
         },
         "surfacePoses": {
             "about": "",
@@ -1493,15 +1497,15 @@
             "wifi": ""
         },
         "surfaces": {
-            "about": true,
-            "aiChat": true,
+            "about": false,
+            "aiChat": false,
             "bootGreeting": true,
             "cheatsheet": true,
             "dashboard": true,
             "dialogs": true,
             "emptyStates": true,
             "session": true,
-            "updates": true
+            "updates": false
         }
     },
     "media": {
@@ -1786,7 +1790,7 @@
         "ai": {
             "textFadeIn": false
         },
-        "animationType": "swing",
+        "animationType": "reveal",
         "animeSchedule": {
             "enable": false,
             "showNsfw": false,
@@ -1904,25 +1908,27 @@
                 "calendar",
                 "calculator",
                 "sysmon",
-                "timer"
+                "timer",
+                "weather",
+                "screentime"
             ],
             "headerBanner": "wallpaper",
             "headerBannerPath": "/home/greed/dotfiles/Pics/Wallpapers/joker-the-dark-knight.1920x1080.mp4",
             "headerStyle": "profile",
             "sectionOrder": [
-                "sliders",
                 "system",
+                "sliders",
                 "toggles",
                 "notifications",
                 "widgets"
             ],
             "sectionWeights": {
-                "notifications": 0.9,
-                "widgets": 1.1
+                "notifications": 1.1999999999999997,
+                "widgets": 0.8000000000000003
             }
         },
         "screenTime": {
-            "enable": false,
+            "enable": true,
             "pollIntervalSeconds": 5,
             "retentionDays": 30
         },
@@ -1953,7 +1959,7 @@
         },
         "wallhaven": {
             "apiKey": "",
-            "enable": false,
+            "enable": true,
             "limit": 24
         },
         "widgets": {
