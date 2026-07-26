@@ -47,6 +47,7 @@
     ghostty
     jujutsu
     git
+    lazygit
     gh
     gource
     tealdeer
