@@ -25,8 +25,8 @@
     firefox
     wget
     curl
-    obsidian
-    inputs.zen-notes.packages.${pkgs.system}.zennotes-desktop
+    # obsidian
+    (import ./zennotes.nix { inherit pkgs inputs; })
     proton-vpn
     cava
     obs-studio
