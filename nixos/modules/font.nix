@@ -18,7 +18,6 @@
       noto-fonts-cjk-sans
       noto-fonts-cjk-serif
       papirus-icon-theme
-      tokyonight-gtk-theme
     ];
   };
 }
