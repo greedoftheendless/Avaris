@@ -29,6 +29,9 @@
       auto_update = false;
       buffer_font_family = "JetBrainsMono Nerd Font";
       buffer_font_size = 20;
+      calls = {
+        mute_on_join = true;
+      };
       chat_panel = {
         dock = "left";
       };
@@ -137,9 +140,6 @@
               source = "discover";
             };
           };
-        };
-        settings = {
-          dialyzerEnabled = true;
         };
       };
       minimap = {
