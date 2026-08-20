@@ -445,7 +445,7 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/echoes-of-a-fallen-world.1920x1080.mp4",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/doom-kingdom.png",
                 "workspaceFirst": 1,
                 "workspaceLast": 2
             }
@@ -561,11 +561,17 @@
                 "dim": 0,
                 "enable": false,
                 "fitMode": "cover",
+                "folder": "",
+                "intervalSeconds": 30,
                 "locked": false,
+                "mediaFilter": "all",
+                "order": "sequential",
                 "path": "",
                 "placementStrategy": "free",
                 "shape": "Cookie4Sided",
                 "size": 220,
+                "sourceMode": "file",
+                "transitionDuration": 450,
                 "widgetOpacity": 100,
                 "widgetScale": 100,
                 "x": 120,
@@ -747,6 +753,36 @@
                 "x": 80,
                 "y": 80
             },
+            "outputOverrides": [
+                {
+                    "height": 1080,
+                    "layoutVersion": 1,
+                    "output": "eDP-1",
+                    "widgets": {
+                        "japaneseTypography": {
+                            "placementStrategy": "free",
+                            "x": 20,
+                            "y": 48
+                        },
+                        "mascot": {
+                            "placementStrategy": "free",
+                            "x": 138,
+                            "y": 777
+                        },
+                        "mediaControls": {
+                            "placementStrategy": "free",
+                            "x": 1368,
+                            "y": 742
+                        },
+                        "systemMonitor": {
+                            "placementStrategy": "free",
+                            "x": 1388,
+                            "y": 908
+                        }
+                    },
+                    "width": 1920
+                }
+            ],
             "powerSaving": {
                 "enable": true,
                 "pauseOnFullscreen": true,
@@ -1223,10 +1259,27 @@
             "radius": 0.5
         },
         "visualizer": {
+            "accentStrength": 70,
+            "barsOrigin": "bottom",
+            "density": 12,
+            "edgeInset": 0,
+            "edgeSoftness": 28,
             "enable": false,
+            "frequencyProfile": "flat",
+            "gap": 2,
             "height": 0.6,
+            "lineWidth": 2,
+            "multiMonitorMode": "primary",
             "opacity": 0.35,
-            "type": "bars"
+            "pillEdgeFade": 92,
+            "pillScreenPadding": 24,
+            "pillUnderlap": 28,
+            "pillWingGap": 12,
+            "pillWingLength": 180,
+            "pillWingMode": "bounded",
+            "smoothing": 2,
+            "type": "bars",
+            "waveMode": "fill"
         },
         "weather": {
             "city": "kolkata",
@@ -1567,7 +1620,7 @@
         "centerClock": true,
         "clock": {
             "position": "center",
-            "style": "analog"
+            "style": "default"
         },
         "dim": {
             "enable": true,
@@ -2560,6 +2613,7 @@
     },
     "welcomeWizard": {
         "completed": false,
+        "profile": "balanced",
         "skipped": false
     },
     "windows": {
