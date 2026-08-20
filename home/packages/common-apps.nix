@@ -4,7 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    emacs
     syncthing
     wl-clipboard
     cliphist
@@ -26,7 +25,7 @@
     wget
     curl
     # obsidian
-    (import ./zennotes.nix { inherit pkgs inputs; })
+    zennotes-desktop
     proton-vpn
     cava
     obs-studio
