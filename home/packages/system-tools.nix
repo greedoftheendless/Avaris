@@ -19,7 +19,6 @@
     pastel
 
     # CLI Tools
-    inputs.herdr.packages.${pkgs.stdenv.hostPlatform.system}.default
     zoxide
     onefetch
     ffmpeg
