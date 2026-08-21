@@ -12,11 +12,12 @@
   #Niri WM
   programs.niri.enable = true;
 
-  #Enabling SSDM login screen
-  #services.displayManager.sddm.enable = true;
+  #Enabling SDDM login screen
+  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm.wayland.enable = true;
 
   #Enabling ly login manager
-  services.displayManager.ly.enable = true;
+  #services.displayManager.ly.enable = true;
 
   #Home-manager config
   home-manager = {

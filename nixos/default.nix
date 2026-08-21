@@ -10,5 +10,6 @@
     ./modules/power.nix
     ./modules/podman.nix
     ./modules/font.nix
+    ./modules/qylock.nix
   ];
 }
