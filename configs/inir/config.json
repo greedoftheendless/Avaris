@@ -1,7 +1,6 @@
 {
     "ai": {
-        "extraModels": [
-        ],
+        "extraModels": [],
         "systemPrompt": "## Style\n- Use casual tone, don't be formal! Make sure you answer precisely without hallucination and prefer bullet points over walls of text. You can have a friendly greeting at the beginning of the conversation, but don't repeat the user's question\n\n## Context (ignore when irrelevant)\n- You are a helpful and inspiring sidebar assistant on a {DISTRO} Linux system\n- Desktop environment: {DE}\n- Current date & time: {DATETIME}\n- Focused app: {WINDOWCLASS}\n\n## Presentation\n- Use Markdown features in your response: \n  - **Bold** text to **highlight keywords** in your response\n  - **Split long information into small sections** with h2 headers and a relevant emoji at the start of it (for example `## 🐧 Linux`). Bullet points are preferred over long paragraphs, unless you're offering writing support or instructed otherwise by the user.\n- Asked to compare different options? You should firstly use a table to compare the main aspects, then elaborate or include relevant comments from online forums *after* the table. Make sure to provide a final recommendation for the user's use case!\n- Use LaTeX formatting for mathematical and scientific notations whenever appropriate. Enclose all LaTeX '$$' delimiters. NEVER generate LaTeX code in a latex block unless the user explicitly asks for it. DO NOT use LaTeX for regular documents (resumes, letters, essays, CVs, etc.).\n",
         "tool": "functions"
     },
@@ -194,8 +193,7 @@
         "dockIconTheme": "yet-another-monochrome-icon-set",
         "extraBackgroundTint": true,
         "fakeScreenRounding": 2,
-        "favoriteThemes": [
-        ],
+        "favoriteThemes": [],
         "globalStyle": "angel",
         "globalStyleCornerStyles": {
             "angel": 1,
@@ -445,12 +443,13 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/doom-kingdom.png",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/irithyll-of-the-boreal-valley.1920x1080.mp4",
                 "workspaceFirst": 1,
-                "workspaceLast": 2
+                "workspaceLast": 3
             }
         ],
         "widgets": {
+            "adaptColorsToWallpaperPosition": false,
             "battery": {
                 "backgroundOpacity": 0.16,
                 "barCount": 20,
@@ -464,6 +463,13 @@
                 "displayMode": "ring",
                 "enable": false,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "pillHeight": 12,
                 "placementStrategy": "free",
                 "preset": "default",
@@ -491,6 +497,13 @@
                 "groupByDay": true,
                 "locked": false,
                 "maxEvents": 5,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "showBackground": true,
                 "showBorder": true,
@@ -538,6 +551,13 @@
                 "enable": false,
                 "fontFamily": "Space Grotesk",
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "quote": {
                     "enable": false,
@@ -566,6 +586,13 @@
                 "locked": false,
                 "mediaFilter": "all",
                 "order": "sequential",
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "path": "",
                 "placementStrategy": "free",
                 "shape": "Cookie4Sided",
@@ -593,6 +620,13 @@
                 "dim": 0,
                 "enable": false,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "selectedFormat": "webp",
                 "showBackground": true,
@@ -629,6 +663,13 @@
                 "mirrorLayout": false,
                 "outlineColor": "#000000",
                 "outlineOpacity": 0,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "paletteMode": "manual",
                 "palettePreset": "cinema",
                 "placementStrategy": "free",
@@ -666,10 +707,9 @@
                 "widgetOpacity": 100,
                 "widgetScale": 100,
                 "x": 20,
-                "y": 47
+                "y": 48
             },
-            "layerOrder": [
-            ],
+            "layerOrder": [],
             "mascot": {
                 "anchorWidget": "",
                 "backgroundOpacity": 0.16,
@@ -682,6 +722,13 @@
                 "dim": 0,
                 "enable": true,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "pose": "panel-sitter",
                 "poseFilter": "loops",
@@ -691,8 +738,8 @@
                 "useBlur": false,
                 "widgetOpacity": 100,
                 "widgetScale": 100,
-                "x": 134,
-                "y": 781
+                "x": 138,
+                "y": 777
             },
             "mediaControls": {
                 "colorMode": "auto",
@@ -700,6 +747,13 @@
                 "enable": true,
                 "locked": false,
                 "lyricsExpanded": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "playerPreset": "compact",
                 "visualizerPosition": "bottom",
@@ -720,6 +774,13 @@
                 "dim": 0,
                 "enable": false,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "showBackground": true,
                 "showBorder": true,
@@ -742,6 +803,13 @@
                 "fontFamily": "sans",
                 "fontSize": 14,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "showBackground": true,
                 "showBorder": true,
@@ -790,8 +858,7 @@
                 "pauseWhenWindowsPresent": true,
                 "showPausedEffect": true
             },
-            "screenList": [
-            ],
+            "screenList": [],
             "style": "island",
             "systemMonitor": {
                 "backgroundOpacity": 1,
@@ -809,6 +876,13 @@
                 "fillOpacity": 1,
                 "graphFillOpacity": 0.3,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "preset": "tall",
                 "showBackground": true,
@@ -837,6 +911,13 @@
                 "dim": 0,
                 "enable": false,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "showBackground": true,
                 "showBorder": true,
@@ -857,6 +938,13 @@
                 "dim": 0,
                 "enable": false,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "showBackground": true,
                 "showBorder": true,
@@ -867,11 +955,14 @@
                 "y": 60
             },
             "visualizer": {
+                "accentStrength": 70,
                 "backgroundOpacity": 0,
                 "barCount": 52,
                 "barMinHeight": 1,
+                "barOpacity": 100,
                 "barRadius": 2,
                 "barSpacing": 2,
+                "barsOrigin": "bottom",
                 "borderOpacity": 0,
                 "borderWidth": 0,
                 "colorMode": "auto",
@@ -879,14 +970,29 @@
                 "contentWidth": 868,
                 "cornerRadius": -1,
                 "dim": 0,
+                "edgeInset": 0,
+                "edgeSoftness": 28,
                 "enable": false,
+                "fillRatio": 90,
+                "frequencyProfile": "flat",
+                "lineWidth": 2,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
+                "paletteMode": "cava",
                 "placementStrategy": "free",
                 "preset": "wide",
                 "showBackground": false,
                 "showBorder": false,
+                "smoothing": 2,
                 "useBlur": false,
                 "vizType": "bars",
+                "waveMode": "fill",
                 "waveOpacity": -1,
                 "widgetOpacity": 100,
                 "widgetScale": 100,
@@ -905,6 +1011,13 @@
                 "iconSize": 80,
                 "locked": false,
                 "padding": 20,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "preset": "default",
                 "shape": "pill",
@@ -935,6 +1048,13 @@
                 "dim": 0,
                 "enable": false,
                 "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
                 "placementStrategy": "free",
                 "showBackground": true,
                 "showBorder": true,
@@ -1028,12 +1148,9 @@
             "cornerStyle": 3,
             "customLayoutSaved": false,
             "customLayouts": {
-                "leftLayout": [
-                ],
-                "middleLayout": [
-                ],
-                "rightLayout": [
-                ]
+                "leftLayout": [],
+                "middleLayout": [],
+                "rightLayout": []
             },
             "divider": {
                 "spacing": 20,
@@ -1090,6 +1207,9 @@
             "showBackground": true,
             "tooltips": {
                 "clickToShow": false
+            },
+            "tray": {
+                "monochromeIcons": true
             },
             "utilButtons": {
                 "showColorPicker": false,
@@ -1225,8 +1345,7 @@
             "tempWarningThreshold": 80
         },
         "rightScrollAction": "workspace",
-        "screenList": [
-        ],
+        "screenList": [],
         "showBackground": true,
         "showScrollHints": true,
         "topLeftIcon": "distro",
@@ -1234,8 +1353,7 @@
             "filterPassive": true,
             "invertPinnedItems": true,
             "monochromeIcons": false,
-            "pinnedItems": [
-            ],
+            "pinnedItems": [],
             "showItemId": false
         },
         "utilButtons": {
@@ -1292,7 +1410,9 @@
         },
         "workspaces": {
             "alwaysShowNumbers": true,
+            "automaticIndicatorColor": true,
             "dynamicCount": true,
+            "indicatorColor": "",
             "invertScroll": false,
             "monochromeIcons": true,
             "numberMap": [
@@ -1339,15 +1459,13 @@
         "externalSync": {
             "enable": true,
             "refreshMinutes": 15,
-            "sources": [
-            ]
+            "sources": []
         },
         "showUpcoming": true,
         "upcomingDays": 7
     },
     "clipboard": {
-        "pinned": [
-        ]
+        "pinned": []
     },
     "closeConfirm": {
         "enabled": true
@@ -1421,8 +1539,7 @@
         "hoverRegionHeight": 2,
         "hoverToReveal": true,
         "iconSize": 35,
-        "ignoredAppRegexes": [
-        ],
+        "ignoredAppRegexes": [],
         "keepPreviewOnClick": false,
         "maxIndicatorDots": 5,
         "minimizeUnfocused": false,
@@ -1435,8 +1552,7 @@
         ],
         "pinnedOnStartup": false,
         "position": "right",
-        "screenList": [
-        ],
+        "screenList": [],
         "separatePinnedFromRunning": true,
         "showAllWindowDots": false,
         "showBackground": true,
@@ -1627,7 +1743,7 @@
             "opacity": 0.3
         },
         "enableAnimation": true,
-        "launchOnStartup": true,
+        "launchOnStartup": false,
         "materialShapeChars": true,
         "notifications": {
             "enable": true,
@@ -1636,7 +1752,7 @@
             "showBody": true
         },
         "security": {
-            "requirePasswordToPower": true,
+            "requirePasswordToPower": false,
             "unlockKeyring": false
         },
         "showLockedText": true,
@@ -1660,8 +1776,7 @@
         },
         "companion": {
             "contextualPlacement": true,
-            "customLines": [
-            ],
+            "customLines": [],
             "edges": {
                 "bottom": true,
                 "left": true,
@@ -1744,8 +1859,7 @@
     "media": {
         "filterDuplicatePlayers": true,
         "popupMode": "bar",
-        "screenList": [
-        ]
+        "screenList": []
     },
     "modules": {
         "altSwitcher": true,
@@ -1790,8 +1904,7 @@
             "start": "22:00"
         },
         "scaleOnHover": true,
-        "screenList": [
-        ],
+        "screenList": [],
         "silent": false,
         "timeout": 7000,
         "timeoutCritical": 0,
@@ -1801,8 +1914,7 @@
     },
     "osd": {
         "mediaEnabled": true,
-        "screenList": [
-        ],
+        "screenList": [],
         "timeout": 1000
     },
     "osk": {
@@ -1889,7 +2001,7 @@
         "weeb": 0
     },
     "powerProfiles": {
-        "preferredProfile": "performance",
+        "preferredProfile": "power-saver",
         "restoreOnStart": true
     },
     "regionSelector": {
@@ -2064,13 +2176,13 @@
                 "widgets",
                 "ai",
                 "translator",
+                "software",
                 "anime",
                 "animeSchedule",
                 "wallhaven",
                 "news",
                 "ytmusic",
-                "tools",
-                "software"
+                "tools"
             ]
         },
         "news": {
@@ -2156,12 +2268,11 @@
                 "widgets"
             ],
             "sectionWeights": {
-                "notifications": 0.4,
-                "widgets": 1.6
+                "notifications": 1.6,
+                "widgets": 0.3999999999999999
             }
         },
-        "screenList": [
-        ],
+        "screenList": [],
         "screenTime": {
             "enable": true,
             "pollIntervalSeconds": 5,
@@ -2293,37 +2404,29 @@
             "autoConnect": true,
             "browser": "firefox",
             "cache": {
-                "albums": [
-                ],
-                "liked": [
-                ],
-                "playlists": [
-                ]
+                "albums": [],
+                "liked": [],
+                "playlists": []
             },
             "connected": false,
             "cookiesPath": "",
             "enable": false,
             "hideSyncBanner": false,
             "lastLikedSync": "",
-            "liked": [
-            ],
+            "liked": [],
             "normalizeVolume": true,
-            "playlists": [
-            ],
+            "playlists": [],
             "profile": {
                 "avatar": "",
                 "name": "",
                 "url": ""
             },
-            "queue": [
-            ],
-            "recentSearches": [
-            ],
+            "queue": [],
+            "recentSearches": [],
             "repeatMode": 0,
             "resolvedBrowserArg": "",
             "resume": {
-                "activePlaylist": [
-                ],
+                "activePlaylist": [],
                 "activePlaylistSource": "",
                 "artist": "",
                 "currentIndex": -1,
@@ -2377,8 +2480,7 @@
         "filterPassive": true,
         "invertPinnedItems": true,
         "monochromeIcons": true,
-        "pinnedItems": [
-        ],
+        "pinnedItems": [],
         "showItemId": false
     },
     "updates": {
@@ -2530,8 +2632,7 @@
             "notifications": {
                 "showUnreadCount": true
             },
-            "screenList": [
-            ],
+            "screenList": [],
             "searchIconSize": 24,
             "tintTrayIcons": false
         },
@@ -2598,8 +2699,7 @@
             "showWeather": true,
             "weatherHideLocation": false
         },
-        "workspaceNames": {
-        }
+        "workspaceNames": {}
     },
     "wallpaperSelector": {
         "coverflowView": "skew",

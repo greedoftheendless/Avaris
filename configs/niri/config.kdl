@@ -232,9 +232,11 @@ binds {
     Mod+Comma { spawn "inir" "settings"; }
     Mod+Slash { spawn "inir" "cheatsheet" "toggle"; }
     Mod+Space { spawn "inir" "overview" "toggle"; }
-    Mod+Shift+L allow-when-locked=true { spawn "inir" "lock" "activate"; }
     Mod+Shift+R { spawn "inir" "region" "record"; }
     Mod+Shift+P { spawn "inir" "session" "toggle"; }
+
+    //Lock screen
+    Mod+Shift+L { spawn "qylock-lock"; } 
 
     //Screenshot(in-built in niri)
     Mod+S { screenshot; }

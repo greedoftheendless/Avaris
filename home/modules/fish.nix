@@ -25,6 +25,7 @@
       gc = "git commit -m";
       gp = "git push";
       #Alias for jj
+      jji = "jj split -i";
       jjb = "jj bookmark list";
       jjs = "jj status";
       jjl = "jj log";
