@@ -3,6 +3,7 @@
 
   programs.qylock = {
     enable = true;
+-    theme = "osu";
 
     # theme = "osu";
     # theme = "ninja_gaiden";
@@ -11,7 +12,5 @@
 
     sddm.enable = true;
     quickshell.enable = true;
-
-    themeOptions.osu.gameMode = "menu";
   };
 }
