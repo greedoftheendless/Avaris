@@ -4,10 +4,9 @@
   programs.qylock = {
     enable = true;
 
-    # -    theme = "osu";
     # theme = "osu";
     # theme = "ninja_gaiden";
-    theme = "clockwork/orbit";
+    theme = "clockwork/neo-orbital";
     # theme = "nier-automata";
 
     sddm.enable = true;
