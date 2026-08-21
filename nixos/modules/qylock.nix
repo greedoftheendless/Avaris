@@ -6,7 +6,7 @@
 
     # theme = "osu";
     # theme = "ninja_gaiden";
-    theme = "clockwork/neo-orbital";
+    theme = "clockwork/orbital";
     # theme = "nier-automata";
 
     sddm.enable = true;
