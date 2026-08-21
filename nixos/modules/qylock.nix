@@ -3,8 +3,8 @@
 
   programs.qylock = {
     enable = true;
--    theme = "osu";
 
+    # -    theme = "osu";
     # theme = "osu";
     # theme = "ninja_gaiden";
     theme = "clockwork/orbit";
