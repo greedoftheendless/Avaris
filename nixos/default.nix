@@ -11,5 +11,7 @@
     ./modules/podman.nix
     ./modules/font.nix
     ./modules/qylock.nix
+    ./modules/vm.nix
+    ./modules/niri/niri.nix
   ];
 }
