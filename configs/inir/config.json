@@ -2018,7 +2018,7 @@
         "weeb": 0
     },
     "powerProfiles": {
-        "preferredProfile": "power-saver",
+        "preferredProfile": "performance",
         "restoreOnStart": true
     },
     "regionSelector": {
