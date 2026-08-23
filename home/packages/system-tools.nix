@@ -12,6 +12,7 @@
     bash
     nushell
     noctalia-shell
+    # dms-shell
     quickshell
 
     #System/Hyprland/Niri required packages
