@@ -6,8 +6,11 @@
 
     # theme = "osu";
     # theme = "ninja_gaiden";
-    theme = "clockwork/orbital";
+    # theme = "clockwork/orbital";
     # theme = "nier-automata";
+    theme = "enfield";
+    # theme = "winter";
+    # theme = "last-of-us";
 
     sddm.enable = true;
     quickshell.enable = true;
