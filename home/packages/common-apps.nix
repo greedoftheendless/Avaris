@@ -16,6 +16,7 @@
     catppuccin
     thunderbird
     tor-browser
+    ascii-image-converter
     gimp
     imagemagick
     localsend
