@@ -24,13 +24,13 @@
     #iNiR import
     inputs.iNiR.homeModules.inir
 
+    #Nixcord import
+    inputs.nixcord.homeModules.nixcord
+
     #Spicetify import
     inputs.spicetify-nix.homeManagerModules.spicetify
 
     #Importing home
     ./home.nix
-
-    #Nixcord import
-    inputs.nixcord.homeModules.nixcord
   ];
 }
