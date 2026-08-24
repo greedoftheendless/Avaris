@@ -27,7 +27,7 @@
       "audio/ogg" = "vlc.desktop";
       "audio/wav" = "vlc.desktop";
       "audio/x-opus+ogg" = "vlc.desktop";
-      "application/pdf" = "zathura";
+      "application/pdf" = "org.pwmt.zathura.desktop";
       "x-terminal-emulator" = "kitty.desktop";
     };
   };
