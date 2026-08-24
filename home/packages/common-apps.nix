@@ -24,6 +24,7 @@
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     firefox
     wget
+    cmatrix
     curl
     # obsidian
     zennotes-desktop
