@@ -445,9 +445,9 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/wallhaven-e8wl9o.jpg",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/dreamy astheric.png",
                 "workspaceFirst": 1,
-                "workspaceLast": 2
+                "workspaceLast": 4
             }
         ],
         "widgets": {
@@ -832,13 +832,13 @@
                     "widgets": {
                         "japaneseTypography": {
                             "placementStrategy": "free",
-                            "x": 20,
-                            "y": 48
+                            "x": 12,
+                            "y": 12
                         },
                         "mascot": {
                             "placementStrategy": "free",
-                            "x": 138,
-                            "y": 777
+                            "x": 139,
+                            "y": 742
                         },
                         "mediaControls": {
                             "placementStrategy": "free",
