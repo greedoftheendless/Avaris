@@ -5,7 +5,6 @@
 }: {
   home.packages = with pkgs; [
     syncthing
-    wl-clipboard
     cliphist
     libqalculate
     onlyoffice-desktopeditors
@@ -23,15 +22,13 @@
     telegram-desktop
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     firefox
-    wget
     cmatrix
-    curl
     # obsidian
     zennotes-desktop
-    proton-vpn
     cava
-    obs-studio
-    protonplus
     opencode
+    obs-studio
+    wf-recorder
+    slurp
   ];
 }
