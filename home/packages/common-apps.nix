@@ -26,6 +26,7 @@
     # obsidian
     zennotes-desktop
     cava
+    glow
     opencode
     obs-studio
     wf-recorder
