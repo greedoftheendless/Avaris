@@ -182,7 +182,12 @@
         languages = {
           enableFormat = true;
           enableTreesitter = true;
-          markdown.enable = true;
+          markdown = {
+            enable = true;
+            extensions.render-markdown-nvim = {
+              enable = true;
+            };
+          };
           html.enable = true;
           typescript.enable = true;
           css.enable = true;
