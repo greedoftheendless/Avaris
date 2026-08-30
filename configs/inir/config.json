@@ -1,7 +1,6 @@
 {
     "ai": {
-        "extraModels": [
-        ],
+        "extraModels": [],
         "systemPrompt": "## Style\n- Use casual tone, don't be formal! Make sure you answer precisely without hallucination and prefer bullet points over walls of text. You can have a friendly greeting at the beginning of the conversation, but don't repeat the user's question\n\n## Context (ignore when irrelevant)\n- You are a helpful and inspiring sidebar assistant on a {DISTRO} Linux system\n- Desktop environment: {DE}\n- Current date & time: {DATETIME}\n- Focused app: {WINDOWCLASS}\n\n## Presentation\n- Use Markdown features in your response: \n  - **Bold** text to **highlight keywords** in your response\n  - **Split long information into small sections** with h2 headers and a relevant emoji at the start of it (for example `## 🐧 Linux`). Bullet points are preferred over long paragraphs, unless you're offering writing support or instructed otherwise by the user.\n- Asked to compare different options? You should firstly use a table to compare the main aspects, then elaborate or include relevant comments from online forums *after* the table. Make sure to provide a final recommendation for the user's use case!\n- Use LaTeX formatting for mathematical and scientific notations whenever appropriate. Enclose all LaTeX '$$' delimiters. NEVER generate LaTeX code in a latex block unless the user explicitly asks for it. DO NOT use LaTeX for regular documents (resumes, letters, essays, CVs, etc.).\n",
         "tool": "functions"
     },
@@ -194,8 +193,7 @@
         "dockIconTheme": "yet-another-monochrome-icon-set",
         "extraBackgroundTint": true,
         "fakeScreenRounding": 2,
-        "favoriteThemes": [
-        ],
+        "favoriteThemes": [],
         "globalStyle": "angel",
         "globalStyleCornerStyles": {
             "angel": 1,
@@ -722,8 +720,7 @@
                 "x": 20,
                 "y": 48
             },
-            "layerOrder": [
-            ],
+            "layerOrder": [],
             "mascot": {
                 "anchorWidget": "",
                 "backgroundOpacity": 0.16,
@@ -858,13 +855,13 @@
                         },
                         "mediaControls": {
                             "placementStrategy": "free",
-                            "x": 1399,
-                            "y": 585
+                            "x": 1412,
+                            "y": 628
                         },
                         "systemMonitor": {
                             "placementStrategy": "free",
-                            "x": 1402,
-                            "y": 802
+                            "x": 1428,
+                            "y": 832
                         },
                         "visualizer": {
                             "placementStrategy": "free",
@@ -882,8 +879,7 @@
                 "pauseWhenWindowsPresent": false,
                 "showPausedEffect": false
             },
-            "screenList": [
-            ],
+            "screenList": [],
             "style": "island",
             "systemMonitor": {
                 "backgroundOpacity": 1,
@@ -1186,12 +1182,9 @@
             "cornerStyle": 3,
             "customLayoutSaved": false,
             "customLayouts": {
-                "leftLayout": [
-                ],
-                "middleLayout": [
-                ],
-                "rightLayout": [
-                ]
+                "leftLayout": [],
+                "middleLayout": [],
+                "rightLayout": []
             },
             "divider": {
                 "spacing": 20,
@@ -1394,8 +1387,7 @@
             "tempWarningThreshold": 80
         },
         "rightScrollAction": "volume",
-        "screenList": [
-        ],
+        "screenList": [],
         "showBackground": true,
         "showScrollHints": true,
         "topLeftIcon": "distro",
@@ -1403,8 +1395,7 @@
             "filterPassive": true,
             "invertPinnedItems": true,
             "monochromeIcons": false,
-            "pinnedItems": [
-            ],
+            "pinnedItems": [],
             "showItemId": false
         },
         "utilButtons": {
@@ -1510,15 +1501,13 @@
         "externalSync": {
             "enable": true,
             "refreshMinutes": 15,
-            "sources": [
-            ]
+            "sources": []
         },
         "showUpcoming": true,
         "upcomingDays": 7
     },
     "clipboard": {
-        "pinned": [
-        ]
+        "pinned": []
     },
     "closeConfirm": {
         "enabled": true
@@ -1592,8 +1581,7 @@
         "hoverRegionHeight": 2,
         "hoverToReveal": true,
         "iconSize": 35,
-        "ignoredAppRegexes": [
-        ],
+        "ignoredAppRegexes": [],
         "keepPreviewOnClick": false,
         "maxIndicatorDots": 5,
         "minimizeUnfocused": false,
@@ -1606,8 +1594,7 @@
         ],
         "pinnedOnStartup": false,
         "position": "right",
-        "screenList": [
-        ],
+        "screenList": [],
         "separatePinnedFromRunning": true,
         "showAllWindowDots": true,
         "showBackground": true,
@@ -1831,8 +1818,7 @@
         },
         "companion": {
             "contextualPlacement": true,
-            "customLines": [
-            ],
+            "customLines": [],
             "edges": {
                 "bottom": true,
                 "left": true,
@@ -1915,8 +1901,7 @@
     "media": {
         "filterDuplicatePlayers": true,
         "popupMode": "bar",
-        "screenList": [
-        ]
+        "screenList": []
     },
     "modules": {
         "altSwitcher": true,
@@ -1961,8 +1946,7 @@
             "start": "22:00"
         },
         "scaleOnHover": true,
-        "screenList": [
-        ],
+        "screenList": [],
         "silent": false,
         "timeout": 7000,
         "timeoutCritical": 0,
@@ -2010,8 +1994,7 @@
     },
     "osd": {
         "mediaEnabled": true,
-        "screenList": [
-        ],
+        "screenList": [],
         "timeout": 1000
     },
     "osk": {
@@ -2137,7 +2120,7 @@
         "audioBackend": "",
         "audioBitrateKbps": 160,
         "audioCodec": "aac",
-        "audioMode": "system",
+        "audioMode": "microphone",
         "audioSampleRate": 48000,
         "audioSource": "",
         "crf": 23,
@@ -2370,8 +2353,7 @@
                 "widgets": 0.3999999999999999
             }
         },
-        "screenList": [
-        ],
+        "screenList": [],
         "screenTime": {
             "enable": true,
             "pollIntervalSeconds": 5,
@@ -2509,37 +2491,29 @@
             "autoConnect": true,
             "browser": "firefox",
             "cache": {
-                "albums": [
-                ],
-                "liked": [
-                ],
-                "playlists": [
-                ]
+                "albums": [],
+                "liked": [],
+                "playlists": []
             },
             "connected": false,
             "cookiesPath": "",
             "enable": false,
             "hideSyncBanner": false,
             "lastLikedSync": "",
-            "liked": [
-            ],
+            "liked": [],
             "normalizeVolume": true,
-            "playlists": [
-            ],
+            "playlists": [],
             "profile": {
                 "avatar": "",
                 "name": "",
                 "url": ""
             },
-            "queue": [
-            ],
-            "recentSearches": [
-            ],
+            "queue": [],
+            "recentSearches": [],
             "repeatMode": 0,
             "resolvedBrowserArg": "",
             "resume": {
-                "activePlaylist": [
-                ],
+                "activePlaylist": [],
                 "activePlaylistSource": "",
                 "artist": "",
                 "currentIndex": -1,
@@ -2593,8 +2567,7 @@
         "filterPassive": true,
         "invertPinnedItems": true,
         "monochromeIcons": true,
-        "pinnedItems": [
-        ],
+        "pinnedItems": [],
         "showItemId": false
     },
     "updates": {
@@ -2746,8 +2719,7 @@
             "notifications": {
                 "showUnreadCount": true
             },
-            "screenList": [
-            ],
+            "screenList": [],
             "searchIconSize": 24,
             "tintTrayIcons": false
         },
@@ -2814,8 +2786,7 @@
             "showWeather": true,
             "weatherHideLocation": false
         },
-        "workspaceNames": {
-        }
+        "workspaceNames": {}
     },
     "wallpaperSelector": {
         "coverflowView": "skew",
@@ -2833,8 +2804,7 @@
         "skipped": true
     },
     "windows": {
-        "appIdentityRules": [
-        ],
+        "appIdentityRules": [],
         "centerTitle": true,
         "showTitlebar": true
     },
