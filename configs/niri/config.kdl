@@ -233,10 +233,11 @@ binds {
     Ctrl+Shift+L { spawn "inir" "clipboard" "toggle"; }
     Mod+D { spawn "inir" "dashboard" "toggle"; }
     Mod+Comma { spawn "inir" "settings"; }
-    Mod+Slash { spawn "inir" "cheatsheet" "toggle"; }
+    Mod+Tab { spawn "inir" "cheatsheet" "toggle"; }
     Mod+Space { spawn "inir" "overview" "toggle"; }
     Mod+R { spawn "inir" "overlay" "toggle"; }
     Mod+Shift+P { spawn "inir" "session" "toggle"; }
+    Alt+Tab { spawn "inir" "orbit" "toggle"; }
 
     //Lock screen
     Mod+Shift+L { spawn "qylock-lock"; } 
@@ -253,7 +254,7 @@ binds {
     Mod+B { spawn "zen-beta"; }
 
     //Keybind showcase
-    Mod+Tab { show-hotkey-overlay; }
+    Mod+Slash { show-hotkey-overlay; }
 
     //Volume Key bind
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1.0"; }
