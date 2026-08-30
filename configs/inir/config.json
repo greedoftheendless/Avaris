@@ -204,6 +204,7 @@
             "cookie": 1,
             "inir": 1,
             "material": 1,
+            "regalia": 1,
             "zzz": 0
         },
         "iconTheme": "yet-another-monochrome-icon-set",
@@ -225,6 +226,14 @@
             "tokyo-night",
             "orng"
         ],
+        "regalia": {
+            "glass": true,
+            "glassBlur": 0.72,
+            "glassSaturation": 0.12,
+            "glassSurfaceOpacity": 0.6,
+            "glassTintTransparency": 0.52,
+            "radiusScale": 1
+        },
         "shellScale": 1,
         "softenColors": true,
         "theme": "custom",
@@ -271,6 +280,7 @@
             "enableVesktop": false,
             "enableZed": false,
             "previewSourcePath": "",
+            "spicetifyTheme": "Inir",
             "terminalColorAdjustments": {
                 "backgroundBrightness": 0.5,
                 "brightness": 0.6,
@@ -360,6 +370,7 @@
             "enable": true,
             "enableAnimatedBlur": false,
             "enableAnimation": true,
+            "fillMode": "fill",
             "hideWallpaper": false,
             "saturation": 0,
             "thumbnailPath": "",
@@ -441,17 +452,17 @@
             "enable": true,
             "type": "wave"
         },
-        "wallpaperPath": "/home/greed/Pictures/Wallpapers/MXBpbZp.png",
+        "wallpaperPath": "/home/greed/dotfiles/Pics/Wallpapers/new-ryoku-walls-v0-jk6dv9e00s2h1.webp",
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/dreamy astheric.png",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/natural.jpg",
                 "workspaceFirst": 1,
-                "workspaceLast": 4
+                "workspaceLast": 5
             }
         ],
         "widgets": {
-            "adaptColorsToWallpaperPosition": false,
+            "adaptColorsToWallpaperPosition": true,
             "battery": {
                 "backgroundOpacity": 0.16,
                 "barCount": 20,
@@ -595,10 +606,10 @@
                     "surface": "surface",
                     "tertiary": "tertiary"
                 },
-                "path": "",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/echoes-of-a-fallen-world.1920x1080.mp4",
                 "placementStrategy": "free",
-                "shape": "Cookie4Sided",
-                "size": 220,
+                "shape": "Circle",
+                "size": 290,
                 "sourceMode": "file",
                 "transitionDuration": 450,
                 "widgetOpacity": 100,
@@ -758,7 +769,7 @@
                     "tertiary": "tertiary"
                 },
                 "placementStrategy": "free",
-                "playerPreset": "compact",
+                "playerPreset": "expandingLyrics",
                 "visualizerPosition": "bottom",
                 "visualizerType": "wave",
                 "widgetOpacity": 100,
@@ -830,6 +841,11 @@
                     "layoutVersion": 1,
                     "output": "eDP-1",
                     "widgets": {
+                        "customImage": {
+                            "placementStrategy": "free",
+                            "x": 1569,
+                            "y": 193
+                        },
                         "japaneseTypography": {
                             "placementStrategy": "free",
                             "x": 12,
@@ -837,18 +853,23 @@
                         },
                         "mascot": {
                             "placementStrategy": "free",
-                            "x": 139,
-                            "y": 742
+                            "x": 492,
+                            "y": 634
                         },
                         "mediaControls": {
                             "placementStrategy": "free",
-                            "x": 1368,
-                            "y": 742
+                            "x": 1399,
+                            "y": 585
                         },
                         "systemMonitor": {
                             "placementStrategy": "free",
-                            "x": 1388,
-                            "y": 908
+                            "x": 1402,
+                            "y": 802
+                        },
+                        "visualizer": {
+                            "placementStrategy": "free",
+                            "x": 686,
+                            "y": 850
                         }
                     },
                     "width": 1920
@@ -858,8 +879,8 @@
                 "enable": true,
                 "pauseOnFullscreen": true,
                 "pauseOnGameMode": true,
-                "pauseWhenWindowsPresent": true,
-                "showPausedEffect": true
+                "pauseWhenWindowsPresent": false,
+                "showPausedEffect": false
             },
             "screenList": [
             ],
@@ -894,6 +915,7 @@
                 "showCpu": true,
                 "showDisk": true,
                 "showGpu": true,
+                "showGpuTemp": false,
                 "showLabels": true,
                 "showMemory": true,
                 "showTemp": true,
@@ -961,7 +983,7 @@
             "visualizer": {
                 "accentStrength": 70,
                 "backgroundOpacity": 0,
-                "barCount": 52,
+                "barCount": 40,
                 "barMinHeight": 1,
                 "barOpacity": 100,
                 "barRadius": 2,
@@ -971,12 +993,12 @@
                 "borderWidth": 0,
                 "colorMode": "auto",
                 "contentHeight": 193,
-                "contentWidth": 868,
+                "contentWidth": 580,
                 "cornerRadius": -1,
                 "dim": 0,
                 "edgeInset": 0,
                 "edgeSoftness": 28,
-                "enable": false,
+                "enable": true,
                 "fillRatio": 90,
                 "frequencyProfile": "flat",
                 "lineWidth": 2,
@@ -1096,6 +1118,12 @@
         },
         "borderless": false,
         "bottom": false,
+        "clock": {
+            "dateFontFamily": "",
+            "datePixelSize": 0,
+            "timeFontFamily": "",
+            "timePixelSize": 0
+        },
         "cornerStyle": 1,
         "customRounding": 10,
         "edgeModulesLayout": {
@@ -1146,9 +1174,15 @@
             "spacerMode": "auto",
             "spacerWidth": 24
         },
-        "leftScrollAction": "workspace",
+        "leftScrollAction": "volume",
         "m3": {
             "borderless": "separated",
+            "clock": {
+                "dateFontFamily": "",
+                "datePixelSize": 0,
+                "timeFontFamily": "",
+                "timePixelSize": 0
+            },
             "cornerStyle": 3,
             "customLayoutSaved": false,
             "customLayouts": {
@@ -1275,10 +1309,13 @@
         },
         "opacity": 1,
         "pill": {
-            "appGap": 0.8,
+            "appGap": 0.5,
             "barMode": false,
+            "batteryDisplay": "both",
             "clockSeconds": true,
             "compactAnnounces": true,
+            "expandedHeight": 66,
+            "floatOverWindows": false,
             "glyphs": {
                 "battery": "",
                 "calendar": "",
@@ -1296,38 +1333,43 @@
                 "notify": "",
                 "power": "",
                 "recorder": "",
+                "settings": "",
                 "sysmon": "",
                 "workspaces": ""
             },
             "iconSize": 22,
             "iconSpacing": 16,
+            "mediaAccess": "row",
+            "mixerAppRows": 5,
             "modules": {
                 "battery": true,
                 "inbox": true,
                 "mixer": true,
                 "power": true,
-                "sidebars": false,
+                "sidebars": true,
                 "tray": true,
                 "weather": true,
                 "wifi": true,
                 "workspaces": true
             },
             "musicViz": true,
-            "opacity": 1,
-            "osd": false,
+            "osd": true,
+            "restHeight": 44,
+            "restWidth": 176,
             "rowSpacing": 20,
-            "scale": 1,
+            "scale": 0.9,
             "showGlyphs": true,
             "soul": {
                 "enable": true,
                 "size": 1.1,
                 "style": "ring"
             },
+            "superSpaceLauncher": "overview",
             "surfaces": {
                 "clipboard": true,
                 "glance": true,
                 "launcher": true,
-                "recorder": false,
+                "recorder": true,
                 "sysmon": true
             },
             "time12h": true,
@@ -1351,7 +1393,7 @@
             "tempCautionThreshold": 65,
             "tempWarningThreshold": 80
         },
-        "rightScrollAction": "workspace",
+        "rightScrollAction": "volume",
         "screenList": [
         ],
         "showBackground": true,
@@ -1375,7 +1417,7 @@
             "showNotepad": false,
             "showPerformanceProfileToggle": true,
             "showScreenCast": true,
-            "showScreenRecord": false,
+            "showScreenRecord": true,
             "showScreenSnip": false
         },
         "verbose": true,
@@ -1388,30 +1430,30 @@
         "visualizer": {
             "accentStrength": 70,
             "barsOrigin": "bottom",
-            "density": 12,
+            "density": 11,
             "edgeInset": 0,
-            "edgeSoftness": 28,
+            "edgeSoftness": 55,
             "enable": false,
-            "frequencyProfile": "flat",
-            "gap": 2,
-            "height": 0.6,
+            "frequencyProfile": "smile",
+            "gap": 1,
+            "height": 0.9,
             "lineWidth": 2,
             "multiMonitorMode": "primary",
-            "opacity": 0.35,
+            "opacity": 1,
             "pillEdgeFade": 92,
             "pillScreenPadding": 24,
             "pillUnderlap": 28,
             "pillWingGap": 12,
             "pillWingLength": 180,
             "pillWingMode": "bounded",
-            "smoothing": 2,
+            "smoothing": 0,
             "type": "bars",
             "waveMode": "fill"
         },
         "weather": {
-            "city": "kolkata",
+            "city": "doha",
             "enable": true,
-            "enableGPS": false,
+            "enableGPS": true,
             "fetchInterval": 10,
             "manualLat": 0,
             "manualLon": 0,
@@ -1460,7 +1502,7 @@
     },
     "bootGreeting": {
         "autoDismissDelay": 5000,
-        "enable": true,
+        "enable": false,
         "showDate": true,
         "showWeather": true
     },
@@ -1495,7 +1537,7 @@
         "showQuickActionsSection": true,
         "showSlidersSection": true,
         "showSystemSection": true,
-        "showWallpaperSchemeChips": false,
+        "showWallpaperSchemeChips": true,
         "showWallpaperSection": true,
         "showWeatherSection": true,
         "style": "island"
@@ -1545,7 +1587,7 @@
         "enableBlurGlass": true,
         "enableDragReorder": true,
         "height": 60,
-        "hoverPreview": false,
+        "hoverPreview": true,
         "hoverPreviewDelay": 400,
         "hoverRegionHeight": 2,
         "hoverToReveal": true,
@@ -1567,10 +1609,10 @@
         "screenList": [
         ],
         "separatePinnedFromRunning": true,
-        "showAllWindowDots": false,
+        "showAllWindowDots": true,
         "showBackground": true,
         "showOnDesktop": true,
-        "smartIndicator": false,
+        "smartIndicator": true,
         "style": "island"
     },
     "enabledPanels": [
@@ -1765,7 +1807,7 @@
             "showBody": true
         },
         "security": {
-            "requirePasswordToPower": false,
+            "requirePasswordToPower": true,
             "unlockKeyring": false
         },
         "showLockedText": true,
@@ -1826,7 +1868,7 @@
             },
             "intervalMinutes": 25,
             "monitor": "focused",
-            "musicRequireArtist": false,
+            "musicRequireArtist": true,
             "placement": "panel-sitter",
             "size": 150,
             "slideMs": 400,
@@ -1928,6 +1970,44 @@
         "timeoutNormal": 7000,
         "useLegacyCounter": false
     },
+    "orbit": {
+        "balancedGrid": true,
+        "closeOnSelect": true,
+        "enable": true,
+        "hotCorner": "bottomLeft",
+        "hotCornerDwellMs": 0,
+        "hotCornerEnable": true,
+        "hotCornerSize": 4,
+        "maxPanelWidthPercent": 92,
+        "motionStyle": "glide",
+        "scrimDim": 35,
+        "scrollNavigation": true,
+        "scrollSteps": 1,
+        "shelf": {
+            "closeOnAction": true,
+            "enable": true,
+            "modules": [
+                "locator",
+                "trail",
+                "actions",
+                "stash"
+            ],
+            "pinnedActions": [
+                "open-cheatsheet",
+                "toggle-tiling",
+                "toggle-dashboard"
+            ]
+        },
+        "showStash": true,
+        "showTrail": true,
+        "showWorkspaceNumbers": true,
+        "stashRestoreMode": "original",
+        "trailItems": 5,
+        "windowGap": 4,
+        "workspaceCount": 3,
+        "workspaceScalePercent": 27,
+        "workspaceSpacing": 18
+    },
     "osd": {
         "mediaEnabled": true,
         "screenList": [
@@ -1949,11 +2029,6 @@
             "scale": 0.5
         },
         "openingZoomAnimation": true,
-        "recorder": {
-            "autoHideOnFullscreen": true,
-            "disableNiriAnims": false,
-            "suppressToasts": true
-        },
         "scrimAnimationDurationMs": 140,
         "scrimDim": 35
     },
@@ -2006,7 +2081,7 @@
             "widgets": "inherit"
         },
         "blurBackend": "auto",
-        "compositorBlur": false,
+        "compositorBlur": true,
         "jsgcThreshold": 300,
         "lowPower": false,
         "memoryMonitoring": true,
@@ -2038,6 +2113,7 @@
             "showAimLines": true
         },
         "rememberSnipChoice": false,
+        "savePath": "",
         "screenshotNameFormat": "ss-%Y%m%d-%H%M%S",
         "targetRegions": {
             "content": false,
@@ -2059,15 +2135,15 @@
     "screenRecord": {
         "accelerationMode": "auto",
         "audioBackend": "",
-        "audioBitrateKbps": 192,
+        "audioBitrateKbps": 160,
         "audioCodec": "aac",
         "audioMode": "system",
         "audioSampleRate": 48000,
         "audioSource": "",
-        "crf": 18,
+        "crf": 23,
         "discordCompress": {
             "audioBitrateKbps": 96,
-            "enabled": false,
+            "enabled": true,
             "maxDimension": 1280,
             "onlyIfNeeded": true,
             "preset": "slow",
@@ -2079,18 +2155,18 @@
         "hardwareDevice": "/dev/dri/renderD128",
         "microphoneSource": "",
         "pixelFormat": "yuv420p",
-        "preset": "medium",
-        "qualityPreset": "custom",
-        "recordingNameFormat": "recording_%Y-%m-%d_%H.%M.%S",
+        "preset": "veryfast",
+        "qualityPreset": "balanced",
+        "recordingNameFormat": "iNiR_%d-%m-%Y_%H.%M",
         "recordingOsd": {
             "autoHide": false
         },
         "savePath": "",
         "showNotifications": false,
-        "showOsd": false,
+        "showOsd": true,
         "systemAudioSource": "",
         "vaapiFilter": "scale_vaapi=format=nv12:out_range=full",
-        "videoBitrateKbps": 16000,
+        "videoBitrateKbps": 10000,
         "videoCodec": "libx264"
     },
     "search": {
@@ -2132,6 +2208,7 @@
     },
     "settingsUi": {
         "categories": "{\"groups\":[{\"label\":\"Essentials\",\"pages\":[0]},{\"label\":\"Appearance\",\"pages\":[4,25,3,14,21]},{\"label\":\"Shell\",\"pages\":[2,26,5,22,23,16,10,11,18,19,20]},{\"label\":\"System\",\"pages\":[1,7,6,12,15,8]},{\"label\":\"Reference\",\"pages\":[9]}],\"hidden\":[24,17,13]}",
+        "chromeLayout": "",
         "easyMode": false,
         "overlayAppearance": {
             "backdropBlur": 0,
@@ -2183,6 +2260,10 @@
             "enable": true,
             "valueScroll": true,
             "visualize": false
+        },
+        "edgeOpen": {
+            "enable": false,
+            "regionWidth": 2
         },
         "instantOpen": false,
         "keepLeftSidebarLoaded": true,
@@ -2274,8 +2355,8 @@
                 "weather",
                 "screentime"
             ],
-            "headerBanner": "wallpaper",
-            "headerBannerPath": "/home/greed/dotfiles/Pics/Wallpapers/joker-the-dark-knight.1920x1080.mp4",
+            "headerBanner": "custom",
+            "headerBannerPath": "/home/greed/Pictures/Pics/Wallpapers/cyberpunk-2077-nighttime-metropolis.1920x1080.mp4",
             "headerStyle": "profile",
             "sectionOrder": [
                 "system",
@@ -2324,7 +2405,8 @@
         "wallhaven": {
             "apiKey": "",
             "enable": true,
-            "limit": 24
+            "fitMode": "auto",
+            "limit": 12
         },
         "widgets": {
             "context": true,
@@ -2499,7 +2581,7 @@
             "focus": 1500,
             "longBreak": 900
         },
-        "secondPrecision": false,
+        "secondPrecision": true,
         "shortDateFormat": "dd/MM"
     },
     "tray": {
@@ -2746,6 +2828,8 @@
         "skipped": false
     },
     "windows": {
+        "appIdentityRules": [
+        ],
         "centerTitle": true,
         "showTitlebar": true
     },
@@ -2796,18 +2880,18 @@
     "workspaceStrip": {
         "closeDelay": 320,
         "openDelay": 110,
-        "panelWidth": 480,
+        "panelWidth": 492,
         "perMonitor": true,
-        "previewSize": 150,
-        "scrollNavigation": false,
+        "previewSize": 166,
+        "scrollNavigation": true,
         "scrollNavigationDebounceMs": 180,
-        "scrollNavigationSwitchWorkspace": true,
+        "scrollNavigationSwitchWorkspace": false,
         "showAppIcons": true,
         "showMediaPlayer": true,
         "showMetadata": true,
         "showPreviews": true,
         "side": "right",
         "style": "island",
-        "triggerWidth": 6
+        "triggerWidth": 10
     }
 }
