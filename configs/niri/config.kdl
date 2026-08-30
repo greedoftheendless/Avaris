@@ -20,7 +20,10 @@ input {
     mouse {
         accel-speed 0.0
     }
-    }
+    mod-key-nested "Super"
+        workspace-auto-back-and-forth
+        disable-power-key-handling
+}
 
 //MONITOR CONFIGURATION
 output "eDP-1" {
@@ -232,7 +235,7 @@ binds {
     Mod+Comma { spawn "inir" "settings"; }
     Mod+Slash { spawn "inir" "cheatsheet" "toggle"; }
     Mod+Space { spawn "inir" "overview" "toggle"; }
-    Mod+Shift+R { spawn "inir" "region" "record"; }
+    Mod+R { spawn "inir" "overlay" "toggle"; }
     Mod+Shift+P { spawn "inir" "session" "toggle"; }
 
     //Lock screen
@@ -277,8 +280,8 @@ binds {
     Mod+Page_Up     { focus-window-up; }
     Mod+Shift+Down  { focus-window-down; }
     Mod+Shift+Up    { focus-window-up; }
-    Mod+Shift+J  { focus-window-down; }
-    Mod+Shift+K    { focus-window-up; }
+    Mod+Shift+J     { focus-window-down; }
+    Mod+Shift+K     { focus-window-up; }
     Mod+Left        { focus-column-left; }
     Mod+Right       { focus-column-right; }
     Mod+H           { focus-column-left; }
@@ -286,12 +289,12 @@ binds {
     Mod+C           { focus-column-left; }
     Mod+V           { focus-column-right; }
 
-    Mod+Down      { focus-workspace-down; }
-    Mod+Up        { focus-workspace-up; }
-    Mod+X         { focus-workspace-down; }
-    Mod+W         { focus-workspace-up; }
-    Mod+J         { focus-workspace-down; }
-    Mod+K         { focus-workspace-up; }
+    Mod+Down        { focus-workspace-down; }
+    Mod+Up          { focus-workspace-up; }
+    Mod+X           { focus-workspace-down; }
+    Mod+W           { focus-workspace-up; }
+    Mod+J           { focus-workspace-down; }
+    Mod+K           { focus-workspace-up; }
 
 
     //Moving windows to workspaces
@@ -313,15 +316,8 @@ binds {
 
     Mod+WheelScrollRight      { focus-column-right; }
     Mod+WheelScrollLeft       { focus-column-left; }
-    Mod+Ctrl+WheelScrollRight { move-column-right; }
-    Mod+Ctrl+WheelScrollLeft  { move-column-left; }
-
-    // Usually scrolling up and down with Shift in applications results in
-    // horizontal scrolling; these binds replicate that.
-    Mod+Shift+WheelScrollDown      { focus-column-right; }
-    Mod+Shift+WheelScrollUp        { focus-column-left; }
-    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    Mod+Ctrl+L                { move-column-right; }
+    Mod+Ctrl+H                { move-column-left; }
 
     Mod+1 { focus-workspace 1; }
     Mod+2 { focus-workspace 2; }
@@ -345,10 +341,7 @@ binds {
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
 
-    // Cycle through widths set in preset-column-widths.
-    Mod+R { switch-preset-column-width; }
-
-    Mod+Ctrl+Shift+R { switch-preset-window-height; }
+    Mod+Alt+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
 
     Mod+Shift+F { maximize-column; }
