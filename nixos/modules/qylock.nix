@@ -8,10 +8,9 @@
     # theme = "ninja_gaiden";
     # theme = "clockwork/orbital";
     # theme = "nier-automata";
-    # theme = "enfield";
+    theme = "enfield";
     # theme = "winter";
-    # theme = "last-of-us";
-    theme = "R1999_2";
+    # theme = "R1999_2";
     # theme = "sword";
 
     sddm.enable = true;
