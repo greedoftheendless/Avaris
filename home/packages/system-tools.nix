@@ -15,7 +15,7 @@
     # dms-shell
     quickshell
 
-    #System/Hyprland/Niri required packages
+    #System/Niri required packages
     awww
     pastel
 
@@ -55,7 +55,14 @@
     navi
     nautilus
     kdePackages.gwenview
+    wl-clipboard
     superfile
+    wget
+    curl
+    file
+    xdg-utils
+    xdg-user-dirs
+    pulseaudio
     btop
     binutils
     unzip
