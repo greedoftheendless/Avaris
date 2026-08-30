@@ -1,6 +1,7 @@
 {
   "applied": [
     "001-gamemode-animation-toggle",
+    "002-backdrop-layer-rules",
     "003-qt-theming-kde",
     "007-brightness-keybinds",
     "008-media-keybinds",
@@ -25,7 +26,10 @@
     "030-unified-snip-keybind",
     "031-remove-reddit-panel",
     "032-cliphist-strip-browser-markup",
-    "033-settings-panel-legibility"
+    "033-settings-panel-legibility",
+    "034-cliphist-text-watcher",
+    "035-hide-xembedsniproxy-window",
+    "036-steam-toast-no-focus"
   ],
   "skipped": []
 }

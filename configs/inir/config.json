@@ -2051,7 +2051,7 @@
             "showVolume": true,
             "showWeather": true
         },
-        "enable": true,
+        "enable": false,
         "focusAnimationDurationMs": 180,
         "focusAnimationEnable": true,
         "iconMaxSize": 0,
@@ -2161,7 +2161,7 @@
         "recordingOsd": {
             "autoHide": false
         },
-        "savePath": "",
+        "savePath": "/home/greed/Videos/Recordings/iNiR",
         "showNotifications": false,
         "showOsd": true,
         "systemAudioSource": "",
@@ -2277,10 +2277,10 @@
                 "software",
                 "anime",
                 "animeSchedule",
+                "tools",
                 "wallhaven",
-                "news",
                 "ytmusic",
-                "tools"
+                "news"
             ]
         },
         "news": {
@@ -2380,7 +2380,7 @@
         "shellLayout": {
             "feature": {
                 "customHeight": 793,
-                "sizeMode": "custom",
+                "sizeMode": "full",
                 "slot": "left",
                 "width": 591
             },
@@ -2422,7 +2422,7 @@
                 "showNightLight": false,
                 "showSettings": true
             },
-            "crypto": false,
+            "crypto": true,
             "crypto_settings": {
                 "coins": [
                     "bitcoin",
@@ -2451,14 +2451,19 @@
                     "name": "Terminal"
                 },
                 {
-                    "cmd": "firefox",
+                    "cmd": "zen-beta",
                     "icon": "web",
                     "name": "Browser"
                 },
                 {
-                    "cmd": "code",
+                    "cmd": "nvim",
                     "icon": "code",
-                    "name": "Code"
+                    "name": "Editor"
+                },
+                {
+                    "cmd": "steam",
+                    "icon": "apps",
+                    "name": "Steam"
                 }
             ],
             "quickWallpaper": {
@@ -2825,7 +2830,7 @@
     "welcomeWizard": {
         "completed": false,
         "profile": "balanced",
-        "skipped": false
+        "skipped": true
     },
     "windows": {
         "appIdentityRules": [
