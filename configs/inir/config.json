@@ -456,9 +456,9 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/natural.jpg",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/night sky.jpg",
                 "workspaceFirst": 1,
-                "workspaceLast": 5
+                "workspaceLast": 2
             }
         ],
         "widgets": {
@@ -591,6 +591,8 @@
                 "y": 316
             },
             "customImage": {
+                "contentHeight": 0,
+                "contentWidth": 0,
                 "dim": 0,
                 "enable": false,
                 "fitMode": "cover",
@@ -1357,7 +1359,7 @@
             "restHeight": 44,
             "restWidth": 176,
             "rowSpacing": 20,
-            "scale": 0.9,
+            "scale": 1.05,
             "showGlyphs": true,
             "soul": {
                 "enable": true,
@@ -2346,6 +2348,10 @@
             "downloadPath": {
                 "nsfw": "",
                 "sfw": ""
+            },
+            "gelbooru": {
+                "apiKey": "",
+                "userId": ""
             },
             "limit": 20,
             "zerochan": {
