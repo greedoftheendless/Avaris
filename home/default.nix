@@ -2,6 +2,7 @@
   imports = [
     #Module imports
     ./packages/system-tools.nix
+    ./packages/shell-items.nix
     ./packages/pentest-packages.nix
     ./packages/game.nix
     ./packages/common-apps.nix
