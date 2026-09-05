@@ -1,8 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   #Installing web-apps
   home.packages = with pkgs; [
     (import ../modules/webapp/webapp-install.nix {inherit pkgs;})
@@ -11,9 +7,6 @@
     #Shells
     bash
     nushell
-    noctalia-shell
-    # dms-shell
-    quickshell
 
     #System/Niri required packages
     awww
@@ -35,9 +28,12 @@
 
     #Languages and their packages
     python3
+    go
+    uv
 
-    # Necessary tools
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    #Tunelling proxy/VPN(Self-Host)
+    wireguard-ui
+    wireguard-tools
 
     cacert
     playerctl
@@ -56,7 +52,6 @@
     nautilus
     kdePackages.gwenview
     wl-clipboard
-    superfile
     wget
     curl
     file

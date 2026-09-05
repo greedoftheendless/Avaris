@@ -10,11 +10,9 @@
     grim
     darkly
     quickshell
-    uv
     fuzzel
     hyprpicker
     libnotify
-    go
     wlsunset
     easyeffects
     swappy
@@ -23,5 +21,7 @@
     mpv
     swaylock
     swayidle
+    ddcutil
+    qt5.qtgraphicaleffects
   ];
 }

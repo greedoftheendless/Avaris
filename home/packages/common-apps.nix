@@ -29,7 +29,7 @@
     glow
     opencode
     obs-studio
-    wf-recorder
-    slurp
+    bitwarden-cli
+    qrencode
   ];
 }
