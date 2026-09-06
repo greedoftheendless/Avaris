@@ -29,7 +29,11 @@
     "033-settings-panel-legibility",
     "034-cliphist-text-watcher",
     "035-hide-xembedsniproxy-window",
-    "036-steam-toast-no-focus"
+    "036-steam-toast-no-focus",
+    "037-remembered-super-shift-s",
+    "038-cliphist-preview-filter",
+    "039-sddm-preserve-greeter-backend",
+    "041-visualizer-app-filter-semantics"
   ],
   "skipped": []
 }

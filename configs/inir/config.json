@@ -115,6 +115,8 @@
             "barSpacing": 1,
             "barWidth": 2,
             "bars": 0,
+            "blockedApps": [
+            ],
             "colorSource": "cover",
             "foreground": "",
             "framerate": 60,
@@ -387,7 +389,11 @@
                 "spatialStep": 30,
                 "transitionFps": 60
             },
-            "provider": "awww"
+            "provider": "awww",
+            "web": {
+                "interactive": false,
+                "source": ""
+            }
         },
         "effects": {
             "blurRadius": 32,
@@ -412,7 +418,7 @@
         },
         "enableAnimation": true,
         "fillMode": "fit",
-        "hideUpscaleNotification": false,
+        "hideUpscaleNotification": true,
         "hideWhenFullscreen": true,
         "multiMonitor": {
             "enable": true
@@ -456,9 +462,9 @@
         "wallpapersByMonitor": [
             {
                 "monitor": "eDP-1",
-                "path": "/home/greed/dotfiles/Pics/Wallpapers/night sky.jpg",
+                "path": "/home/greed/dotfiles/Pics/Wallpapers/death night-dark.jpg",
                 "workspaceFirst": 1,
-                "workspaceLast": 2
+                "workspaceLast": 3
             }
         ],
         "widgets": {
@@ -570,6 +576,9 @@
                     "signal": "signal",
                     "surface": "surface",
                     "tertiary": "tertiary"
+                },
+                "pixel": {
+                    "orientation": "horizontal"
                 },
                 "placementStrategy": "free",
                 "quote": {
@@ -736,7 +745,7 @@
                 "cornerRadius": -1,
                 "customPath": "",
                 "dim": 0,
-                "enable": true,
+                "enable": false,
                 "locked": false,
                 "palette": {
                     "primary": "primary",
@@ -762,7 +771,16 @@
                 "dim": 0,
                 "enable": true,
                 "locked": false,
-                "lyricsExpanded": false,
+                "lyricsExpanded": true,
+                "organicCompression": 0,
+                "organicGlow": 100,
+                "organicIdleMotion": 40,
+                "organicMotionSpeed": 250,
+                "organicOpacity": 100,
+                "organicPulse": 150,
+                "organicRange": 20,
+                "organicReach": 35,
+                "organicSensitivity": 35,
                 "palette": {
                     "primary": "primary",
                     "secondary": "secondary",
@@ -771,13 +789,49 @@
                     "tertiary": "tertiary"
                 },
                 "placementStrategy": "free",
-                "playerPreset": "expandingLyrics",
+                "playerPreset": "compact",
+                "visualizerAccentStrength": 70,
+                "visualizerBarCount": 32,
+                "visualizerFrequencyProfile": "flat",
+                "visualizerOpacity": 55,
+                "visualizerPaletteMode": "cava",
                 "visualizerPosition": "bottom",
+                "visualizerRange": 88,
+                "visualizerSmoothing": 2,
                 "visualizerType": "wave",
                 "widgetOpacity": 100,
                 "widgetScale": 124,
                 "x": 1412,
                 "y": 628
+            },
+            "monthCalendar": {
+                "backgroundOpacity": 0.14,
+                "borderOpacity": 0.16,
+                "borderWidth": 1,
+                "colorMode": "auto",
+                "contentHeight": 340,
+                "contentWidth": 300,
+                "cornerRadius": -1,
+                "dim": 0,
+                "enable": false,
+                "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
+                "placementStrategy": "free",
+                "showAdjacentDays": true,
+                "showBackground": true,
+                "showBorder": true,
+                "useBlur": false,
+                "weekStart": 1,
+                "widgetOpacity": 100,
+                "widgetScale": 100,
+                "x": 420,
+                "y": 120
             },
             "newsTicker": {
                 "backgroundOpacity": 0.16,
@@ -843,10 +897,20 @@
                     "layoutVersion": 1,
                     "output": "eDP-1",
                     "widgets": {
+                        "clock": {
+                            "placementStrategy": "free",
+                            "x": 588,
+                            "y": 320
+                        },
                         "customImage": {
                             "placementStrategy": "free",
                             "x": 1569,
                             "y": 193
+                        },
+                        "imageConverter": {
+                            "placementStrategy": "free",
+                            "x": 492,
+                            "y": 368
                         },
                         "japaneseTypography": {
                             "placementStrategy": "free",
@@ -860,18 +924,47 @@
                         },
                         "mediaControls": {
                             "placementStrategy": "free",
-                            "x": 1412,
-                            "y": 628
+                            "x": 1427,
+                            "y": 558
+                        },
+                        "monthCalendar": {
+                            "placementStrategy": "free",
+                            "x": 492,
+                            "y": 128
+                        },
+                        "newsTicker": {
+                            "contentHeight": 144,
+                            "contentWidth": 336,
+                            "placementStrategy": "free",
+                            "x": 1036,
+                            "y": 184
                         },
                         "systemMonitor": {
                             "placementStrategy": "free",
                             "x": 1428,
-                            "y": 832
+                            "y": 728
+                        },
+                        "userCard": {
+                            "contentHeight": 256,
+                            "contentWidth": 448,
+                            "placementStrategy": "free",
+                            "x": 1292,
+                            "y": 232
                         },
                         "visualizer": {
                             "placementStrategy": "free",
-                            "x": 658,
-                            "y": 865
+                            "x": 660,
+                            "y": 874
+                        },
+                        "weather": {
+                            "placementStrategy": "free",
+                            "x": 492,
+                            "y": 200
+                        },
+                        "worldClock": {
+                            "placementStrategy": "free",
+                            "x": 1004,
+                            "y": 280
                         }
                     },
                     "width": 1920
@@ -927,6 +1020,59 @@
                 "widgetScale": 100,
                 "x": 1428,
                 "y": 832
+            },
+            "timers": {
+                "backgroundOpacity": 0,
+                "borderOpacity": 0.16,
+                "borderWidth": 0,
+                "colorMode": "auto",
+                "cornerRadius": -1,
+                "dim": 0,
+                "enable": false,
+                "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
+                "placementStrategy": "free",
+                "showBackground": false,
+                "showBorder": false,
+                "useBlur": false,
+                "vertical": false,
+                "widgetOpacity": 100,
+                "widgetScale": 100,
+                "x": 360,
+                "y": 420
+            },
+            "todo": {
+                "backgroundOpacity": 0.14,
+                "borderOpacity": 0.16,
+                "borderWidth": 1,
+                "colorMode": "auto",
+                "contentHeight": 276,
+                "contentWidth": 300,
+                "cornerRadius": -1,
+                "dim": 0,
+                "enable": false,
+                "locked": false,
+                "palette": {
+                    "primary": "primary",
+                    "secondary": "secondary",
+                    "signal": "signal",
+                    "surface": "surface",
+                    "tertiary": "tertiary"
+                },
+                "placementStrategy": "free",
+                "showBackground": true,
+                "showBorder": true,
+                "useBlur": false,
+                "widgetOpacity": 100,
+                "widgetScale": 100,
+                "x": 120,
+                "y": 180
             },
             "uptime": {
                 "backgroundOpacity": 0.16,
@@ -1005,6 +1151,15 @@
                 "frequencyProfile": "flat",
                 "lineWidth": 2,
                 "locked": false,
+                "organicCompression": 0,
+                "organicCoverSize": 51,
+                "organicGlow": 100,
+                "organicIdleMotion": 18,
+                "organicMotionSpeed": 250,
+                "organicOpacity": 100,
+                "organicPulse": 150,
+                "organicRange": 20,
+                "organicSensitivity": 25,
                 "palette": {
                     "primary": "primary",
                     "secondary": "secondary",
@@ -1087,8 +1242,8 @@
                 "showBackground": true,
                 "showBorder": true,
                 "timezones": [
-                    "Australia/Sydney",
-                    "Asia/Tokyo",
+                    "Asia/Kolkata",
+                    "UTC",
                     "Europe/London",
                     "America/New_York"
                 ],
@@ -1118,7 +1273,7 @@
             "enabled": false,
             "overlayOpacity": 0.3
         },
-        "borderless": false,
+        "borderless": true,
         "bottom": false,
         "clock": {
             "dateFontFamily": "",
@@ -1360,7 +1515,7 @@
             "restWidth": 176,
             "rowSpacing": 20,
             "scale": 1.05,
-            "showGlyphs": true,
+            "showGlyphs": false,
             "soul": {
                 "enable": true,
                 "size": 1.1,
@@ -1431,7 +1586,7 @@
         },
         "visualizer": {
             "accentStrength": 70,
-            "barsOrigin": "bottom",
+            "barsOrigin": "mirror",
             "density": 11,
             "edgeInset": 0,
             "edgeSoftness": 55,
@@ -1440,7 +1595,7 @@
             "gap": 1,
             "height": 0.9,
             "lineWidth": 2,
-            "multiMonitorMode": "primary",
+            "multiMonitorMode": "all",
             "opacity": 1,
             "pillEdgeFade": 92,
             "pillScreenPadding": 24,
@@ -1449,8 +1604,8 @@
             "pillWingLength": 180,
             "pillWingMode": "bounded",
             "smoothing": 0,
-            "type": "bars",
-            "waveMode": "fill"
+            "type": "wave",
+            "waveMode": "ribbon"
         },
         "weather": {
             "city": "doha",
@@ -1491,7 +1646,7 @@
         }
     },
     "battery": {
-        "automaticSuspend": true,
+        "automaticSuspend": false,
         "chargeLimit": {
             "enable": false,
             "threshold": 80
@@ -1656,20 +1811,20 @@
         "wSessionScreen",
         "iiMascotCompanion",
         "iiDashboard",
-        "iiOnScreenKeyboard",
         "iiShellUpdate",
-        "iiRecordingOsd"
+        "iiRecordingOsd",
+        "iiRegionSelector"
     ],
     "familyTransitionAnimation": true,
     "gameMode": {
         "autoDetect": true,
         "checkInterval": 5000,
-        "disableAnimations": false,
-        "disableDiscoverOverlay": false,
-        "disableEffects": false,
-        "disableNiriAnimations": false,
+        "disableAnimations": true,
+        "disableDiscoverOverlay": true,
+        "disableEffects": true,
+        "disableNiriAnimations": true,
         "disableReloadToasts": true,
-        "minimalMode": false,
+        "minimalMode": true,
         "niriWindowListUpdateIntervalMs": 100,
         "niriWindowListUpdateIntervalMsGameMode": 500,
         "suppressNotifications": true
@@ -1827,7 +1982,7 @@
     "mascot": {
         "chaos": {
             "allowRearrange": false,
-            "enable": true,
+            "enable": false,
             "sfx": true,
             "systemEvents": true
         },
@@ -1876,7 +2031,7 @@
             "slideMs": 400,
             "visibleSeconds": 8
         },
-        "enable": true,
+        "enable": false,
         "personality": {
             "commentary": true,
             "enabled": true,
@@ -1953,6 +2108,8 @@
         "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
     },
     "notifications": {
+        "blockedApps": [
+        ],
         "edgeMargin": 4,
         "ignoreAppTimeout": false,
         "maxPopupLifetime": 30000,
@@ -2065,7 +2222,7 @@
         "scrollWrapAround": true,
         "shelf": {
             "closeOnAction": true,
-            "density": "comfortable",
+            "density": "compact",
             "enable": true,
             "islandPadding": 8,
             "islandStyle": "ricelin",
@@ -2213,9 +2370,22 @@
             "padding": 10,
             "strokeWidth": 6
         },
+        "japaneseLookup": {
+            "anki": {
+                "backField": "Back",
+                "deck": "Default",
+                "enabled": false,
+                "endpoint": "http://127.0.0.1:8765",
+                "frontField": "Front",
+                "model": "Basic"
+            },
+            "enabled": true,
+            "translationTarget": "auto"
+        },
         "lastAction": 2,
         "lastMode": 1,
         "numSize": 48,
+        "ocrLanguage": "auto",
         "rect": {
             "showAimLines": true
         },
@@ -2396,8 +2566,8 @@
         },
         "news": {
             "enable": true,
-            "mode": "local",
-            "topic": "NATION"
+            "mode": "topic",
+            "topic": "WORLD"
         },
         "openFolderOnDownload": false,
         "plugins": {
@@ -2445,6 +2615,10 @@
                     {
                         "size": 1,
                         "type": "darkMode"
+                    },
+                    {
+                        "size": 1,
+                        "type": "easyEffects"
                     }
                 ]
             },
@@ -2511,7 +2685,7 @@
         },
         "translator": {
             "delay": 300,
-            "enable": false
+            "enable": true
         },
         "wallhaven": {
             "apiKey": "",
@@ -2686,7 +2860,7 @@
         "pomodoro": true,
         "theme": "freedesktop",
         "timer": true,
-        "volume": 0.5
+        "volume": 1
     },
     "time": {
         "dateFormat": "ddd, dd/MM",
@@ -2940,8 +3114,10 @@
     },
     "welcomeWizard": {
         "completed": false,
+        "performancePreset": "balanced",
         "profile": "balanced",
-        "skipped": true
+        "skipped": true,
+        "stylePreset": "material-flow"
     },
     "windows": {
         "appIdentityRules": [
