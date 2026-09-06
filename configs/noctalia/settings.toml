@@ -1,3 +1,6 @@
+[accessibility]
+ui_scale = 1.300000011920929
+
 [audio]
 enable_sounds = true
 
@@ -7,33 +10,7 @@ enabled = true
 tint_intensity = 0.0
 
 [bar]
-order = [ "Top-Bar", "Left-bar", "Right-Bar" ]
-
-    [bar.Left-bar]
-    auto_hide = true
-    center = [ "cpu", "temp", "ram", "network_rx", "network_tx" ]
-    enabled = true
-    end = []
-    icon_color = "primary"
-    layer = "overlay"
-    position = "left"
-    reserve_space = false
-    scale = 1.4500000141561031
-    start = []
-    thickness = 86
-
-    [bar.Right-Bar]
-    auto_hide = true
-    center = [ "cat_2", "media", "audio_visualizer" ]
-    enabled = true
-    end = []
-    layer = "overlay"
-    padding = 0
-    position = "right"
-    reserve_space = false
-    scale = 4.0
-    start = []
-    thickness = 120
+order = [ "Top-Bar" ]
 
     [bar.Top-Bar]
     background_opacity = 0.0
@@ -91,7 +68,6 @@ widget_order = [ "desktop-widget-0000000000000001", "desktop-widget-000000000000
     type = "audio_visualizer"
 
         [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
-        aspect_ratio = 2.5
         background_opacity = 0.0
         bands = 32
         show_when_idle = false
@@ -131,134 +107,6 @@ pre_action_fade_seconds = 0
 [location]
 auto_locate = true
 
-[lockscreen]
-blur_intensity = 0.099999997764825821
-tint_intensity = 0.0
-
-[lockscreen_widgets]
-enabled = true
-schema_version = 2
-widget_order = [
-    "lockscreen-login-box@eDP-1",
-    "lockscreen-widget-0000000000000002",
-    "lockscreen-widget-0000000000000003",
-    "lockscreen-widget-0000000000000004",
-    "lockscreen-widget-0000000000000001",
-    "lockscreen-widget-0000000000000006"
-]
-
-    [lockscreen_widgets.grid]
-    cell_size = 64
-    major_interval = 4
-    visible = true
-
-    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 0.0
-    box_width = 0.0
-    cx = 932.0
-    cy = 771.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "login_box"
-
-        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
-        background_opacity = 1.0
-        background_radius = 32.0
-        input_opacity = 1.0
-        input_radius = 18.0
-        show_login_button = true
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
-    box_height = 320.0
-    box_width = 704.0
-    cx = 960.0
-    cy = 179.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "clock"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
-        background = true
-        background_color = "surface"
-        background_opacity = 1.0
-        background_padding = 10.0
-        background_radius = 12.0
-        circle = true
-        clock_style = "digital"
-        color = "on_surface"
-        font_family = ""
-        format = "{:%-I:%M:%S %p}"
-        shadow = true
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
-    box_height = 480.0
-    box_width = 512.0
-    cx = 320.0
-    cy = 579.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "fancy_audio_visualizer"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
-        background = false
-        bar_width = 0.5
-        bloom_intensity = 0.5
-        fade_when_idle = true
-        inner_diameter = 0.85000000000000009
-        ring_opacity = 0.5
-        rotation_speed = 0.70000000000000007
-        sensitivity = 1.6000000000000001
-        visualization_mode = "wave_rings"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
-    box_height = 192.0
-    box_width = 528.0
-    cx = 1592.0
-    cy = 540.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "audio_visualizer"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
-        aspect_ratio = 6.0
-        background_opacity = 0.0
-        background_padding = 22.0
-        background_radius = 32.0
-        bands = 128.0
-        show_when_idle = false
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
-    box_height = 192.0
-    box_width = 576.0
-    cx = 960.0
-    cy = 604.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "media_player"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
-        background_opacity = 1.0
-        background_padding = 7.0
-        background_radius = 32.0
-        hide_when_no_media = true
-        layout = "horizontal"
-
-    [lockscreen_widgets.widget.lockscreen-widget-0000000000000006]
-    box_height = 256.0
-    box_width = 320.0
-    cx = 932.0
-    cy = 952.0
-    output = "eDP-1"
-    rotation = 0.0
-    type = "clock"
-
-        [lockscreen_widgets.widget.lockscreen-widget-0000000000000006.settings]
-        background_opacity = 1.0
-        background_padding = 32.0
-        background_radius = 32.0
-        clock_style = "analog"
-
 [osd]
 position = "top_right"
 
@@ -270,13 +118,11 @@ directory = "/home/greed/videos/Recordings"
 enabled = [ "noctalia/bongocat", "noctalia/screen_recorder" ]
 
     [[plugins.source]]
-    auto_update = true
     kind = "git"
     location = "https://github.com/noctalia-dev/official-plugins"
     name = "official"
 
     [[plugins.source]]
-    auto_update = true
     kind = "git"
     location = "https://github.com/noctalia-dev/community-plugins"
     name = "community"
@@ -294,7 +140,6 @@ polkit_agent = true
 screen_time_enabled = false
 settings_show_advanced = true
 time_format = "{:%-I:%M %p}"
-ui_scale = 1.300000011920929
 
     [shell.mpris]
     blacklist = [ "zen-beta", "reddit", "vesktop" ]
@@ -303,10 +148,9 @@ ui_scale = 1.300000011920929
     clipboard_placement = "floating"
     control_center_placement = "floating"
     launcher_placement = "floating"
-    launcher_session_search = true
     open_near_click_session = true
     open_near_click_wallpaper = true
-    session_placement = "centered"
+    session_placement = "floating"
     transparency_mode = "glass"
     wallpaper_placement = "floating"
 
@@ -364,13 +208,13 @@ fill_mode = "fit"
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/greed/dotfiles/Pics/Wallpapers/skull.png"
+    path = "/home/greed/dotfiles/Pics/Wallpapers"
 
     [wallpaper.last]
-    path = "/home/greed/dotfiles/Pics/Wallpapers/skull.png"
+    path = "/home/greed/dotfiles/Pics/Wallpapers"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/greed/dotfiles/Pics/Wallpapers/skull.png"
+    path = "/home/greed/dotfiles/Pics/Wallpapers"
 
 [widget.audio_visualizer]
 bands = 30
@@ -387,7 +231,7 @@ show_label = true
 
 [widget.cat]
 audio_spectrum = true
-input_device = "/dev/input/event1"
+input_devices = [ "/dev/input/event1" ]
 rave_mode = true
 type = "noctalia/bongocat:cat"
 
@@ -428,7 +272,8 @@ hide_when_no_unread = true
 type = "noctalia/screen_recorder:recorder"
 
 [widget.sysmon]
-display = "graph"
+visualization = "graph"
+show_value = true
 
 [widget.tray]
 hidden = [ "blueman" ]
