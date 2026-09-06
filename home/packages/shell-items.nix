@@ -1,14 +1,25 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   home.packages = with pkgs; [
-    # inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
-    # dms-shell
-    noctalia-shell
+    #iNiR import
+    # inputs.inir.homeModules.inir
+
+    #noctalia import
+    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+
+    #umbriel import
+    inputs.umbriel.packages.${pkgs.stdenv.hostPlatform.system}.default
+
+    dms-shell
 
     #Items
     wf-recorder
     slurp
     grim
-    darkly
+    gpu-screen-recorder
     quickshell
     fuzzel
     hyprpicker
