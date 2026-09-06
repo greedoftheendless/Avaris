@@ -90,8 +90,8 @@ layout {
 //AUTOSTART OF APPLICATIONS
 spawn-at-startup "bash" "-c" "wl-paste --type text --watch cliphist store &"
 spawn-at-startup "bash" "-c" "wl-paste --type image --watch cliphist store &"
-spawn-at-startup "bash" "-c" "wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &"
-//spawn-at-startup "noctalia-shell"
+spawn-at-startup "noctalia"
+// spawn-at-startup "bash" "-c" "wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &"
 // spawn-at-startup "noctalia"
 spawn-at-startup "zen-beta"
 
@@ -196,51 +196,32 @@ layer-rule {
 
 binds {
 
-    // //Noctalia-shell binds
-    // //Recorder
-    // Mod+Shift+R { spawn-sh "noctalia-shell ipc call plugin:screen-recorder toggle"; }
-    //
-    // //Search bar
-    // Mod+Space { spawn-sh "noctalia-shell ipc call launcher toggle"; }
-    //
-    // //Cheat sheet
-    // Mod+Ctrl+C { spawn-sh "noctalia-shell ipc call plugin:keybind-cheatsheet toggle"; }
-    //
-    // //Clipboard
-    // Ctrl+Shift+L { spawn-sh "noctalia-shell ipc call launcher clipboard"; }
-    //
-    // // Session menu (has poweroff, reboot, logout, etc.)
-    // Mod+Shift+P { spawn-sh "noctalia-shell ipc call sessionMenu toggle"; }
-    //
-    // // Lock screen directly
-    // Mod+Shift+L { spawn-sh "noctalia-shell ipc call lockScreen lock"; }
+    // Noctalia binds
+    //Search bar
+    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
 
+    //Clipboard
+    Ctrl+Shift+L { spawn-sh "noctalia msg panel-toggle clipboard"; }
 
-    //Noctalia binds
-    // //Search bar
-    // Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
-    //
-    // //Clipboard
-    // Ctrl+Shift+L { spawn-sh "noctalia msg panel-toggle clipboard"; }
-    //
-    // // Session menu (has poweroff, reboot, logout, etc.)
-    // Mod+Shift+P { spawn-sh "noctalia msg panel-toggle session"; }
-    //
-    // // Lock screen directly
-    // Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
+    // Session menu (has poweroff, reboot, logout, etc.)
+    Mod+Shift+P { spawn-sh "noctalia msg panel-toggle session"; }
 
-    //iNiR binds
-    Ctrl+Shift+L { spawn "inir" "clipboard" "toggle"; }
-    Mod+D { spawn "inir" "dashboard" "toggle"; }
-    Mod+Comma { spawn "inir" "settings"; }
-    Mod+Tab { spawn "inir" "cheatsheet" "toggle"; }
-    Mod+Space { spawn "inir" "overview" "toggle"; }
-    Mod+R { spawn "inir" "overlay" "toggle"; }
-    Mod+Shift+P { spawn "inir" "session" "toggle"; }
-    Alt+Tab { spawn "inir" "orbit" "toggle"; }
+    // Lock screen directly
+    Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
+
+    // //iNiR binds
+
+    // Ctrl+Shift+L { spawn "inir" "clipboard" "toggle"; }
+    // Mod+D { spawn "inir" "dashboard" "toggle"; }
+    // Mod+Comma { spawn "inir" "settings"; }
+    // Mod+Tab { spawn "inir" "cheatsheet" "toggle"; }
+    // Mod+Space { spawn "inir" "overview" "toggle"; }
+    // Mod+R { spawn "inir" "overlay" "toggle"; }
+    // Mod+Shift+P { spawn "inir" "session" "toggle"; }
+    // Alt+Tab { spawn "inir" "orbit" "toggle"; }
 
     //Lock screen
-    Mod+Shift+L { spawn "qylock-lock"; } 
+    // Mod+Shift+L { spawn "qylock-lock"; } 
 
     //Screenshot(in-built in niri)
     Mod+S { screenshot; }
