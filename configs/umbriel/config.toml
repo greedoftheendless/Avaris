@@ -1,1 +1,189 @@
-/nix/store/fhxvax7a6j6zlbwj6jv164z17vci3dfx-home-manager-files/.config/umbriel/config.toml
+[include]
+files = [
+  "./keybinds.toml",
+]
+
+[general]
+#autostart
+autostart = ["noctalia","zen-beta"]
+
+mod_key = "Super"
+xwayland = true 
+show_cheatsheet = false
+focus_on_activate = true
+
+[environment]
+QT_QPA_PLATFORMTHEME = "qt6ct"
+ELECTRON_OZONE_PLATFORM_HINT = "auto"
+GTK_USE_PORTAL = "1"
+
+[workspaces]
+back_and_forth = true
+
+
+[output.eDP-1]
+mode = "1920x1080@60"
+scale = 1.00
+
+# Input ----------------------------------------------------------------------
+[input]
+middle_click_paste = true
+[input.keyboard]
+layout = "us"
+variant = ""
+options = ""
+repeat_rate = 60
+repeat_delay = 300
+
+[input.touchpad]
+tap = true
+natural_scroll = true
+accel_profile = "flat"   # swap to "flat" to feel the difference
+sensitivity = 0.5        # -1.0..1.0
+scroll_factor = 1.5      # touchpad scroll speed, 0.1 to 10.0
+
+[input.mouse]
+accel_profile = "flat"         # "flat", "adaptive", or "custom <step> <points...>"
+sensitivity = 0.4              # pointer speed, -1.0 to 1.0
+scroll_wheel_step = 60         # 1-1000
+
+[input.tablet]
+enabled = true                 # false disables the tablet and its pads
+
+[input.cursor]
+theme = ""
+size = 24                      # 1-512
+hardware_cursor = true         # false forces software cursor composition
+hide_when_typing = false       # hide after a non-modifier key press
+hide_timeout_ms = 0            # 0-3600000, 0 disables hiding
+
+[input.focus]
+follows_mouse = false
+
+[[window_rule]]
+blur = true
+blur_optimized = false
+
+# Colors ---------------------------------------------------------------------
+[colors]
+
+# Appearance -----------------------------------------------------------------
+[appearance]
+prefer_no_csd = true
+border_width = 2               # 0-100
+outer_border_width = 0         # 0-100
+corner_radius = 20             # 0-500
+# Border colors moved to [colors.border]; insert_hint/backdrop/shadow to [colors].
+# [colors.border]
+# focused = "#7AA3FFFF"
+# unfocused = "#292933FF"
+# scratchpad_focused = "#E5C07BFF"
+# scratchpad_unfocused = "#5C4A2AFF"
+# outer = "#1A1A1FFF"
+
+[appearance.blur]
+enabled = true
+optimized = true
+passes = 1                     # 0-8
+radius = 3                     # 0-100
+noise = 0.02                   # 0.0-1.0
+brightness = 0.9               # 0.0-2.0
+contrast = 0.9                 # 0.0-2.0
+saturation = 1.1               # 0.0-2.0
+
+[appearance.shadow]
+enabled = true
+softness = 10                  # 0-200, 0 = hard edge
+offset_x = 2                   # -200 to 200
+offset_y = 2                    # color moved to [colors].shadow
+
+[animation]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.windows_in]
+enabled = true
+duration_ms = 150
+curve = "easeout"
+style = "fade"       # "popin", "zoom", "slide", "fade", or "none"
+scale = 0.85          # 0.1-1.0, used by "popin"
+
+[animation.windows_out]
+enabled = true
+duration_ms = 150
+curve = "easeout"
+style = "fade"        # "fade" or "slide"
+
+[animation.windows_move]
+enabled = true
+duration_ms = 250
+curve = "snappy"
+
+[animation.workspaces]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.overview]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.scratchpad]
+# enabled = false
+# duration_ms = 250
+# curve = "easeout"
+# dim = 0.5             # 0.0-1.0
+# blur = false          # requires appearance.blur.enabled
+# scale = 0.0           # 0 preserves geometry; 0.1-1.0 sizes and centers on entry
+# maximize = false      # maximize to edges on entry
+# fullscreen = false    # fullscreen on entry
+
+[animation.border]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+
+[animation.dim_unfocused]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+dim = 0.0             # 0.0-1.0
+
+[animation.layers]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+
+
+# Overview -------------------------------------------------------------------
+[overview]
+zoom = 0.5                     # 0.1-0.75
+
+# Layout ---------------------------------------------------------------------
+[layout]
+mode = "scrolling"             # "scrolling" or "dwindle"
+gap = 5                        # 0-500
+width_presets = [0.333, 0.5, 0.667] # shared by scrolling and dwindle
+
+[layout.scrolling]
+default_width_fraction = 0.5   # 0.1-1.0
+center_underfull_strip = true  # center the strip whenever it is narrower than the viewport
+
+# Workspace layout overrides (see docs/user/outputs.md#workspace-rules)
+# [[workspace]]
+# name = "chat"
+# layout.mode = "dwindle"
+# layout.gap = 4
+# layout.scrolling.center_underfull_strip = false
+
+# Window and layer rules (see docs/user/rules.md) ---------------------------
+[[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = true
+
+[[window_rule]]
+match.title = "zen-beta"

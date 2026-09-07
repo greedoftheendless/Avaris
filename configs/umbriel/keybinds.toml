@@ -1,0 +1,74 @@
+# Keybinds (see docs/user/keybinds.md) --------------------------------------
+[keybinds]
+# Noctalia binds
+"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+"Ctrl+Shift+L" = "spawn:noctalia msg panel-toggle clipboard;"
+"Mod+Shift+P" = "spawn:noctalia msg panel-toggle session;"
+"Mod+Shift+L" = "spawn:noctalia msg panel-toggle lock;"
+"Mod+R" = "spawn:noctalia msg panel-toggle record;"
+"Mod+U" = "spawn:noctalia msg annotate;"
+
+# Applications
+"Mod+E" = "spawn:nautilus"
+"Mod+Return" = "spawn:kitty"
+"Mod+B" = "spawn:zen-beta"
+
+# Screenshots (grim + slurp)
+"Print" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+"Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
+"Mod+S" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
+"Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+
+# # Window Size
+"Mod+Minus" = "window-modify-width:-0.1"
+"Mod+Equal" = "window-modify-width:+0.1"
+"Mod+Shift+Minus" = "window-modify-height:-0.1"
+"Mod+Shift+Equal" = "window-modify-height:+0.1"
+# "Mod+R" = "window-cycle-width"
+# "Mod+Shift+R" = "window-cycle-width-back"
+# "Mod+Alt+R" = "window-cycle-height"
+# "Mod+Alt+Shift+R" = "window-cycle-height-back"
+
+# Media / brightness
+"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up, allow_when_locked = true"
+"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down, allow_when_locked = true"
+"XF86AudioMute" = "spawn:noctalia msg volume-mute, allow_when_locked = true"
+"XF86AudioMicMute" = "spawn:noctalia msg mic-mute, allow_when_locked = true"
+"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up, allow_when_locked = true"
+"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down, allow_when_locked = true"
+
+# Windows toggle and view
+"Mod+Z" = "window-toggle-floating"
+"Mod+P" = "window-toggle-pinned"
+"Mod+M" = "window-toggle-maximize-to-edges"
+"Mod+Q" = "window-close"
+"Mod+F" = "window-toggle-fullscreen"
+
+# Focus / columns
+"Mod+Left" = "window-focus-left"
+"Mod+Right" = "window-focus-right"
+"Mod+H" = "window-focus-left"
+"Mod+L" = "window-focus-right"
+"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+Right" = "column-move-right"
+"Mod+BracketLeft" = "window-consume-left"
+"Mod+BracketRight" = "window-consume-right"
+
+"Mod+WheelUp" = "workspace-previous"
+"Mod+WheelDown" = "workspace-next"
+"Mod+Up" = "workspace-previous"
+"Mod+Down" = "workspace-next"
+"Mod+K" = "workspace-previous"
+"Mod+J" = "workspace-next"
+
+# Scratchpad (focus-next moved off Mod+Tab)
+"Mod+C" = "window-move-to-scratchpad"
+"Mod+X" = "scratchpad-toggle"
+"Mod+Tab" = "window-restore-from-scratchpad"
+"Mod+Shift+Tab" = "scratchpad-focus-next"
+
+"Mod+O" = "overview-toggle"
+"Mod+Slash" = "cheatsheet-toggle"
+
+# Output, workspace, and window movement actions.
+"Mod+Shift+T" = "workspace-set-layout:toggle"
