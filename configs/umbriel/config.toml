@@ -6,11 +6,15 @@ files = [
 [general]
 #autostart
 autostart = ["noctalia","zen-beta"]
-
+honor_restored_maximize = true
 mod_key = "Super"
 xwayland = true 
 show_cheatsheet = false
 focus_on_activate = true
+
+[events]
+lid_close = "notify-send 'The laptop lid is closed!'"
+lid_open = "notify-send 'The laptop lid is open!'"
 
 [environment]
 QT_QPA_PLATFORMTHEME = "qt6ct"

@@ -4,7 +4,7 @@
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Ctrl+Shift+L" = "spawn:noctalia msg panel-toggle clipboard;"
 "Mod+Shift+P" = "spawn:noctalia msg panel-toggle session;"
-"Mod+Shift+L" = "spawn:noctalia msg panel-toggle lock;"
+"Mod+Shift+L" = "spawn:noctalia msg session lock;"
 "Mod+R" = "spawn:noctalia msg panel-toggle record;"
 "Mod+U" = "spawn:noctalia msg annotate;"
 
@@ -14,10 +14,14 @@
 "Mod+B" = "spawn:zen-beta"
 
 # Screenshots (grim + slurp)
-"Print" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
-"Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
-"Mod+S" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
-"Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+# "Print" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+# "Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
+# "Mod+S" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
+# "Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+"Print" = "spawn:sh -c 'noctalia msg screenshot-fullscreen ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png'"
+"Mod+Print" = "spawn:sh -c 'noctalia msg screenshot-region ~/Pictures/Screenshots/region-$(date +%H%M%S).png'"
+"Mod+S" = "spawn:sh -c 'noctalia msg screenshot-region ~/Pictures/Screenshots/region-$(date +%H%M%S).png'"
+"Mod+Shift+S" = "spawn:sh -c 'noctalia msg screenshot-fullscreen ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png'"
 
 # # Window Size
 "Mod+Minus" = "window-modify-width:-0.1"
