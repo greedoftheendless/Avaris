@@ -4,8 +4,7 @@
 "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
 "Ctrl+Shift+L" = "spawn:noctalia msg panel-toggle clipboard;"
 "Mod+Shift+P" = "spawn:noctalia msg panel-toggle session;"
-"Mod+Shift+L" = "spawn:noctalia msg session lock;"
-"Mod+R" = "spawn:noctalia msg panel-toggle record;"
+"Mod+Shift+Delete" = "spawn:noctalia msg session lock;"
 "Mod+U" = "spawn:noctalia msg annotate;"
 
 # Applications
@@ -33,14 +32,19 @@
 # "Mod+Alt+R" = "window-cycle-height"
 # "Mod+Alt+Shift+R" = "window-cycle-height-back"
 
-# Media / brightness
-"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up, allow_when_locked = true"
-"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down, allow_when_locked = true"
-"XF86AudioMute" = "spawn:noctalia msg volume-mute, allow_when_locked = true"
-"XF86AudioMicMute" = "spawn:noctalia msg mic-mute, allow_when_locked = true"
-"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up, allow_when_locked = true"
-"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down, allow_when_locked = true"
+# Volume
+"XF86AudioRaiseVolume" = { action = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle", allow_when_locked = true }
 
+# Media playback (playerctl)
+"XF86AudioPlay" = { action = "spawn:playerctl play-pause", allow_when_locked = true }
+"XF86AudioNext" = { action = "spawn:playerctl next", allow_when_locked = true }
+"XF86AudioPrev" = {action = "spawn:playerctl previous", allow_when_locked = true }
+
+# Brightness
+"XF86MonBrightnessUp" = { action =  "spawn:brightnessctl set +5%", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:brightnessctl set 5%-", allow_when_locked = true } 
 # Windows toggle and view
 "Mod+Z" = "window-toggle-floating"
 "Mod+P" = "window-toggle-pinned"
@@ -55,8 +59,10 @@
 "Mod+L" = "window-focus-right"
 "Mod+Shift+Left" = "column-move-left"
 "Mod+Shift+Right" = "column-move-right"
-"Mod+BracketLeft" = "window-consume-left"
-"Mod+BracketRight" = "window-consume-right"
+"Mod+Shift+H" = "column-move-left"
+"Mod+Shift+L" = "column-move-right"
+"Mod+BracketLeft" = "window-consume-or-expel-left"
+"Mod+BracketRight" = "window-consume-or-expel-right"
 
 "Mod+WheelUp" = "workspace-previous"
 "Mod+WheelDown" = "workspace-next"
@@ -64,6 +70,20 @@
 "Mod+Down" = "workspace-next"
 "Mod+K" = "workspace-previous"
 "Mod+J" = "workspace-next"
+
+#Workspace movement
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+
+#Moving windows to workspace
+"Mod+Shift+1" = "window-move-to-workspace:1"
+"Mod+Shift+2" = "window-move-to-workspace:2"
+"Mod+Shift+3" = "window-move-to-workspace:3"
+"Mod+Shift+4" = "window-move-to-workspace:4"
+"Mod+Shift+5" = "window-move-to-workspace:5"
 
 # Scratchpad (focus-next moved off Mod+Tab)
 "Mod+C" = "window-move-to-scratchpad"

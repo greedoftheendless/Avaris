@@ -1,11 +1,12 @@
 [include]
 files = [
   "./keybinds.toml",
+  "./window-rule.toml",
 ]
 
 [general]
 #autostart
-autostart = ["noctalia","zen-beta"]
+autostart = ["noctalia","zen-beta","vesktop"]
 honor_restored_maximize = true
 mod_key = "Super"
 xwayland = true 
@@ -74,26 +75,25 @@ blur_optimized = false
 # Appearance -----------------------------------------------------------------
 [appearance]
 prefer_no_csd = true
-border_width = 2               # 0-100
-outer_border_width = 0         # 0-100
-corner_radius = 20             # 0-500
-# Border colors moved to [colors.border]; insert_hint/backdrop/shadow to [colors].
-# [colors.border]
-# focused = "#7AA3FFFF"
-# unfocused = "#292933FF"
-# scratchpad_focused = "#E5C07BFF"
-# scratchpad_unfocused = "#5C4A2AFF"
-# outer = "#1A1A1FFF"
+border_width = 2
+outer_border_width = 0
+corner_radius = 20
+
+[colors.border]
+focused = "#7AA3FFFF"
+unfocused = "#292933FF"
+scratchpad_unfocused = "#5C4A2AFF"
+outer = "#1A1A1FFF"
 
 [appearance.blur]
 enabled = true
 optimized = true
-passes = 1                     # 0-8
-radius = 3                     # 0-100
-noise = 0.02                   # 0.0-1.0
-brightness = 0.9               # 0.0-2.0
-contrast = 0.9                 # 0.0-2.0
-saturation = 1.1               # 0.0-2.0
+passes = 1
+radius = 3
+noise = 0.02
+brightness = 0.9
+contrast = 0.9
+saturation = 1.1
 
 [appearance.shadow]
 enabled = true
@@ -135,14 +135,14 @@ duration_ms = 250
 curve = "easeout"
 
 [animation.scratchpad]
-# enabled = false
-# duration_ms = 250
-# curve = "easeout"
-# dim = 0.5             # 0.0-1.0
-# blur = false          # requires appearance.blur.enabled
-# scale = 0.0           # 0 preserves geometry; 0.1-1.0 sizes and centers on entry
-# maximize = false      # maximize to edges on entry
-# fullscreen = false    # fullscreen on entry
+enabled = true
+duration_ms = 250
+curve = "easeout"
+dim = 0.5             # 0.0-1.0
+blur = false          # requires appearance.blur.enabled
+scale = 0.0
+maximize = false      # maximize to edges on entry
+fullscreen = false    # fullscreen on entry
 
 [animation.border]
 enabled = false
@@ -163,7 +163,7 @@ curve = "easeout"
 
 # Overview -------------------------------------------------------------------
 [overview]
-zoom = 0.5                     # 0.1-0.75
+zoom = 0.4                    # 0.1-0.75
 
 # Layout ---------------------------------------------------------------------
 [layout]
@@ -174,20 +174,3 @@ width_presets = [0.333, 0.5, 0.667] # shared by scrolling and dwindle
 [layout.scrolling]
 default_width_fraction = 0.5   # 0.1-1.0
 center_underfull_strip = true  # center the strip whenever it is narrower than the viewport
-
-# Workspace layout overrides (see docs/user/outputs.md#workspace-rules)
-# [[workspace]]
-# name = "chat"
-# layout.mode = "dwindle"
-# layout.gap = 4
-# layout.scrolling.center_underfull_strip = false
-
-# Window and layer rules (see docs/user/rules.md) ---------------------------
-[[window_rule]]
-match.title = "^notificationtoasts_.+_desktop"
-default_position = { x = 0, y = 0, anchor = "bottom_right" }
-default_focused = false
-default_pinned = true
-
-[[window_rule]]
-match.title = "zen-beta"
