@@ -1,1 +1,0 @@
-cat /proc/bus/input/devices | rg "Name=|Handlers="

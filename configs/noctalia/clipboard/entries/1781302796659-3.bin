@@ -1,7 +1,0 @@
-    [[shell.session.actions]]
-    action = "command"
-    command = "
-    enabled = true
-    label = "Safe reboot"
-    shortcut = "q"
-    variant = "default"

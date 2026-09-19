@@ -1,2 +1,0 @@
-    //Cheat sheet
-    Mod+Ctrl+C { spawn-sh "noctalia ipc call plugin:keybind-cheatsheet toggle"; }
