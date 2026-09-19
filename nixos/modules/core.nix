@@ -13,9 +13,6 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
 
-  #Enabling ly login manager
-  #services.displayManager.ly.enable = true;
-
   #Home-manager config
   home-manager = {
     useGlobalPkgs = true;
