@@ -12,7 +12,7 @@
     ./modules/font.nix
     ./modules/qylock.nix
     ./modules/vm.nix
-    ./modules/niri/niri.nix
+    # ./modules/niri/niri.nix
     ./modules/umbriel.nix
   ];
 }
