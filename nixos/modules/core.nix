@@ -9,6 +9,8 @@
 
   services.envfs.enable = true;
 
+  services.accounts-daemon.enable = true;
+
   #Enabling SDDM login screen
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
