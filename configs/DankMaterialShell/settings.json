@@ -183,6 +183,11 @@
     "softreboot"
   ],
   "powerMenuGridLayout": true,
+  "screenPreferences": {
+    "wallpaper": [
+      "all"
+    ]
+  },
   "barConfigs": [
     {
       "id": "default",
@@ -196,17 +201,6 @@
       "leftWidgets": [
         "launcherButton",
         "workspaceSwitcher",
-        {
-          "id": "focusedWindow",
-          "enabled": true,
-          "focusedWindowSize": 0,
-          "focusedWindowCompactMode": false,
-          "focusedWindowShowIcon": true
-        },
-        {
-          "id": "quickCapture",
-          "enabled": true
-        },
         {
           "id": "systemTray",
           "enabled": true
