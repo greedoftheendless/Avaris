@@ -1,7 +1,7 @@
 # Avaris
 
 Welcome! Greed here. This repository contains my personal Nix OS configuration
-using Niri(Main) and Hyprland, designed for a clean and efficient workspace.
+using Niri(Main).
 
 ---
 
@@ -10,15 +10,7 @@ using Niri(Main) and Hyprland, designed for a clean and efficient workspace.
 This configuration is packed with features to enhance your workflow and
 aesthetics:
 
-> **Need help with keybindings?** Just press `Super+Tab' or go to keybinds
-> section in noctalia settings to access the keybinding guide on Niri.
-
----
-
 ### 🛠 Installation
-
-> ⚠️ **WARNING**: This setup is intended for **NixOS**. Due to the declarative
-> nature of Nix, following these steps will give you an exact copy of my system.
 
 ### 1. Clone the repository
 
@@ -47,31 +39,18 @@ sudo nixos-rebuild switch
 
 📚 Notes & Integrations
 
-- Quickshell bar, Wallpapers, settings, themes, all are handled by noctalia
-  through their dependent apps.
-- Wallpapers apps you can install to manage: Waypaper, utilizing swww and
-  mpvpaper as the engine.
+- Quickshell bar, Wallpapers, settings, themes, all are handled by noctalia or
+  other independent shells through their dependent apps.
+- Wallpapers apps you can install to manage: Waypaper, utilizing swww as the
+  engine.
 - Notifications: Handled by Sway Notifications Control (Swaync).
-- Audio: Managed through pavucontrol and wpctl.
+- Audio: Managed through pipewire and wpctl.
 - Lock Screen: Uses noctalia lockscreen which displays notifications, music,
-  time, weather, etc... Hyprlock is used as backup(in case you need to flex 😏.
+  time, weather.
 - NVIDIA Drivers: Installed with the latest NVIDIA and AMD drivers. Adjust
   configuration accordingly.
 
 🙏 Credits
 
-Inspired by and based on the incredible work from:
-
-- Hyprland Wiki
-- r/unixporn
 - Aeon Remnant
-- VimJoyers Discord community (A big-ass community that made Nix fun, and helped
-  me to learn)
-
-And many others — your contributions are never forgotten! 📝 To-Do List
-
-- Create a Bash script to automate the installation process for new-NixOS users.
-
-- Transition all .config setups to Nix modules for easier management.
-
-Stay hungry, stay foolish. Keep customizing!
+- VimJoyer
