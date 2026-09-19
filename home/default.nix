@@ -20,6 +20,7 @@
     ./modules/tmux.nix
     ./modules/spotify+spicetify.nix
     ./modules/default-app.nix
+    ./modules/man.nix
     # ./modules/inir.nix
 
     #Nixcord import
