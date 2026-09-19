@@ -6,7 +6,7 @@ files = [
 
 [general]
 #autostart
-autostart = ["noctalia","zen-beta","vesktop"]
+autostart = ["zen-beta","dms run"]
 honor_restored_maximize = true
 mod_key = "Super"
 xwayland = true 
@@ -169,8 +169,8 @@ zoom = 0.4                    # 0.1-0.75
 [layout]
 mode = "scrolling"             # "scrolling" or "dwindle"
 gap = 5                        # 0-500
-width_presets = [0.333, 0.5, 0.667] # shared by scrolling and dwindle
+extent_presets = [0.333, 0.5, 0.667]
 
 [layout.scrolling]
-default_width_fraction = 0.5   # 0.1-1.0
-center_underfull_strip = true  # center the strip whenever it is narrower than the viewport
+center_underfull_strip = true
+default_extent_fraction = 0.5

@@ -1,11 +1,17 @@
 # Keybinds (see docs/user/keybinds.md) --------------------------------------
 [keybinds]
 # Noctalia binds
-"Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
-"Ctrl+Shift+L" = "spawn:noctalia msg panel-toggle clipboard;"
-"Mod+Shift+P" = "spawn:noctalia msg panel-toggle session;"
-"Mod+Shift+Delete" = "spawn:noctalia msg session lock;"
-"Mod+U" = "spawn:noctalia msg annotate;"
+# "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
+# "Ctrl+Shift+L" = "spawn:noctalia msg panel-toggle clipboard;"
+# "Mod+Shift+P" = "spawn:noctalia msg panel-toggle session;"
+# "Mod+Shift+Delete" = "spawn:noctalia msg session lock;"
+
+# DMS binds
+"Mod+Space" = "spawn:dms ipc call island open launcher;"
+"Ctrl+Shift+L" = "spawn:dms ipc call clipboard toggle;"
+"Mod+Shift+P" = "spawn:dms ipc powermenu toggle;"
+"Mod+Shift+Delete" = "spawn:dms ipc call lock lock;"
+"Mod+Y" = "spawn:dms ipc call island open wallpaper;"
 
 # Applications
 "Mod+E" = "spawn:nautilus"
@@ -13,24 +19,17 @@
 "Mod+B" = "spawn:zen-beta"
 
 # Screenshots (grim + slurp)
-# "Print" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
-# "Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
+"Print" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+"Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
+"Mod+S" = "spawn:dms ipc call screenCaptureToolbar toggle;"
 # "Mod+S" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
 # "Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
-"Print" = "spawn:sh -c 'noctalia msg screenshot-fullscreen ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png'"
-"Mod+Print" = "spawn:sh -c 'noctalia msg screenshot-region ~/Pictures/Screenshots/region-$(date +%H%M%S).png'"
-"Mod+S" = "spawn:sh -c 'noctalia msg screenshot-region ~/Pictures/Screenshots/region-$(date +%H%M%S).png'"
-"Mod+Shift+S" = "spawn:sh -c 'noctalia msg screenshot-fullscreen ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png'"
 
 # # Window Size
-"Mod+Minus" = "window-modify-width:-0.1"
-"Mod+Equal" = "window-modify-width:+0.1"
-"Mod+Shift+Minus" = "window-modify-height:-0.1"
-"Mod+Shift+Equal" = "window-modify-height:+0.1"
-# "Mod+R" = "window-cycle-width"
-# "Mod+Shift+R" = "window-cycle-width-back"
-# "Mod+Alt+R" = "window-cycle-height"
-# "Mod+Alt+Shift+R" = "window-cycle-height-back"
+"Mod+Minus" = "window-modify-primary-extent:-0.1"
+"Mod+Equal" = "window-modify-primary-extent:+0.1"
+"Mod+Shift+Minus" = "window-modify-secondary-extent:-0.1"
+"Mod+Shift+Equal" = "window-modify-secondary-extent:+0.1"
 
 # Volume
 "XF86AudioRaiseVolume" = { action = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+", allow_when_locked = true }
@@ -57,6 +56,8 @@
 "Mod+Right" = "window-focus-right"
 "Mod+H" = "window-focus-left"
 "Mod+L" = "window-focus-right"
+"Mod+Shift+J" = "window-focus-down"
+"Mod+Shift+K" = "window-focus-up"
 "Mod+Shift+Left" = "column-move-left"
 "Mod+Shift+Right" = "column-move-right"
 "Mod+Shift+H" = "column-move-left"
@@ -68,6 +69,8 @@
 "Mod+WheelDown" = "workspace-next"
 "Mod+Up" = "workspace-previous"
 "Mod+Down" = "workspace-next"
+"Mod+Shift+Up" = "window-focus-up"
+"Mod+Shift+Down" = "window-focus-down"
 "Mod+K" = "workspace-previous"
 "Mod+J" = "workspace-next"
 
