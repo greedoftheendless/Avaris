@@ -1,0 +1,34 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "1db5865419a40a33171a475855a59e0b8bf7187f"
+    },
+    "cavaVisualizer": {
+      "repo": "https://github.com/ernestowgg/cava-visualizer",
+      "commit": "2d08bef95bc7cd170ad5730a27791c9af6d80a52"
+    },
+    "dankKDEConnect": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankKDEConnect",
+      "commit": "bb90a1db7d540e64ae049c5906afba9b24baa865"
+    },
+    "emojiLauncher": {
+      "repo": "https://github.com/devnullvoid/dms-emoji-launcher",
+      "commit": "8ff394e3ddfcb2fd755ed2e7b4c6f01f3e26e596"
+    },
+    "mediaPlayer": {
+      "repo": "https://github.com/arrifat346afs/mediaPlayer",
+      "commit": "56ec160ed3fe32ad55b920ff462727d918b6eb51"
+    },
+    "nixPackageRunner": {
+      "repo": "https://github.com/iahccc/NixPackageRunner",
+      "commit": "829ad93c15b7c0ec82a6d7483728029037442601"
+    },
+    "screenCaptureToolbar": {
+      "repo": "https://github.com/JDKamalakar/DMS-ScreenCapture_Toolbar",
+      "commit": "332ea98c0fb2e2d26d55a0cda14c3c9b3cd28505"
+    }
+  }
+}

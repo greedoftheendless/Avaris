@@ -1,0 +1,114 @@
+{
+  "calculator": {
+    "enabled": true,
+    "trigger": "=",
+    "calcEngine": "qalc"
+  },
+  "quickCapture": {
+    "enabled": false,
+    "micDevice": "default_input",
+    "systemAudioDevice": "default_output",
+    "recordingBackend": "gpu-screen-recorder",
+    "recordingCodec": "auto",
+    "recordingQuality": "medium",
+    "recordingScreenTarget": "screen",
+    "regionHudScale": "auto",
+    "menuRightClickAction": "copy",
+    "rightClickAction": "region",
+    "middleClickAction": "full",
+    "recordingDirectory": "/home/greed/Videos/Recordings/dms",
+    "showPillBorder": true,
+    "includeCursor": true,
+    "watermarkPosition": "bottom_right",
+    "preset_0_tool": "pen",
+    "preset_1_tool": "arrow",
+    "preset_2_tool": "rect",
+    "preset_3_tool": "highlighter",
+    "preset_4_tool": "ellipse",
+    "preset_5_tool": "stamp",
+    "preset_6_tool": "redact",
+    "preset_7_tool": "pixelate",
+    "spawnPosition": "bottom-left",
+    "borderColor": "outlineVariant",
+    "backgroundDefaultAlignment": "center",
+    "backgroundDefaultAspectRatio": "auto",
+    "backgroundDefaultMode": "solid",
+    "modalDisplayTarget": "focused",
+    "editQuality": "600000",
+    "stampFontFamily": "system",
+    "textFontFamily": "system",
+    "defaultTool": "pen",
+    "defaultPresetIndex": "0",
+    "showToolbarBorder": true,
+    "show_shortcut_hints": true,
+    "recordMic": true,
+    "recordingFormat": "mp4"
+  },
+  "bongoCat": {
+    "enabled": false,
+    "catColorMode": "primary",
+    "catSizePercent": 127,
+    "waitingTimeout": 1,
+    "catYOffset": 1,
+    "soundEnabled": false,
+    "showMetrics": true,
+    "selectedDevicePath": "all"
+  },
+  "emojiLauncher": {
+    "enabled": true,
+    "defaultSkinTone": "🏽",
+    "trigger": ":"
+  },
+  "fullscreenPowerMenu": {
+    "enabled": false,
+    "menuOpacity": 30,
+    "menuOrientation": "dynamic",
+    "dimOpacity": 0
+  },
+  "screenCaptureToolbar": {
+    "enabled": true,
+    "multiMonitorScreenshot": true,
+    "stdout": true,
+    "captureMode": "interactive",
+    "videoFormat": "mp4",
+    "copyVideoFile": true,
+    "recordMic": true,
+    "videoMic": "alsa_input.pci-0000_06_00.6.analog-stereo",
+    "recPillScreenName": "eDP-1",
+    "recPillX": 699,
+    "recPillY": 1016,
+    "showAdvancedSettings": true,
+    "showNotify": true,
+    "enableController": false,
+    "videoCustomPath": "~/Videos/Recordings/dms",
+    "enableAudioRecorder": true,
+    "audioSource": "both",
+    "audioCustomPath": "~/Music/Recordings",
+    "quality": "100",
+    "toolbarOpacity": "1.00",
+    "pillOpacity": "1.00",
+    "videoMonitor": "eDP-1",
+    "format": "jpg",
+    "saveToDisk": true,
+    "copyPathOnCapture": false
+  },
+  "nixPackageRunner": {
+    "enabled": true,
+    "runInTerminal": true,
+    "runSourceMode": "latest_unstable"
+  },
+  "wallpaperCarousel": {
+    "enabled": false,
+    "overlayOpacity": 79
+  },
+  "dankAudioVisualizer": {
+    "enabled": false
+  },
+  "dankKDEConnect": {
+    "enabled": true,
+    "selectedDeviceId": "99143b4c601b44e282b8e60683b68e73"
+  },
+  "hyprwhsprVoiceOverlay": {
+    "enabled": false
+  }
+}
