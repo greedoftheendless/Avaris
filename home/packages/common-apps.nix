@@ -36,5 +36,6 @@
     kew
     yt-dlp
     spotdl
+    kdePackages.kdeconnect-kde
   ];
 }
