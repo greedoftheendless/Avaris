@@ -13,10 +13,11 @@
     #Items
     slurp
     grim
-    gpu-screen-recorder
     quickshell
     fuzzel
     hyprpicker
     libnotify
+    satty
+    dsearch
   ];
 }
