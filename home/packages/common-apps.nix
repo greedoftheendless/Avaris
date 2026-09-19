@@ -31,5 +31,10 @@
     obs-studio
     bitwarden-cli
     qrencode
+    ghgrab
+    lazyrsync
+    kew
+    yt-dlp
+    spotdl
   ];
 }
