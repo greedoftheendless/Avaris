@@ -4,9 +4,8 @@
     (import ../modules/webapp/webapp-install.nix {inherit pkgs;})
     (import ../modules/webapp/webapp-uninstall.nix {inherit pkgs;})
 
-    #Shells
+    #Terminal needed shells
     bash
-    nushell
 
     #System/Niri required packages
     awww
@@ -28,8 +27,6 @@
 
     #Languages and their packages
     python3
-    go
-    uv
 
     #Tunelling proxy/VPN(Self-Host)
     wireguard-ui
@@ -39,8 +36,6 @@
     playerctl
     bc
     brightnessctl
-    usbguard
-    usbguard-notifier
     ghostty
     jujutsu
     git
