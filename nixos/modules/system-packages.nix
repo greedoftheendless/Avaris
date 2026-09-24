@@ -16,7 +16,7 @@
     nh
     upower-notify
     pkgs.adwaita-icon-theme
-    swaynotificationcenter
+    # swaynotificationcenter
 
     #qylock dependencies
     gst_all_1.gstreamer
