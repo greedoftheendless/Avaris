@@ -1,10 +1,15 @@
 # Window and layer rules (see docs/user/rules.md)
 [[window_rule]]
+match.title = "^notificationtoasts_.+_desktop"
+default_position = { x = 0, y = 0, anchor = "bottom_right" }
+default_focused = false
+default_pinned = false
+
+[[window_rule]]
 match.title = "zen-beta"
 default_workspace = 1
 default_maximize = true
 
 [[window_rule]]
 match.title = "vesktop"
-default_workspace = 1
 default_maximize = true

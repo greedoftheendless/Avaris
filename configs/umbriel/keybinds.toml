@@ -23,7 +23,7 @@
 "Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
 "Mod+S" = "spawn:dms ipc call screenCaptureToolbar toggle;"
 # "Mod+S" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
-# "Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+"Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
 
 # # Window Size
 "Mod+Minus" = "window-modify-primary-extent:-0.1"
@@ -73,6 +73,7 @@
 "Mod+Shift+Down" = "window-focus-down"
 "Mod+K" = "workspace-previous"
 "Mod+J" = "workspace-next"
+"Mod+Shift+C" = "window-center"
 
 #Workspace movement
 "Mod+1" = "workspace-switch:1"
@@ -89,10 +90,10 @@
 "Mod+Shift+5" = "window-move-to-workspace:5"
 
 # Scratchpad (focus-next moved off Mod+Tab)
-"Mod+C" = "window-move-to-scratchpad"
-"Mod+X" = "scratchpad-toggle"
-"Mod+Tab" = "window-restore-from-scratchpad"
-"Mod+Shift+Tab" = "scratchpad-focus-next"
+"Mod+X" = "window-move-to-scratchpad"
+"Mod+Shift+Tab" = "window-restore-from-scratchpad"
+"Mod+Tab" = "scratchpad-toggle"
+"Mod+C" = "scratchpad-focus-next"
 
 "Mod+O" = "overview-toggle"
 "Mod+Slash" = "cheatsheet-toggle"
