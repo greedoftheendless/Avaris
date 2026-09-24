@@ -29,7 +29,6 @@
     glow
     opencode
     obs-studio
-    bitwarden-cli
     qrencode
     ghgrab
     lazyrsync
