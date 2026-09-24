@@ -106,7 +106,7 @@
   },
   "dankKDEConnect": {
     "enabled": true,
-    "selectedDeviceId": "99143b4c601b44e282b8e60683b68e73"
+    "selectedDeviceId": ""
   },
   "hyprwhsprVoiceOverlay": {
     "enabled": false

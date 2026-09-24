@@ -147,41 +147,22 @@
   "notificationAnimationSpeed": 4,
   "notificationCustomAnimationDuration": 238,
   "notificationHistoryMaxAgeDays": 3,
-  "notificationRules": [
-    {
-      "enabled": true,
-      "field": "desktopEntry",
-      "pattern": "zen",
-      "matchType": "exact",
-      "action": "mute",
-      "urgency": "normal",
-      "bypassDnd": false
-    },
-    {
-      "enabled": true,
-      "field": "desktopEntry",
-      "pattern": "zen-desktop",
-      "matchType": "exact",
-      "action": "mute",
-      "urgency": "normal",
-      "bypassDnd": false
-    }
-  ],
   "osdAlwaysShowValue": true,
   "osdPosition": 7,
   "osdMediaPlaybackEnabled": true,
   "osdPowerProfileEnabled": true,
   "powerMenuActions": [
-    "reboot",
     "logout",
     "poweroff",
     "lock",
     "suspend",
-    "restart",
     "switchuser",
     "hibernate",
-    "softreboot"
+    "reboot",
+    "softreboot",
+    "restart"
   ],
+  "powerMenuDefaultAction": "poweroff",
   "powerMenuGridLayout": true,
   "screenPreferences": {
     "wallpaper": [
@@ -294,9 +275,9 @@
       "islandFloating": false,
       "islandUseOverlayLayer": false,
       "islandReserveThickness": 39,
-      "islandCompactThickness": 57,
+      "islandCompactThickness": 60,
       "islandOuterGap": 3,
-      "islandAlongOffset": 29,
+      "islandAlongOffset": 15,
       "islandHomeClockDisplay": "both",
       "islandHomeCompactTight": false,
       "islandHomeLayout": [
@@ -338,9 +319,12 @@
       "islandSatellitePosition": "island",
       "islandSatelliteGap": 48,
       "islandBatteryStyle": "solid",
-      "islandCornerRadius": 31,
+      "islandCornerRadius": 22,
       "islandPalette": "dim",
-      "island": true
+      "islandSatellitesEnabled": true,
+      "island": true,
+      "islandTransparency": 1,
+      "islandHighContrast": false
     }
   ],
   "desktopClockCustomColor": {
