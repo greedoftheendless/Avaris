@@ -8,3 +8,11 @@ default_maximize = true
 match.title = "vesktop"
 default_workspace = 1
 default_maximize = true
+
+[[window_rule]]
+match.title = "kitty"
+default_workspace = 2
+
+[[window_rule]]
+match.title = "spotify"
+default_workspace = 1
