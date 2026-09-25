@@ -19,9 +19,10 @@
     ./modules/nixcord/nixcord.nix
     ./modules/tmux.nix
     ./modules/spotify+spicetify.nix
-    ./modules/default-app.nix
+    ./modules/mimelist.nix
     ./modules/man.nix
     ./modules/nu.nix
+    ./modules/appimage.nix
     # ./modules/inir.nix
 
     #Nixcord import
