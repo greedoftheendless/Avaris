@@ -15,5 +15,6 @@
     # ./modules/niri/niri.nix
     ./modules/umbriel.nix
     ./modules/gpu-screen-recorder.nix
+    ./modules/appimage.nix
   ];
 }
