@@ -30,6 +30,7 @@
       jjs = "jj status";
       jjl = "jj log";
       jjd = "jj diff -r";
+      jjde = "jj diffedit";
       jjc = "jj commit -m";
       jjt = "jj bookmark advance --to @-";
       jjp = "jj git push --bookmark";
