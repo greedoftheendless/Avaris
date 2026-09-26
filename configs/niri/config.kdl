@@ -170,7 +170,7 @@ open-maximized true
 window-rule {
 open-maximized true
 
-  match app-id="spotify"
+  match app-id=".*spotify.*"
 
 }
 
