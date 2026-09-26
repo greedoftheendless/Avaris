@@ -16,3 +16,4 @@ default_workspace = 2
 [[window_rule]]
 match.title = "spotify"
 default_workspace = 1
+default_maximize = true
