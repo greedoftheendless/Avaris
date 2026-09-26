@@ -69,7 +69,7 @@
     "enabled": true,
     "multiMonitorScreenshot": true,
     "stdout": true,
-    "captureMode": "all",
+    "captureMode": "interactive",
     "videoFormat": "mp4",
     "copyVideoFile": true,
     "recordMic": true,
@@ -106,7 +106,7 @@
   },
   "dankKDEConnect": {
     "enabled": true,
-    "selectedDeviceId": "d5631979d950423c863574412fc98b4b"
+    "selectedDeviceId": ""
   },
   "hyprwhsprVoiceOverlay": {
     "enabled": false
