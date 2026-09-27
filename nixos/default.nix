@@ -12,7 +12,6 @@
     ./modules/font.nix
     ./modules/qylock.nix
     ./modules/vm.nix
-    # ./modules/niri/niri.nix
     ./modules/umbriel.nix
     ./modules/gpu-screen-recorder.nix
     ./modules/appimage.nix
