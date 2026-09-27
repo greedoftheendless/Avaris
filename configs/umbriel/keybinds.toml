@@ -97,6 +97,3 @@
 
 "Mod+O" = "overview-toggle"
 "Mod+Slash" = "cheatsheet-toggle"
-
-# Output, workspace, and window movement actions.
-"Mod+Shift+T" = "workspace-set-layout:toggle"

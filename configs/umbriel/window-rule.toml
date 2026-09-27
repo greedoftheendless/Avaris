@@ -1,5 +1,9 @@
 # Window and layer rules (see docs/user/rules.md)
 [[window_rule]]
+blur = true
+blur_optimized = false
+
+[[window_rule]]
 match.title = "zen-beta"
 default_workspace = 1
 default_maximize = true
@@ -10,10 +14,11 @@ default_workspace = 1
 default_maximize = true
 
 [[window_rule]]
-match.title = "kitty"
-default_workspace = 2
-
-[[window_rule]]
 match.title = "spotify"
 default_workspace = 1
+default_maximize = true
+
+[[window_rule]]
+match.app_id = "steam"
+default_workspace = 3
 default_maximize = true

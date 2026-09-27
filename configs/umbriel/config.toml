@@ -65,10 +65,6 @@ hide_timeout_ms = 0            # 0-3600000, 0 disables hiding
 [input.focus]
 follows_mouse = false
 
-[[window_rule]]
-blur = true
-blur_optimized = false
-
 # Colors ---------------------------------------------------------------------
 [colors]
 
@@ -82,7 +78,6 @@ corner_radius = 20
 [colors.border]
 focused = "#7AA3FFFF"
 unfocused = "#292933FF"
-scratchpad_unfocused = "#5C4A2AFF"
 outer = "#1A1A1FFF"
 
 [appearance.blur]
@@ -97,9 +92,9 @@ saturation = 1.1
 
 [appearance.shadow]
 enabled = true
-softness = 10                  # 0-200, 0 = hard edge
-offset_x = 2                   # -200 to 200
-offset_y = 2                    # color moved to [colors].shadow
+softness = 10
+offset_x = 2
+offset_y = 2
 
 [animation]
 enabled = true
@@ -111,7 +106,7 @@ enabled = true
 duration_ms = 150
 curve = "easeout"
 style = "fade"       # "popin", "zoom", "slide", "fade", or "none"
-scale = 0.85          # 0.1-1.0, used by "popin"
+scale = 0.85
 
 [animation.windows_out]
 enabled = true
@@ -138,11 +133,11 @@ curve = "easeout"
 enabled = true
 duration_ms = 250
 curve = "easeout"
-dim = 0.5             # 0.0-1.0
+dim = 0.5
 blur = false          # requires appearance.blur.enabled
 scale = 0.0
-maximize = false      # maximize to edges on entry
-fullscreen = false    # fullscreen on entry
+maximize = false
+fullscreen = false
 
 [animation.border]
 enabled = false
@@ -153,7 +148,7 @@ curve = "easeout"
 enabled = false
 duration_ms = 250
 curve = "easeout"
-dim = 0.0             # 0.0-1.0
+dim = 0.0
 
 [animation.layers]
 enabled = false
@@ -163,12 +158,12 @@ curve = "easeout"
 
 # Overview -------------------------------------------------------------------
 [overview]
-zoom = 0.4                    # 0.1-0.75
+zoom = 0.4
 
 # Layout ---------------------------------------------------------------------
 [layout]
 mode = "scrolling"             # "scrolling" or "dwindle"
-gap = 5                        # 0-500
+gap = 5
 extent_presets = [0.333, 0.5, 0.667]
 
 [layout.scrolling]
