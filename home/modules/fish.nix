@@ -32,7 +32,7 @@
       jjb = "jj bookmark list";
       jjs = "jj status";
       jjl = "jj log";
-      jjd = "jj diff -r";
+      jjd = "jj diff";
       jjde = "jj diffedit";
       jjc = "jj commit -m";
       jjt = "jj bookmark advance --to @-";
