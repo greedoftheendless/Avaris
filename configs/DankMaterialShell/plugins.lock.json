@@ -26,6 +26,11 @@
       "repo": "https://github.com/iahccc/NixPackageRunner",
       "commit": "829ad93c15b7c0ec82a6d7483728029037442601"
     },
+    "quickCapture": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "quickCapture",
+      "commit": "bc7724880f5643eda6cace2072a55185b3fc045a"
+    },
     "screenCaptureToolbar": {
       "repo": "https://github.com/JDKamalakar/DMS-ScreenCapture_Toolbar",
       "commit": "332ea98c0fb2e2d26d55a0cda14c3c9b3cd28505"

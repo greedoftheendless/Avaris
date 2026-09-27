@@ -5,7 +5,7 @@
     "calcEngine": "qalc"
   },
   "quickCapture": {
-    "enabled": false,
+    "enabled": true,
     "micDevice": "default_input",
     "systemAudioDevice": "default_output",
     "recordingBackend": "gpu-screen-recorder",
@@ -106,7 +106,7 @@
   },
   "dankKDEConnect": {
     "enabled": true,
-    "selectedDeviceId": ""
+    "selectedDeviceId": "d5631979d950423c863574412fc98b4b"
   },
   "hyprwhsprVoiceOverlay": {
     "enabled": false

@@ -193,6 +193,10 @@
         {
           "id": "dankKDEConnect",
           "enabled": true
+        },
+        {
+          "id": "quickCapture",
+          "enabled": true
         }
       ],
       "centerWidgets": [
@@ -274,8 +278,8 @@
       "hoverPopoutDelay": 150,
       "islandFloating": false,
       "islandUseOverlayLayer": false,
-      "islandReserveThickness": 39,
-      "islandCompactThickness": 60,
+      "islandReserveThickness": 42,
+      "islandCompactThickness": 59,
       "islandOuterGap": 3,
       "islandAlongOffset": 15,
       "islandHomeClockDisplay": "both",
