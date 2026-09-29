@@ -22,10 +22,13 @@
     ./modules/mimelist.nix
     ./modules/man.nix
     ./modules/nu.nix
-    # ./modules/inir.nix
+    ./modules/inir.nix
 
     #Nixcord import
     inputs.nixcord.homeModules.nixcord
+
+    #iNiR import
+    inputs.inir.homeModules.default
 
     #Spicetify import
     inputs.spicetify-nix.homeManagerModules.spicetify
