@@ -90,10 +90,9 @@ layout {
 //AUTOSTART OF APPLICATIONS
 spawn-at-startup "bash" "-c" "wl-paste --type text --watch cliphist store &"
 spawn-at-startup "bash" "-c" "wl-paste --type image --watch cliphist store &"
-spawn-at-startup "noctalia"
-// spawn-at-startup "bash" "-c" "wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &"
-// spawn-at-startup "noctalia"
+spawn-at-startup "bash" "-c" "wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &"
 spawn-at-startup "zen-beta"
+spawn-at-startup "inir run"
 
 hotkey-overlay {
      skip-at-startup
@@ -185,43 +184,25 @@ open-maximized true
 
 //Wallpaper in overview
 layer-rule {
-    match namespace="^noctalia-backdrop"
-    place-within-backdrop true
-}
-
-layer-rule {
     match namespace="quickshell:iiBackdrop"
     place-within-backdrop true
 }
 
 binds {
 
-    // Noctalia binds
-    //Search bar
-    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    //iNiR binds
 
-    //Clipboard
-    Ctrl+Shift+L { spawn-sh "noctalia msg panel-toggle clipboard"; }
-
-    // Session menu (has poweroff, reboot, logout, etc.)
-    Mod+Shift+P { spawn-sh "noctalia msg panel-toggle session"; }
-
-    // Lock screen directly
-    Mod+Shift+L { spawn-sh "noctalia msg session lock"; }
-
-    // //iNiR binds
-
-    // Ctrl+Shift+L { spawn "inir" "clipboard" "toggle"; }
-    // Mod+D { spawn "inir" "dashboard" "toggle"; }
-    // Mod+Comma { spawn "inir" "settings"; }
-    // Mod+Tab { spawn "inir" "cheatsheet" "toggle"; }
-    // Mod+Space { spawn "inir" "overview" "toggle"; }
-    // Mod+R { spawn "inir" "overlay" "toggle"; }
-    // Mod+Shift+P { spawn "inir" "session" "toggle"; }
+    Ctrl+Shift+L { spawn "inir" "clipboard" "toggle"; }
+    Mod+D { spawn "inir" "dashboard" "toggle"; }
+    Mod+Comma { spawn "inir" "settings"; }
+    Mod+Tab { spawn "inir" "cheatsheet" "toggle"; }
+    Mod+Space { spawn "inir" "overview" "toggle"; }
+    Mod+R { spawn "inir" "overlay" "toggle"; }
+    Mod+Shift+P { spawn "inir" "session" "toggle"; }
     // Alt+Tab { spawn "inir" "orbit" "toggle"; }
 
-    //Lock screen
-    // Mod+Shift+L { spawn "qylock-lock"; } 
+    // Lock screen
+    Mod+Shift+L { spawn "qylock-lock"; } 
 
     //Screenshot(in-built in niri)
     Mod+S { screenshot; }
@@ -347,3 +328,11 @@ binds {
     Ctrl+Alt+Delete { quit; }
 }
 include "./Effects/pop-drop.kdl"
+
+// Niri's blur behind surfaces that ask for it (iRiS glass set to Blur).
+blur {
+    passes 2
+    offset 2.0
+    noise 0
+    saturation 2.3
+}

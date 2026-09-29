@@ -3,8 +3,12 @@
     "001-gamemode-animation-toggle",
     "002-backdrop-layer-rules",
     "003-qt-theming-kde",
+    "004-audio-keybinds-ipc",
+    "005-dolphin-xdg-menu",
+    "006-close-confirm",
     "007-brightness-keybinds",
     "008-media-keybinds",
+    "009-quickshell-dbus-properties-logspam",
     "010-terminal-keybinds-dynamic",
     "011-gtk4-nautilus-css",
     "012-plasma-integration-qt-theming",
@@ -33,7 +37,10 @@
     "037-remembered-super-shift-s",
     "038-cliphist-preview-filter",
     "039-sddm-preserve-greeter-backend",
-    "041-visualizer-app-filter-semantics"
+    "040-niri-session-environment-lifecycle",
+    "041-visualizer-app-filter-semantics",
+    "042-cliphist-no-synthetic-newline",
+    "043-spanish-catalogue-es-419"
   ],
   "skipped": []
 }

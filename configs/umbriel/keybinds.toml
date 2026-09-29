@@ -1,11 +1,5 @@
 # Keybinds (see docs/user/keybinds.md) --------------------------------------
 [keybinds]
-# Noctalia binds
-# "Mod+Space" = "spawn:noctalia msg panel-toggle launcher"
-# "Ctrl+Shift+L" = "spawn:noctalia msg panel-toggle clipboard;"
-# "Mod+Shift+P" = "spawn:noctalia msg panel-toggle session;"
-# "Mod+Shift+Delete" = "spawn:noctalia msg session lock;"
-
 # DMS binds
 "Mod+Space" = "spawn:dms ipc call island open launcher;"
 "Ctrl+Shift+L" = "spawn:dms ipc call clipboard toggle;"
@@ -13,17 +7,31 @@
 "Mod+Shift+Delete" = "spawn:dms ipc call lock lock;"
 "Mod+Y" = "spawn:dms ipc call island open wallpaper;"
 
+#iNiR binds
+# "Ctrl+Shift+L" = "spawn:inir clipboard toggle;"
+# "Mod+D" = "spawn:inir dashboard toggle;"
+# "Mod+Comma" = "spawn:inir settings;"
+# "Mod+Space" = "spawn:inir overview toggle;"
+# "Mod+Shift+P" = "spawn:inir session toggle;"
+# "Mod+S" = "spawn:inir region screenshot;"
+# "Mod+R" = "spawn:inir region record;"
+# "Mod+Shift+Delete" = "spawn:inir lock activate;"
+# "Alt+Tab" = "spawn:inir orbit toggle;"
+
 # Applications
 "Mod+E" = "spawn:nautilus"
 "Mod+Return" = "spawn:kitty"
 "Mod+B" = "spawn:zen-beta"
 
-# Screenshots (grim + slurp)
+# # Screenshots (grim + slurp)
 "Print" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
 "Mod+Print" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
-"Mod+S" = "spawn:dms ipc call screenCaptureToolbar toggle;"
 # "Mod+S" = "spawn:sh -c 'grim -g \"$(slurp)\" - | tee ~/Pictures/Screenshots/region-$(date +%H%M%S).png | wl-copy'"
-"Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+# "Mod+Shift+S" = "spawn:sh -c 'grim - | tee ~/Pictures/Screenshots/full-$(date +%Y%m%d-%H%M%S).png | wl-copy'"
+"Mod+S" = "spawn:dms ipc call quickCapture screenshot region edit;"
+"Mod+Shift+S" = "spawn:dms ipc call quickCapture screenshot full edit;"
+"Mod+R" = "spawn:dms ipc call screenCaptureToolbar toggle;"
+
 
 # # Window Size
 "Mod+Minus" = "window-modify-primary-extent:-0.1"

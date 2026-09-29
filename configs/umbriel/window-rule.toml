@@ -4,19 +4,20 @@ blur = true
 blur_optimized = false
 
 [[window_rule]]
-match.title = "zen-beta"
+match.app_id = "^zen-beta$"
 default_workspace = 1
 default_maximize = true
 
 [[window_rule]]
-match.title = "vesktop"
+match.app_id = "^vesktop$"
 default_workspace = 1
-default_maximize = true
+default_floating = false
+default_maximize_to_edges = true
 
 [[window_rule]]
-match.title = "spotify"
+match.app_id = "^(spotify|Spotify)$"
 default_workspace = 1
-default_maximize = true
+default_maximize_to_edges = true
 
 [[window_rule]]
 match.app_id = "steam"
