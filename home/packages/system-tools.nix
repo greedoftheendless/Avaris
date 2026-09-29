@@ -1,9 +1,6 @@
 {pkgs, ...}: {
   #Installing web-apps
   home.packages = with pkgs; [
-    (import ../modules/webapp/webapp-install.nix {inherit pkgs;})
-    (import ../modules/webapp/webapp-uninstall.nix {inherit pkgs;})
-
     #Terminal needed shells
     bash
 
