@@ -120,15 +120,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1789849958,
-        "narHash": "sha256-Zu4FrR/vn+Pq81hLkR5n3XXt+ja7m0my6ml+4IJotn4=",
+        "lastModified": 1790658595,
+        "narHash": "sha256-nq4D2tIHuZ4vm4LcP10u78igtgG3rJoVGb89KqIS75Y=",
         "owner": "snowarch",
         "repo": "iNiR",
-        "rev": "9574fa424c0d1008e927454e933a7fbe292f9fb2",
+        "rev": "f630c250cf7fa22d74bde99230001df954a01695",
         "type": "github"
       },
       "original": {
         "owner": "snowarch",
+        "ref": "prerelease",
         "repo": "iNiR",
         "type": "github"
       }
