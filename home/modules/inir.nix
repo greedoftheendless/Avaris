@@ -1,9 +1,6 @@
 {...}: {
   programs.inir = {
     enable = true;
-    service.enable = true;
-    service.compositor = "niri";
+    configSymlink.enable = true;
   };
-
-  programs.inir.configSymlink.enable = true;
 }
