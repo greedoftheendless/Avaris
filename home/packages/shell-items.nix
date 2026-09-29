@@ -21,5 +21,6 @@
     libnotify
     satty
     dsearch
+    wf-recorder
   ];
 }
