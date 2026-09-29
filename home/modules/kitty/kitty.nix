@@ -14,6 +14,7 @@
       cursor_trail_decay = "0.15 0.3";
       cursor_trail_start_threshold = "2";
       mouse_hide_wait = "2.0";
+      remember_window_size = "no";
 
       fallback_family = "Noto Sans Arabic";
       bold_font = "auto";
