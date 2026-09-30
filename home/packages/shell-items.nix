@@ -7,7 +7,7 @@
     #umbriel import
     inputs.umbriel.packages.${pkgs.stdenv.hostPlatform.system}.default
 
-    inputs.inir.packages.${pkgs.stdenv.hostPlatform.system}.default
+    # inputs.inir.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     dms-shell
     noctalia

@@ -113,27 +113,6 @@
         "type": "github"
       }
     },
-    "inir": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1790658595,
-        "narHash": "sha256-nq4D2tIHuZ4vm4LcP10u78igtgG3rJoVGb89KqIS75Y=",
-        "owner": "snowarch",
-        "repo": "iNiR",
-        "rev": "f630c250cf7fa22d74bde99230001df954a01695",
-        "type": "github"
-      },
-      "original": {
-        "owner": "snowarch",
-        "ref": "prerelease",
-        "repo": "iNiR",
-        "type": "github"
-      }
-    },
     "mnw": {
       "locked": {
         "lastModified": 1784154424,
@@ -318,7 +297,6 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "inir": "inir",
         "nixcord": "nixcord",
         "nixpkgs": "nixpkgs_2",
         "nvf": "nvf",

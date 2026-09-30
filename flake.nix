@@ -31,10 +31,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    inir = {
-      url = "github:snowarch/iNiR/prerelease";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # inir = {
+    #   url = "github:snowarch/iNiR/prerelease";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     systems.url = "github:nix-systems/default";
   };
