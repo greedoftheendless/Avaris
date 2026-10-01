@@ -22,5 +22,6 @@
     satty
     dsearch
     wf-recorder
+    killall
   ];
 }
