@@ -1,0 +1,74 @@
+#:schema https://docs.jj-vcs.dev/latest/config-schema.json
+
+[user]
+name = "weegs710"
+email = "weegs@tutamail.com"
+
+[ui]
+pager = ":builtin"
+editor = "zeditor --wait"
+
+[git]
+auto-local-branch = true
+
+[remotes.codeberg]
+auto-track-bookmarks = "*"
+
+[remotes.github]
+auto-track-bookmarks = "*"
+
+[remotes.tangled]
+auto-track-bookmarks = "*"
+
+# ============================================================================
+# REVSET ALIASES
+# ============================================================================
+
+[revset-aliases]
+'trunk()' = 'main@codeberg'
+'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+'recent()' = 'ancestors(reachable(@, mutable()), 2)'
+
+# ============================================================================
+# ALIASES
+# ============================================================================
+
+[aliases]
+    # Viewing & Status
+    s = ["status"]
+    l = ["log", "-r", "recent()"]
+    ll = ["log", "-T", "builtin_log_detailed"]
+
+    # Diffs
+    d = ["diff"]
+    dp = ["diff", "@-"]
+    ds = ["diff", "--stat"]
+
+    # Change Creation & Editing
+    n = ["new"]
+    dm = ["describe", "-m"]
+
+    # Change Manipulation
+    sq = ["squash"]
+    sp = ["split"]
+    spi = ["split", "--interactive"]
+    r = ["restore"]
+
+    # Bookmarks
+    bs = ["bookmark", "set"]
+    tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
+    t = ["bookmark", "advance", "--to", "@-"]
+
+    # Git Remotes
+    f = ["git", "fetch"]
+    p = ["git", "push"]
+
+    # History
+    u = ["undo"]
+
+# ============================================================================
+# TEMPLATES
+# ============================================================================
+
+[templates]
+format_short_change_id = 'id.shortest()'
