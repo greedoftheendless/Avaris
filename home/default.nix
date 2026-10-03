@@ -22,6 +22,8 @@
     ./modules/mimelist.nix
     ./modules/man.nix
     ./modules/nu.nix
+    ./modules/atuin.nix
+    ./modules/zoxide.nix
     # ./modules/inir.nix
 
     #Nixcord import
