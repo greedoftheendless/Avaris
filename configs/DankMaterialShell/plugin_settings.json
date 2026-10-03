@@ -67,7 +67,7 @@
     "dimOpacity": 0
   },
   "screenCaptureToolbar": {
-    "enabled": true,
+    "enabled": false,
     "multiMonitorScreenshot": true,
     "stdout": true,
     "captureMode": "interactive",
@@ -111,5 +111,12 @@
   },
   "hyprwhsprVoiceOverlay": {
     "enabled": false
+  },
+  "audioFx": {
+    "enabled": false,
+    "glowOn": true
+  },
+  "cavaVisualizer": {
+    "enabled": true
   }
 }

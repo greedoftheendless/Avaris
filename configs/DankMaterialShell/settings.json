@@ -208,13 +208,14 @@
         {
           "id": "controlCenterButton",
           "enabled": true,
-          "showAudioPercent": true,
+          "showAudioPercent": false,
           "showMicIcon": true,
           "showBrightnessIcon": false,
           "showBrightnessPercent": false,
           "showPrinterIcon": false,
           "showIdleInhibitorIcon": false,
-          "showDoNotDisturbIcon": false
+          "showDoNotDisturbIcon": false,
+          "showAudioIcon": false
         },
         "cpuUsage",
         {
@@ -240,7 +241,7 @@
       "noBackground": false,
       "maximizeWidgetIcons": true,
       "maximizeWidgetText": true,
-      "removeWidgetPadding": false,
+      "removeWidgetPadding": true,
       "widgetPadding": 13,
       "batteryColorMode": "level",
       "gothCornersEnabled": false,
@@ -307,11 +308,11 @@
         },
         {
           "id": "volume",
-          "enabled": false
+          "enabled": true
         },
         {
           "id": "brightness",
-          "enabled": false
+          "enabled": true
         }
       ],
       "islandSatelliteBackground": true,
