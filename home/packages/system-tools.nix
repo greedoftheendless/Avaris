@@ -14,8 +14,6 @@
     ffmpeg
     jq
     tmux
-    atuin
-    eza
     openssl
     bat
     tree
