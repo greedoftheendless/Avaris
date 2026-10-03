@@ -22,7 +22,7 @@
       bold_italic_font = "auto";
       cursor_shape = "beam";
 
-      shell = "fish";
+      shell = "nu";
       background_opacity = "0.8";
       allow_remote_control = "yes";
 
