@@ -6,5 +6,6 @@
       "--preview 'bat --color=always {}'"
       "--preview-window=right:60%"
     ];
+    historyWidget.command = "";
   };
 }
