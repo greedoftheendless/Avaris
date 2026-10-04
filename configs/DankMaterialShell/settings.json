@@ -107,6 +107,7 @@
   "launcherStyle": "island",
   "spotlightBarShowModeChips": true,
   "useAutoLocation": true,
+  "networkPreference": "wifi",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -141,7 +142,7 @@
   "notificationPopupPrivacyMode": true,
   "notificationPopupBodyInvokesAction": true,
   "lockScreenNotificationMode": 2,
-  "lockScreenWallpaperPath": "/home/greed/dotfiles/Pics/Wallpapers/1004017-colorized.png",
+  "lockScreenWallpaperPath": "/home/greed/dotfiles/Pics/Wallpapers/138032536_p0.jpg",
   "notificationCompactMode": true,
   "notificationShowTimeoutBar": true,
   "notificationAnimationSpeed": 4,

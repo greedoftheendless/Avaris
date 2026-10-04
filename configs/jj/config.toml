@@ -1,18 +1,14 @@
-#:schema https://docs.jj-vcs.dev/latest/config-schema.json
-
 [user]
-name = "weegs710"
-email = "weegs@tutamail.com"
+name = "greedoftheendless"
+email = "greeoftheendless@gmail.com"
 
 [ui]
 pager = ":builtin"
-editor = "zeditor --wait"
+editor = ":builtin"
+diff-editor = "nvim"
 
 [git]
 auto-local-branch = true
-
-[remotes.codeberg]
-auto-track-bookmarks = "*"
 
 [remotes.github]
 auto-track-bookmarks = "*"
@@ -25,7 +21,6 @@ auto-track-bookmarks = "*"
 # ============================================================================
 
 [revset-aliases]
-'trunk()' = 'main@codeberg'
 'closest_bookmark(to)' = 'heads(::to & bookmarks())'
 'recent()' = 'ancestors(reachable(@, mutable()), 2)'
 
@@ -43,6 +38,7 @@ auto-track-bookmarks = "*"
     d = ["diff"]
     dp = ["diff", "@-"]
     ds = ["diff", "--stat"]
+    de = ["diff", "edit"]
 
     # Change Creation & Editing
     n = ["new"]
@@ -56,8 +52,8 @@ auto-track-bookmarks = "*"
 
     # Bookmarks
     bs = ["bookmark", "set"]
-    tug = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
-    t = ["bookmark", "advance", "--to", "@-"]
+    bt = ["bookmark", "move", "--from", "closest_bookmark(@-)", "--to", "@-"]
+    ba = ["bookmark", "advance", "--to", "@-"]
 
     # Git Remotes
     f = ["git", "fetch"]
@@ -65,10 +61,6 @@ auto-track-bookmarks = "*"
 
     # History
     u = ["undo"]
-
-# ============================================================================
-# TEMPLATES
-# ============================================================================
 
 [templates]
 format_short_change_id = 'id.shortest()'
