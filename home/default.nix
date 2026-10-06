@@ -21,6 +21,7 @@
     ./modules/spotify+spicetify.nix
     ./modules/mimelist.nix
     ./modules/man.nix
+    ./modules/nixpkgs-config.nix
     ./modules/nu.nix
     ./modules/atuin.nix
     ./modules/zoxide.nix
