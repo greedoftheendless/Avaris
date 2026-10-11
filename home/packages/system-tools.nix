@@ -53,5 +53,6 @@
     unzip
     openvpn
     typst
+    devenv
   ];
 }
