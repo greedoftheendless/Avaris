@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   imports = [inputs.qylock.nixosModules.default];
 
   programs.qylock = {
@@ -16,4 +20,14 @@
     sddm.enable = true;
     quickshell.enable = true;
   };
+
+  #qylock dependencies
+  environment.systemPackages = with pkgs; [
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-libav
+    qt6.qtmultimedia
+    qt6.qt5compat
+    qt6.qtsvg
+  ];
 }
