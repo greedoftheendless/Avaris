@@ -2,23 +2,11 @@
 files = [
   "./keybinds.toml",
   "./window-rule.toml",
+  "./autostart-rules.toml",
+  "./inputs.toml",
+  "./appearance.toml",
+  "./animation.toml",
 ]
-
-[general]
-#autostart
-autostart = [
-  "zen-beta",
-  # "inir run",
-  "dms run",
-  "bash -c 'wl-paste --type text --watch cliphist store &'",
-  "bash -c 'wl-paste --type image --watch cliphist store &'",
-  "bash -c 'wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &'",
-]
-honor_restored_maximize = true
-mod_key = "Super"
-xwayland = true 
-show_cheatsheet = false
-focus_on_activate = true
 
 [events]
 lid_close = "notify-send 'The laptop lid is closed!'"
@@ -37,133 +25,15 @@ back_and_forth = true
 mode = "1920x1080@60"
 scale = 1.00
 
-# Input ----------------------------------------------------------------------
-[input]
-middle_click_paste = true
-[input.keyboard]
-layout = "us"
-variant = ""
-options = ""
-repeat_rate = 60
-repeat_delay = 300
-
-[input.touchpad]
-tap = true
-natural_scroll = true
-accel_profile = "flat"   # swap to "flat" to feel the difference
-sensitivity = 0.5        # -1.0..1.0
-scroll_factor = 1.5      # touchpad scroll speed, 0.1 to 10.0
-
-[input.mouse]
-accel_profile = "flat"         # "flat", "adaptive", or "custom <step> <points...>"
-sensitivity = 0.4              # pointer speed, -1.0 to 1.0
-scroll_wheel_step = 60         # 1-1000
-
-[input.tablet]
-enabled = true                 # false disables the tablet and its pads
-
-[input.cursor]
-theme = ""
-size = 24                      # 1-512
-hardware_cursor = true         # false forces software cursor composition
-hide_when_typing = false       # hide after a non-modifier key press
-hide_timeout_ms = 0            # 0-3600000, 0 disables hiding
-
-[input.focus]
-follows_mouse = false
-
-# Colors ---------------------------------------------------------------------
+# Colors
 [colors]
-
-# Appearance -----------------------------------------------------------------
-[appearance]
-prefer_no_csd = true
-border_width = 2
-outer_border_width = 0
-corner_radius = 20
 
 [colors.border]
 focused = "#7AA3FFFF"
 unfocused = "#292933FF"
 outer = "#1A1A1FFF"
 
-[appearance.blur]
-enabled = true
-optimized = true
-passes = 1
-radius = 3
-noise = 0.02
-brightness = 0.9
-contrast = 0.9
-saturation = 1.1
-
-[appearance.shadow]
-enabled = true
-softness = 10
-offset_x = 2
-offset_y = 2
-
-[animation]
-enabled = true
-duration_ms = 250
-curve = "easeout"
-
-[animation.windows_in]
-enabled = true
-duration_ms = 150
-curve = "easeout"
-style = "fade"       # "popin", "zoom", "slide", "fade", or "none"
-scale = 0.85
-
-[animation.windows_out]
-enabled = true
-duration_ms = 150
-curve = "easeout"
-style = "fade"        # "fade" or "slide"
-
-[animation.windows_move]
-enabled = true
-duration_ms = 250
-curve = "snappy"
-
-[animation.workspaces]
-enabled = true
-duration_ms = 250
-curve = "easeout"
-
-[animation.overview]
-enabled = true
-duration_ms = 250
-curve = "easeout"
-
-[animation.scratchpad]
-enabled = true
-duration_ms = 250
-curve = "easeout"
-dim = 0.5
-blur = false          # requires appearance.blur.enabled
-scale = 0.0
-maximize = false
-fullscreen = false
-
-[animation.border]
-enabled = false
-duration_ms = 250
-curve = "easeout"
-
-[animation.dim_unfocused]
-enabled = false
-duration_ms = 250
-curve = "easeout"
-dim = 0.0
-
-[animation.layers]
-enabled = false
-duration_ms = 250
-curve = "easeout"
-
-
-# Overview -------------------------------------------------------------------
+# Overview
 [overview]
 zoom = 0.4
 

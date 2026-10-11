@@ -1,0 +1,15 @@
+[general]
+#autostart
+  autostart = [
+    "zen-beta",
+    # "inir run",
+    "dms run",
+    "bash -c 'wl-paste --type text --watch cliphist store &'",
+    "bash -c 'wl-paste --type image --watch cliphist store &'",
+    "bash -c 'wl-paste --type text --watch ~/.config/quickshell/inir/scripts/clipboard-store.py &'",
+  ]
+  honor_restored_maximize = true
+  mod_key = "Super"
+  xwayland = true 
+  show_cheatsheet = false
+  focus_on_activate = true

@@ -1,0 +1,58 @@
+[animation]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.windows_in]
+enabled = true
+duration_ms = 150
+curve = "easeout"
+style = "fade"       # "popin", "zoom", "slide", "fade", or "none"
+scale = 0.85
+
+[animation.windows_out]
+enabled = true
+duration_ms = 150
+curve = "easeout"
+style = "fade"        # "fade" or "slide"
+
+[animation.windows_move]
+enabled = true
+duration_ms = 250
+curve = "snappy"
+
+[animation.workspaces]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.overview]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+
+[animation.scratchpad]
+enabled = true
+duration_ms = 250
+curve = "easeout"
+dim = 0.5
+blur = false          # requires appearance.blur.enabled
+scale = 0.0
+maximize = false
+fullscreen = false
+
+[animation.border]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+
+[animation.dim_unfocused]
+enabled = false
+duration_ms = 250
+curve = "easeout"
+dim = 0.0
+
+[animation.layers]
+enabled = false
+duration_ms = 250
+curve = "easeout"
