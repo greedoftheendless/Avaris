@@ -247,15 +247,42 @@
 
         statusline.lualine = {
           enable = true;
-          theme = "auto";
-          sectionSeparator = {
-            left = "";
-            right = "";
+          setupOpts.options = {
+            theme = "auto";
+            section_separators = {
+              left = "₴";
+              right = "₶";
+            };
+            component_separators = {
+              left = "₵";
+              right = "₷";
+            };
           };
-          componentSeparator = {
-            left = "";
-            right = "";
-          };
+          setupOpts.sections.lualine_b = [
+            {
+              "@1" = "filetype";
+              colored = true;
+              icon_only = true;
+              icon = {align = "left";};
+            }
+            {
+              "@1" = "filename";
+              path = 3;
+              symbols = {
+                modified = " ";
+                readonly = " ";
+              };
+              separator = {right = "";};
+            }
+            {
+              "@1" = "";
+              draw_empty = true;
+              separator = {
+                left = "";
+                right = "";
+              };
+            }
+          ];
         };
 
         binds = {
@@ -333,14 +360,19 @@
           };
         };
 
-        git.gitsigns = {
-          enable = true;
-          setupOpts = {
-            attach_to_untracked = true;
-            current_line_blame = true;
-            current_line_blame_opts = {
-              delay = 0;
-              virt_text_pos = "eol";
+        git = {
+          octo-nvim = {
+            enable = true;
+          };
+          gitsigns = {
+            enable = true;
+            setupOpts = {
+              attach_to_untracked = true;
+              current_line_blame = true;
+              current_line_blame_opts = {
+                delay = 0;
+                virt_text_pos = "eol";
+              };
             };
           };
         };
