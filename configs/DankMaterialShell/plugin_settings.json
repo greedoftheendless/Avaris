@@ -58,7 +58,7 @@
     "enabled": true,
     "defaultSkinTone": "🏽",
     "trigger": ":",
-    "recentEmojis": "👍🏽"
+    "recentEmojis": "😭,👍🏽"
   },
   "fullscreenPowerMenu": {
     "enabled": false,
@@ -107,7 +107,7 @@
   },
   "dankKDEConnect": {
     "enabled": true,
-    "selectedDeviceId": "d5631979d950423c863574412fc98b4b"
+    "selectedDeviceId": ""
   },
   "hyprwhsprVoiceOverlay": {
     "enabled": false

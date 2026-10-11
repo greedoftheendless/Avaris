@@ -29,11 +29,16 @@
     "quickCapture": {
       "repo": "https://github.com/hthienloc/dms-plugins",
       "path": "quickCapture",
-      "commit": "bc7724880f5643eda6cace2072a55185b3fc045a"
+      "commit": "063bb70762c42804213fa02e521a051477dbd5d0"
     },
     "screenCaptureToolbar": {
       "repo": "https://github.com/JDKamalakar/DMS-ScreenCapture_Toolbar",
       "commit": "332ea98c0fb2e2d26d55a0cda14c3c9b3cd28505"
+    },
+    "typingSounds": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "typingSounds",
+      "commit": "063bb70762c42804213fa02e521a051477dbd5d0"
     }
   }
 }

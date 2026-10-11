@@ -153,7 +153,6 @@
   "osdMediaPlaybackEnabled": true,
   "osdPowerProfileEnabled": true,
   "powerMenuActions": [
-    "logout",
     "poweroff",
     "lock",
     "suspend",
@@ -161,10 +160,12 @@
     "hibernate",
     "reboot",
     "softreboot",
-    "restart"
+    "restart",
+    "logout"
   ],
   "powerMenuDefaultAction": "poweroff",
   "powerMenuGridLayout": true,
+  "customPowerActionLogout": "bash -c 'loginctl terminate-user $USER'",
   "screenPreferences": {
     "wallpaper": [
       "all"
