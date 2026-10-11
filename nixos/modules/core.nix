@@ -11,6 +11,9 @@
 
   services.accounts-daemon.enable = true;
 
+  #enabling gnome keyring for services
+  services.gnome.gnome-keyring .enable = true;
+
   #Enabling SDDM login screen
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
