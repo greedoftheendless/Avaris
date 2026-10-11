@@ -36,5 +36,6 @@
     yt-dlp
     spotdl
     kdePackages.kdeconnect-kde
+    cisco-packet-tracer_9
   ];
 }
