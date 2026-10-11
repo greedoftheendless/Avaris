@@ -15,5 +15,7 @@
     ./modules/umbriel.nix
     ./modules/gpu-screen-recorder.nix
     ./modules/appimage.nix
+    ./modules/steam.nix
+    ./modules/wireshark.nix
   ];
 }
