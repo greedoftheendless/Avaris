@@ -5,7 +5,6 @@ email = "greeoftheendless@gmail.com"
 [ui]
 pager = ":builtin"
 editor = ":builtin"
-diff-editor = "nvim"
 
 [git]
 auto-local-branch = true
@@ -38,7 +37,7 @@ auto-track-bookmarks = "*"
     d = ["diff"]
     dp = ["diff", "@-"]
     ds = ["diff", "--stat"]
-    de = ["diff", "edit"]
+    de = ["diffedit"]
 
     # Change Creation & Editing
     n = ["new"]
