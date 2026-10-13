@@ -91,7 +91,9 @@
   "audioDeviceScrollVolumeEnabled": true,
   "mediaExcludePlayers": [
     "zen-desktop",
-    "vesktop"
+    "vesktop",
+    "zen",
+    "firefox"
   ],
   "appIdSubstitutions": [],
   "sortAppsAlphabetically": true,
@@ -127,7 +129,6 @@
   "launcherLogoMode": "os",
   "launcherLogoSizeOffset": -2,
   "fontFamily": "Noto Serif Kannada",
-  "soundLogin": true,
   "acProfileName": "2",
   "batteryProfileName": "0",
   "batteryNotifyChargeLimit": true,
@@ -198,6 +199,10 @@
         },
         {
           "id": "quickCapture",
+          "enabled": true
+        },
+        {
+          "id": "alarmClock",
           "enabled": true
         }
       ],
@@ -377,7 +382,8 @@
         "barWidth": 0,
         "bgOpacity": 0,
         "opacity": 100,
-        "silenceTimeout": 4
+        "silenceTimeout": 4,
+        "showOnOverlay": false
       }
     },
     {
@@ -391,7 +397,8 @@
         ],
         "syncPositionAcrossScreens": true,
         "backgroundOpacity": 0,
-        "borderOpacity": 100
+        "borderOpacity": 100,
+        "showOnOverlay": false
       }
     }
   ],

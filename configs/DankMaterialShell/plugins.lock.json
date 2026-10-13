@@ -1,9 +1,14 @@
 {
   "lockfileVersion": 1,
   "plugins": {
+    "alarmClock": {
+      "repo": "https://github.com/lucyfire/dms-plugins",
+      "path": "alarmClock",
+      "commit": "c99ba77c848721fbb8b8c3307638ea10d5dccdd9"
+    },
     "calculator": {
       "repo": "https://github.com/rochacbruno/DankCalculator",
-      "commit": "1db5865419a40a33171a475855a59e0b8bf7187f"
+      "commit": "c9fbbe921e9afeb92f4e92390e9fc05f006f0373"
     },
     "cavaVisualizer": {
       "repo": "https://github.com/ernestowgg/cava-visualizer",
@@ -12,7 +17,7 @@
     "dankKDEConnect": {
       "repo": "https://github.com/AvengeMedia/dms-plugins",
       "path": "DankKDEConnect",
-      "commit": "bb90a1db7d540e64ae049c5906afba9b24baa865"
+      "commit": "a8a508bc371e7c3f2c7862d8840b88cf5c63978f"
     },
     "emojiLauncher": {
       "repo": "https://github.com/devnullvoid/dms-emoji-launcher",
@@ -29,7 +34,7 @@
     "quickCapture": {
       "repo": "https://github.com/hthienloc/dms-plugins",
       "path": "quickCapture",
-      "commit": "063bb70762c42804213fa02e521a051477dbd5d0"
+      "commit": "49c3fd7a23268af16adf29f72e00965e3ff61d02"
     },
     "screenCaptureToolbar": {
       "repo": "https://github.com/JDKamalakar/DMS-ScreenCapture_Toolbar",
@@ -38,7 +43,7 @@
     "typingSounds": {
       "repo": "https://github.com/hthienloc/dms-plugins",
       "path": "typingSounds",
-      "commit": "063bb70762c42804213fa02e521a051477dbd5d0"
+      "commit": "49c3fd7a23268af16adf29f72e00965e3ff61d02"
     }
   }
 }
