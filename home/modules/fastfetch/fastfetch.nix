@@ -5,8 +5,9 @@
       "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
 
       logo = {
+        type = "kitty";
         source = "/home/greed/dotfiles/home/modules/fastfetch/Images/angel.jpg";
-        height = 13;
+        height = 12;
 
         padding.middle = 1;
       };
@@ -22,11 +23,6 @@
           type = "os";
           format = "{2} {9}";
           key = "├──";
-        }
-        {
-          type = "kernel";
-          format = "{1} {2}";
-          key = "│ ";
         }
         {
           type = "wm";
@@ -51,10 +47,6 @@
           key = "│󰢮 ";
         }
         {
-          type = "memory";
-          key = "│ ";
-        }
-        {
           type = "disk";
           folders = "/";
           format = "{1} / {2} ({3})";
@@ -62,7 +54,7 @@
         }
         {
           type = "media";
-          key = "├─󰝚";
+          key = "├──󰝚";
         }
         {
           type = "custom";
