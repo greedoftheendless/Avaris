@@ -4,7 +4,6 @@ email = "greeoftheendless@gmail.com"
 
 [ui]
 pager = ":builtin"
-editor = ":builtin"
 
 [git]
 auto-local-branch = true
